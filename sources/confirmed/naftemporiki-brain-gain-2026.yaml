@@ -1,0 +1,40 @@
+id: naftemporiki-brain-gain-2026
+title:
+  el: 'ΟΟΣΑ: Για πρώτη φορά από την κρίση επιστρέφουν περισσότεροι Έλληνες απ'' όσους φεύγουν'
+  en: 'OECD: For the first time since the crisis, more Greeks return than leave'
+publisher:
+  el: Ναυτεμπορική
+  en: Naftemporiki
+country: greece
+year: 2026
+url: https://www.naftemporiki.gr/finance/economy/2132861/oosa-gia-proti-fora-apo-tin-krisi-epistrefoyn-perissoteroi-ellines-ap-osoys-feygoyn/
+classification: confirmed
+type: media
+scope: greek-citizens
+reliability: medium
+publication:
+  published_at: '2026-07-03'
+  retrieved_at: '2026-10-05'
+independence:
+  primary_data_collector: false
+  derives_from:
+  - oecd-review-greek-emigrants
+  notes:
+    el: 'Ρεπορτάζ για την κοινή μελέτη ΟΟΣΑ–ΕΚΤ. Το ίδιο εύρημα δεν είναι αυτόνομος αριθμός: η αρχική
+      απόδοση σε δήλωση Σκερτσου δεν τεκμηριωνόταν (το businessdaily.gr URL είναι 404 χωρίς archive),
+      ενώ εδώ τα ίδια νούμερο αποδίδονται στη δημοσιευμένη μελέτη.'
+    en: 'A report on the joint OECD–EKT study. The identical finding is not a stand-alone figure: the
+      original attribution to a Skertsos statement was unevidenced (the businessdaily.gr URL is 404 with
+      no archive), while here the same numbers are attributed to the published study.'
+robots_txt_allows_fetch: true
+language: el
+language_iso639_2b: ell
+notes:
+  el: 'Φέρει τα ακριβή μεγέθη που η key-findings σελίδα του OECD στρογγυλοποιεί (46.091 αντί 46.000, 36.931
+    αντί 37.000) και το 2024 (51.993 επιστροφές, 32.141 αναχωρήσεις). Εσωτερικός έλεγχος συμβατότητας:
+    46.091 + 51.993 = 98.084 και 36.931 + 32.141 = 69.072, που ταιριάζουν με το «περίπου 98.000 επέστρεψαν,
+    69.000 αναχώρησαν» για τη διετία.'
+  en: 'Carries the exact figures the OECD key-findings page rounds (46,091 not 46,000; 36,931 not 37,000)
+    and the 2024 values (51,993 returns, 32,141 departures). Internal consistency check: 46,091 + 51,993
+    = 98,084 and 36,931 + 32,141 = 69,072, matching the article''s ''about 98,000 returned, 69,000 left''
+    for the two years.'

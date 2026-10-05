@@ -13,6 +13,8 @@ Open dataset of Greeks living permanently abroad, organized by
 - `data/lists/country-list.csv` — the bundled country list (regenerate with `scripts/build_country_list.py`)
 - `sources/confirmed/` — official censuses, registers, Eurostat, UN, OECD
 - `sources/hypothetical/` — community estimates, media, academic extrapolations
+- `data/flows/<country>/` — flow data: `outflow.yaml`, `return.yaml`, and the
+  derived `net.yaml` (computed balances, excluded from every total)
 - `schemas/` — JSON Schemas for all YAML files
 - `i18n/` — translations for reports and enum labels
 - `scripts/` — validate, aggregate, report
@@ -35,6 +37,9 @@ Outputs:
 - `data/aggregate/worldwide.yaml`
 - `reports/summary.en.md`
 - `reports/summary.el.md`
+
+Stock and flow are different quantities and are never summed; see
+[docs/methodology.md](docs/methodology.md#net-figures).
 
 ## Core rules
 

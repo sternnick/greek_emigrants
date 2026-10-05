@@ -1,13 +1,203 @@
 country: greece
 direction: return
-
 records:
-  - year: 2023
-    count: 47200
-    source_ref: greece-in-figures-2023
-    classification: confirmed
-    citizenship: greek-citizens
-    education: any
-    notes:
-      el: "Έλληνες πολίτες που επέστρεψαν στην Ελλάδα το 2023. Πρώτη χρονιά με καθαρή επιστροφή μετά το 2008."
-      en: "Greek citizens who returned to Greece in 2023. First net return year since 2008."
+- year: 2023
+  count: 47200
+  source_ref: hatzidakis-return-2025
+  classification: confirmed
+  citizenship: greek-citizens
+  education: any
+  evidence:
+  - source_ref: hatzidakis-return-2025
+    url: https://vicepresident.gov.gr/k-chatzidakis-antistrofi-tou-brain-drain-apo-to-2023-symfona-me-ta-episima-stoicheia/
+    accessed_at: '2026-10-05'
+    published_at: '2025-06-02'
+    page_or_table: statement body (Government Spokesperson briefing at the Brain ReGain annual conference)
+    quote:
+      el: 'το 2023, για πρώτη φορά από 2008, το ισοζύγιο εισροών-εκροών Ελλήνων πολιτών ήταν θετικό: 47.200 συμπατριώτες
+        μας επέστρεψαν έναντι 32.800 που έφυγαν'
+      en: 'το 2023, για πρώτη φορά από 2008, το ισοζύγιο εισροών-εκροών Ελλήνων πολιτών ήταν θετικό: 47.200 συμπατριώτες
+        μας επέστρεψαν έναντι 32.800 που έφυγαν'
+    quote_language: el
+  - source_ref: greece-in-figures-2023
+    url: https://www.greeceinnumbers.gr/en-gb/Population/Migration
+    accessed_at: '2026-10-05'
+    page_or_table: Population → Migration — figures sit in a JavaScript pivot embed; not machine-readable in the 2026-10-05
+      pass, so the value is confirmed through the government statement below
+  verification:
+    independent_sources: 1
+    confidence: single-source
+    corroborating_refs:
+    - greece-in-figures-2023
+    independence_note:
+      el: Μία πρωτογενής πηγή (ΕΛΣΤΑΤ) και ένας φορέας που την παραθέτει· η ανεξαρτησία δεν αυξάνεται από το να το αναφέρει
+        η κυβέρνηση.
+      en: One primary source (ELSTAT) and one carrier quoting it; a government restatement does not add independence.
+  notes:
+    el: Έλληνες πολίτες που επέστρεψαν το 2023. Πρώτη χρονιά με θετικό ισοζύγιο από το 2008.
+    en: Greek citizens who returned in 2023. First positive balance since 2008.
+- year: 2023
+  count: 46000
+  source_ref: oecd-review-greek-emigrants
+  classification: confirmed
+  citizenship: greek-citizens
+  education: any
+  dispute_note:
+    el: 'Διαφωνία με την εθνική τιμή: 46.000 (OECD) έναντι 47.200 (ΕΛΣΤΑΤ/Αντιπρόεδρος). Και οι δύο κρατούνται — διαφέρουν
+      ο ορισμός και ο τρόπος απογραφής, όχι απλώς η ακρίβεια.'
+    en: 'Conflicts with the national figure: 46,000 (OECD) versus 47,200 (ELSTAT / Vice-President). Both are kept — the
+      definition and counting method differ, not merely the precision.'
+  evidence:
+  - source_ref: oecd-review-greek-emigrants
+    url: https://www.oecd.org/en/publications/a-review-of-greek-emigrants_309708bf.html
+    accessed_at: '2026-10-05'
+    published_at: '2026-07-03'
+    page_or_table: page 16 (Key findings)
+    quote:
+      el: the return flow was 29 000 people in 2022, a figure that increased to 46 000 people in 2023, exceeding the 37
+        000 departures recorded that same year
+      en: the return flow was 29 000 people in 2022, a figure that increased to 46 000 people in 2023, exceeding the 37
+        000 departures recorded that same year
+    quote_language: en
+  verification:
+    independent_sources: 0
+    confidence: single-source
+    independence_note:
+      el: Ο OECD αναπαράγει εθνικά/ευρωπαϊκά δεδομένα· δεν συνέλεξε δεδομένα.
+      en: OECD reproduces national/European data; it collected none.
+  notes:
+    el: Οι πίνακες της μελέτης δίνουν 46.091· η σελίδα key findings του OECD το στρογγυλοποιεί.
+    en: The study's own tables give 46.091; the OECD key-findings page rounds it.
+- year: 2022
+  count: 29000
+  source_ref: oecd-review-greek-emigrants
+  classification: confirmed
+  citizenship: greek-citizens
+  education: any
+  evidence:
+  - source_ref: oecd-review-greek-emigrants
+    url: https://www.oecd.org/en/publications/a-review-of-greek-emigrants_309708bf.html
+    accessed_at: '2026-10-05'
+    published_at: '2026-07-03'
+    page_or_table: page 16 (Key findings)
+    quote:
+      el: the return flow was 29 000 people in 2022, a figure that increased to 46 000 people in 2023, exceeding the 37
+        000 departures recorded that same year
+      en: the return flow was 29 000 people in 2022, a figure that increased to 46 000 people in 2023, exceeding the 37
+        000 departures recorded that same year
+    quote_language: en
+  verification:
+    independent_sources: 0
+    confidence: single-source
+    independence_note:
+      el: Ο OECD αναπαράγει εθνικά/ευρωπαϊκά δεδομένα.
+      en: OECD reproduces national/European data.
+- year: 2010
+  period_end: 2023
+  count: 400000
+  source_ref: hatzidakis-return-2025
+  classification: hypothetical
+  citizenship: greek-citizens
+  education: any
+  evidence:
+  - source_ref: hatzidakis-return-2025
+    url: https://vicepresident.gov.gr/k-chatzidakis-antistrofi-tou-brain-drain-apo-to-2023-symfona-me-ta-episima-stoicheia/
+    accessed_at: '2026-10-05'
+    published_at: '2025-06-02'
+    page_or_table: statement body
+    quote:
+      el: Συνολικά, από τις 600.000 Έλληνες που έφυγαν την περίοδο της κρίσης έχουν επιστρέψει 400.000
+      en: Συνολικά, από τις 600.000 Έλληνες που έφυγαν την περίοδο της κρίσης έχουν επιστρέψει 400.000
+    quote_language: el
+  verification:
+    independent_sources: 1
+    confidence: single-source
+    corroborating_refs:
+    - greekcitytimes-brain-drain-2024
+    independence_note:
+      el: Σωρευτικό μεγέθος που παραθέτει η κυβέρνηση· η ίδια πηγή αναφέρει ξεχωριστά ότι τα σωρευτικά βασίζονται σε στοιχεία
+        Eurostat.
+      en: A cumulative figure quoted by the government, which elsewhere attributes the cumulative series to Eurostat.
+  notes:
+    el: Επιστροφές της γενιάς της κρίσης ως τα τέλη 2023 (400.000 από 600.000). Το διάστημα δεν δίνεται ρητά· year=2010
+      χρησιμοποιείται ως αφετηρία της περιόδου.
+    en: Returns of the crisis generation up to end-2023 (400,000 of 600,000). The window is not stated explicitly; year=2010
+      is used as the period's start.
+- year: 2010
+  period_end: 2024
+  count: 473044
+  source_ref: naftemporiki-brain-gain-2026
+  classification: confirmed
+  citizenship: greek-citizens
+  education: any
+  dispute_note:
+    el: Επιβεβαιώθηκε από ξεχωριστό domain (naftemporiki.gr) που αποδίδει το νούμερο στη δημοσιευμένη μελέτη ΟΟΣΑ–ΕΚΤ. Δεν
+      είναι αυτόνομος αριθμός Σκερτσου — το businessdaily.gr URL παραμένει 404 χωρίς αρχειακό αντίγραφο.
+    en: Confirmed from a different domain (naftemporiki.gr), which attributes the figure to the published OECD-EKT study.
+      It is not a stand-alone Skertsos figure - the businessdaily.gr URL remains 404 with no archive copy.
+  evidence:
+  - source_ref: naftemporiki-brain-gain-2026
+    url: https://www.naftemporiki.gr/finance/economy/2132861/oosa-gia-proti-fora-apo-tin-krisi-epistrefoyn-perissoteroi-ellines-ap-osoys-feygoyn/
+    accessed_at: '2026-10-05'
+    published_at: '2026-07-03'
+    page_or_table: article body, section «Έξι στους δέκα έχουν ήδη επιστρέψει»
+    quote:
+      el: Η μελέτη δείχνει ότι από το 2010 έως το 2024 εγκατέλειψαν την Ελλάδα 773.296 Έλληνες πολίτες. Στο ίδιο διάστημα
+        επέστρεψαν 473.044, γεγονός που σημαίνει ότι περίπου έξι στους δέκα από όσους μετανάστευσαν έχουν ήδη επαναπατριστεί
+      en: Η μελέτη δείχνει ότι από το 2010 έως το 2024 εγκατέλειψαν την Ελλάδα 773.296 Έλληνες πολίτες. Στο ίδιο διάστημα
+        επέστρεψαν 473.044, γεγονός που σημαίνει ότι περίπου έξι στους δέκα από όσους μετανάστευσαν έχουν ήδη επαναπατριστεί
+    quote_language: el
+  verification: &id001
+    independent_sources: 1
+    confidence: single-source
+    corroborating_refs:
+    - oecd-review-greek-emigrants
+    independence_note:
+      el: Ρεπορτάζ για την κοινή μελέτη ΟΟΣΑ–ΕΚΤ. Ο φορέας δεν συνέλεξε δεδομένα.
+      en: A report on the joint OECD-EKT study. The carrier collected no data.
+- year: 2022
+  period_end: 2024
+  count: null
+  source_ref: skertso-brain-gain-2026
+  classification: confirmed
+  citizenship: greek-citizens
+  education: any
+  dispute_note:
+    el: 'Οι 130.101 (2022–2024) δεν εμφανίστηκαν σε κανέναν ανακτήσιμο φορέα. Σταυρωτικός έλεγχος με τη μελέτη: 46.091 +
+      51.993 = 98.084 για το 2023–2024, άρα το 130.101 προϋποθέτει 2022 ≈ 32.000, που δεν επιβεβαιώνεται. count=null.'
+    en: 'The 130,101 (2022-2024) never appeared on any retrievable carrier. Cross-check against the study: 46,091 + 51,993
+      = 98,084 for 2023-2024, so 130,101 would require 2022 to be ~32,000, which is not confirmed. count=null.'
+  evidence:
+  - source_ref: skertso-brain-gain-2026
+    url: https://www.businessdaily.gr/oikonomia/ergas%C3%ADa/2026-05-15/479419/
+    accessed_at: '2026-10-05'
+    page_or_table: 'NOT RETRIEVED — live URL 404 (also under Camoufox); Wayback availability API returns archived_snapshots:
+      {} (no capture on any date)'
+  verification:
+    independent_sources: 0
+    confidence: single-source
+    independence_note:
+      el: Ρεπορτάζ χωρίς ανακτήσιμο φορέα· δεν έχει επιβεβαιωθεί κανένας αριθμός.
+      en: A report with no retrievable carrier; no figure confirmed from it.
+- year: 2024
+  count: 51993
+  source_ref: naftemporiki-brain-gain-2026
+  classification: confirmed
+  citizenship: greek-citizens
+  education: any
+  dispute_note:
+    el: Επιβεβαιώθηκε από ξεχωριστό φορέα (naftemporiki.gr, μελέτη ΟΟΣΑ–ΕΚΤ).
+    en: Confirmed from a separate carrier (naftemporiki.gr, the OECD-EKT study).
+  evidence:
+  - source_ref: naftemporiki-brain-gain-2026
+    url: https://www.naftemporiki.gr/finance/economy/2132861/oosa-gia-proti-fora-apo-tin-krisi-epistrefoyn-perissoteroi-ellines-ap-osoys-feygoyn/
+    accessed_at: '2026-10-05'
+    published_at: '2026-07-03'
+    page_or_table: article body, section «Χρονιά-καμπή το 2023»
+    quote:
+      el: Το 2023 επέστρεψαν 46.091 Έλληνες, έναντι 36.931 που έφυγαν, ενώ το 2024 οι επιστροφές αυξήθηκαν στις 51.993,
+        με τις αναχωρήσεις να περιορίζονται στις 32.141
+      en: Το 2023 επέστρεψαν 46.091 Έλληνες, έναντι 36.931 που έφυγαν, ενώ το 2024 οι επιστροφές αυξήθηκαν στις 51.993,
+        με τις αναχωρήσεις να περιορίζονται στις 32.141
+    quote_language: el
+  verification: *id001

@@ -13,6 +13,8 @@
 - `data/lists/country-list.csv` — ενσωματωμένος κατάλογος χωρών (αναγεννάται με `scripts/build_country_list.py`)
 - `sources/confirmed/` — επίσημες απογραφές, μητρώα, Eurostat, UN, OECD
 - `sources/hypothetical/` — εκτιμήσεις κοινοτήτων, ΜΜΕ, ακαδημαϊκές προεκτάσεις
+- `data/flows/<country>/` — δεδομένα ροών: `outflow.yaml`, `return.yaml` και το
+  παράγωγο `net.yaml` (υπολογισμένα ισοζύγια, εξαιρούνται από κάθε άθροισμα)
 - `schemas/` — JSON Schemas για όλα τα YAML
 - `i18n/` — μεταφράσεις για reports και enum labels
 - `scripts/` — validate, aggregate, report
@@ -35,6 +37,9 @@ python scripts/report.py
 - `data/aggregate/worldwide.yaml`
 - `reports/summary.en.md`
 - `reports/summary.el.md`
+
+Το απόθεμα και η ροή είναι διαφορετικά μεγέθη και δεν αθροίζονται ποτέ!
+δες [docs/methodology.el.md](docs/methodology.el.md#καθαρά-μεγέθη).
 
 ## Βασικοί κανόνες
 

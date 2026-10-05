@@ -1,0 +1,122 @@
+country: greece
+direction: net
+records:
+- year: 2023
+  count: 14400
+  source_ref: hatzidakis-return-2025
+  classification: confirmed
+  computed: true
+  citizenship: greek-citizens
+  education: any
+  evidence:
+  - source_ref: hatzidakis-return-2025
+    url: https://vicepresident.gov.gr/k-chatzidakis-antistrofi-tou-brain-drain-apo-to-2023-symfona-me-ta-episima-stoicheia/
+    accessed_at: '2026-10-05'
+    published_at: '2025-06-02'
+    page_or_table: statement body
+    quote:
+      el: 'το 2023, για πρώτη φορά από 2008, το ισοζύγιο εισροών-εκροών Ελλήνων πολιτών ήταν θετικό: 47.200 συμπατριώτες
+        μας επέστρεψαν έναντι 32.800 που έφυγαν'
+      en: 'το 2023, για πρώτη φορά από 2008, το ισοζύγιο εισροών-εκροών Ελλήνων πολιτών ήταν θετικό: 47.200 συμπατριώτες
+        μας επέστρεψαν έναντι 32.800 που έφυγαν'
+    quote_language: el
+  verification:
+    independent_sources: 1
+    confidence: single-source
+    corroborating_refs:
+    - greece-in-figures-2023
+    independence_note:
+      el: Παράγεται από μία μέτρηση (47.200 − 32.800)· δεν αποτελεί ανεξάρτητη πηγή.
+      en: Derived from one measurement (47,200 − 32,800); not an independent source.
+  notes:
+    el: 'Καθαρό ισοζύγιο 2023: επιστροφές 47.200 − αναχωρήσεις 32.800 = +14.400.'
+    en: '2023 net balance: 47,200 returns − 32,800 departures = +14,400.'
+- year: 2023
+  count: 9000
+  source_ref: oecd-review-greek-emigrants
+  classification: confirmed
+  computed: true
+  citizenship: greek-citizens
+  education: any
+  dispute_note:
+    el: Η τιμή του OECD για την ίδια χρονιά (+9.000) διαφέρει από την εθνική (+14.400) επειδή διαφέρουν και οι δύο συνιστώσες.
+    en: The OECD figure for the same year (+9,000) differs from the national one (+14,400) because both components differ.
+  evidence:
+  - source_ref: oecd-review-greek-emigrants
+    url: https://www.oecd.org/en/publications/a-review-of-greek-emigrants_309708bf.html
+    accessed_at: '2026-10-05'
+    published_at: '2026-07-03'
+    page_or_table: page 16 (Key findings)
+    quote:
+      el: the return flow was 29 000 people in 2022, a figure that increased to 46 000 people in 2023, exceeding the 37
+        000 departures recorded that same year
+      en: the return flow was 29 000 people in 2022, a figure that increased to 46 000 people in 2023, exceeding the 37
+        000 departures recorded that same year
+    quote_language: en
+  verification:
+    independent_sources: 0
+    confidence: single-source
+    independence_note:
+      el: Παράγεται από τα δύο νούμερα του OECD (46.000 − 37.000).
+      en: Derived from the two OECD figures (46,000 − 37,000).
+  notes:
+    el: 'Καθαρό ισοζύγιο 2023 κατά OECD: +9.000.'
+    en: 'OECD 2023 net balance: +9,000.'
+- year: 2022
+  period_end: 2024
+  count: null
+  source_ref: skertso-brain-gain-2026
+  classification: confirmed
+  computed: true
+  citizenship: greek-citizens
+  education: any
+  dispute_note:
+    el: 'Το αναφερόμενο +19.878 (130.101 − 110.223) δεν μπορεί να υπολογιστεί από τεκμηριωμένες τιμές: ο φορέας είναι νεκρός
+      και ασυναρμολόγητος → count=null.'
+    en: 'The reported +19,878 (130,101 − 110,223) cannot be computed from evidenced values: the carrier is dead and uncached
+      → count=null.'
+  evidence:
+  - source_ref: skertso-brain-gain-2026
+    url: https://www.businessdaily.gr/oikonomia/ergas%C3%ADa/2026-05-15/479419/
+    accessed_at: '2026-10-05'
+    page_or_table: 'NOT RETRIEVED — live URL 404 (also under Camoufox); Wayback availability API returns archived_snapshots:
+      {} (no capture on any date)'
+  verification:
+    independent_sources: 0
+    confidence: single-source
+    independence_note:
+      el: Ρεπορτάζ χωρίς ανακτήσιμο φορέα· δεν έχει επιβεβαιωθεί κανένας αριθμός.
+      en: A report with no retrievable carrier; no figure confirmed from it.
+  notes:
+    el: Παράγεται από μη επαληθεύσιμες συνιστώσες· κρατείται για το χρονοδιάγραμμα.
+    en: Derived from unverified components; kept for the timeline.
+- year: 2024
+  count: 19852
+  source_ref: naftemporiki-brain-gain-2026
+  classification: confirmed
+  computed: true
+  citizenship: greek-citizens
+  education: any
+  evidence:
+  - source_ref: naftemporiki-brain-gain-2026
+    url: https://www.naftemporiki.gr/finance/economy/2132861/oosa-gia-proti-fora-apo-tin-krisi-epistrefoyn-perissoteroi-ellines-ap-osoys-feygoyn/
+    accessed_at: '2026-10-05'
+    published_at: '2026-07-03'
+    page_or_table: article body, section «Χρονιά-καμπή το 2023»
+    quote:
+      el: Το 2023 επέστρεψαν 46.091 Έλληνες, έναντι 36.931 που έφυγαν, ενώ το 2024 οι επιστροφές αυξήθηκαν στις 51.993,
+        με τις αναχωρήσεις να περιορίζονται στις 32.141
+      en: Το 2023 επέστρεψαν 46.091 Έλληνες, έναντι 36.931 που έφυγαν, ενώ το 2024 οι επιστροφές αυξήθηκαν στις 51.993,
+        με τις αναχωρήσεις να περιορίζονται στις 32.141
+    quote_language: el
+  verification:
+    independent_sources: 1
+    confidence: single-source
+    corroborating_refs:
+    - oecd-review-greek-emigrants
+    independence_note:
+      el: Ρεπορτάζ για την κοινή μελέτη ΟΟΣΑ–ΕΚΤ. Ο φορέας δεν συνέλεξε δεδομένα.
+      en: A report on the joint OECD-EKT study. The carrier collected no data.
+  notes:
+    el: 'Καθαρό ισοζύγιο 2024: 51.993 − 32.141 = +19.852 (υπολογισμένο).'
+    en: '2024 net balance: 51,993 - 32,141 = +19,852 (computed).'

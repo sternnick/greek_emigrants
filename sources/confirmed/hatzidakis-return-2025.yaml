@@ -1,0 +1,38 @@
+id: hatzidakis-return-2025
+title:
+  el: 'Κ. Χατζηδάκης: Αντιστροφή του brain drain από το 2023 σύμφωνα με τα επίσημα στοιχεία'
+  en: 'Hatzidakis: Reversal of the brain drain from 2023, according to the official figures'
+publisher:
+  el: Αντιπρόεδρος της Κυβέρνησης
+  en: Vice-President of the Government
+country: greece
+year: 2025
+url: https://vicepresident.gov.gr/k-chatzidakis-antistrofi-tou-brain-drain-apo-to-2023-symfona-me-ta-episima-stoicheia/
+classification: confirmed
+type: government-portal
+scope: greek-citizens
+reliability: medium
+publication:
+  published_at: '2025-06-02'
+  retrieved_at: '2026-10-05'
+independence:
+  primary_data_collector: false
+  derives_from:
+  - greece-in-figures-2023
+  notes:
+    el: Κυβερνητική ανακοίνωση που παραθέτει επίσημα στατιστικά στοιχεία· δεν συνέλεξε δεδομένα. Η σελίδα
+      ανακτήθηκε αυτοπροσώπως (HTTP 200) και η ημερομηνία δημοσίευσης διαβάστηκε από το meta article:published_time
+      (2025-06-02) — όχι 2025-05-06, όπως είχε σημειωθεί πρόχειρα.
+    en: A government statement quoting official statistics; it collected no data. The page was fetched
+      first-hand (HTTP 200) and its publication date read from meta article:published_time (2025-06-02)
+      — not 2025-05-06, which was a provisional note.
+robots_txt_allows_fetch: true
+language: el
+language_iso639_2b: ell
+notes:
+  el: 'Φέρει δύο στοιχεία: το ισοζύγιο 2023 (47.200 επιστροφές έναντι 32.800 εκροών) και τη σωρευτική
+    επιστροφή 400.000 από τους 600.000 της περιόδου της κρίσης, η οποία αποδίδεται ρητά σε στοιχεία της
+    Eurostat σε ξεχωριστή ανακοίνωση για το Brain ReGain.'
+  en: 'Carries two figures: the 2023 balance (47,200 returns against 32,800 departures) and the cumulative
+    return of 400,000 of the 600,000 who left during the crisis, which a separate Brain ReGain statement
+    attributes explicitly to Eurostat.'

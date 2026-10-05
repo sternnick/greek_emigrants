@@ -1,0 +1,40 @@
+id: skertso-brain-gain-2026
+title:
+  el: Επιστροφή Ελλήνων στο εξωτερικό — στοιχεία Skertsos (Business Daily)
+  en: Return of Greeks from abroad — Skertsos figures (Business Daily)
+publisher:
+  el: Business Daily (επιχειρηματική ιστοσελίδα)
+  en: Business Daily (business news site)
+country: greece
+year: 2026
+url: https://www.businessdaily.gr/oikonomia/ergas%C3%ADa/2026-05-15/479419/
+classification: confirmed
+type: government-portal
+scope: greek-citizens
+reliability: low
+publication:
+  published_at: '2026-05-15'
+  retrieved_at: '2026-10-05'
+independence:
+  primary_data_collector: false
+  derives_from:
+  - greece-in-figures-2023
+  notes:
+    el: 'Ρεπορτάζ που αποδίδει αριθμούς στον πρώην αντιπρόεδρο της κυβέρνησης· δεν συνέλεξε δεδομένα.
+      ΚΑΝΕΝΑΣ τίτλος δεν επιβεβαιώθηκε από αυτή τη σελίδα: το live URL επιστρέφει 404 («Η σελίδα δε βρέθηκε»,
+      επιβεβαιώθηκε και με Camoufox) και το archive.io αναφέρει archived_snapshots: {} — καμία αποθήκευση,
+      σε καμία ημερομηνία.'
+    en: 'A report transmitting figures attributed to the former Deputy PM; it collected no data. NO figure
+      has been confirmed from this page: the live URL returns 404 (''Η σελίδα δε βρέθηκε'', confirmed
+      under Camoufox as well) and the Wayback availability API reports archived_snapshots: {} — no capture,
+      on any date.'
+robots_txt_allows_fetch: false
+language: el
+language_iso639_2b: ell
+notes:
+  el: 'Τα σωρευτικά που αποδίδονται εδώ (773.296 αναχωρήσεις / 473.044 επιστροφές 2010-2024, 130.101 /
+    110.223 για 2022-2024, 51.993 το 2024) κρατούνται με count=null μέχρι να βρεθεί ανακτήσιμος φορέας.
+    Τρόπος επαλήθευσης: 404 στο live, Camoufox 404, CDX μηδενικές εγγραφές για το 479419 σε κάθε ημερομηνία.'
+  en: 'The cumulative figures attributed to this carrier (773,296 departures / 473,044 returns 2010-2024,
+    130,101 / 110,223 for 2022-2024, 51,993 in 2024) are kept with count=null until a retrievable carrier
+    is found. Verification path: 404 live, 404 under Camoufox, CDX zero rows for 479419 on any date.'

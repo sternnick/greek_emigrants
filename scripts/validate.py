@@ -328,6 +328,16 @@ def main() -> int:
     for f in births_files:
         for rec in load_yaml(f).get("records", []):
             check_verification(rec, f, meta)
+    for f in flow_files:
+        doc = load_yaml(f)
+        if doc.get("direction") == "net" and any(
+                not rec.get("computed") for rec in doc.get("records", [])):
+            errors.append(
+                f"[NET-COMPUTED] {f}: a net record is derived arithmetic, so it must carry "
+                f"computed: true"
+            )
+        for rec in doc.get("records", []):
+            check_verification(rec, f, meta)
 
     for w in warnings:
         print(f"⚠  {w}")

@@ -1,4 +1,13 @@
 generated_by: scripts/aggregate.py
+net_flows:
+  greece:
+    year: 2024
+    departures: 32141
+    departures_source: naftemporiki-brain-gain-2026
+    returns: 51993
+    returns_source: naftemporiki-brain-gain-2026
+    net_emigration: 0
+    net_return: 19852
 totals_by_definition:
   confirmed:
     greek-ethnic: 23485
