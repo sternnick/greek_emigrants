@@ -16,6 +16,17 @@
 - **Greek ethnic (self-identified)**: 287,000
 - **Greek ancestry**: 400,000
 
+## Country coverage by status
+
+| Status | Countries |
+|---|---|
+| stub (no records yet) | 189 |
+| complete (confirmed and hypothetical) | 1 |
+| disputed (sources disagree) | 5 |
+| **Total** | **195** |
+
+_189 countries are scaffolded placeholders (status: stub) with no records yet - see data/countries/._
+
 ## Country
 
 | Continent | Country | Confirmed | Year | Definition | Hypothetical | Year | Definition | Source |
@@ -25,4 +36,3 @@
 | Europe | United Kingdom | 77,000 | 2021 | Born in Greece | 400,000 | 2009 | Greek ancestry | `ons-uk-2021` |
 | North America | Canada | 262,135 | 2021 | Greek ancestry | — |  |  | `statcan-ca-2021` |
 | North America | United States | 1,220,215 | 2023 | Greek ancestry | — |  |  | `us-acs-2023` |
-| Oceania | Australia | — |  |  | — |  |  | `` |

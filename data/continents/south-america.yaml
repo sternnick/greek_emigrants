@@ -2,4 +2,16 @@ id: south-america
 name:
   el: Νότια Αμερική
   en: South America
-countries: []
+countries:
+- argentina
+- bolivia
+- brazil
+- chile
+- colombia
+- ecuador
+- guyana
+- paraguay
+- peru
+- suriname
+- uruguay
+- venezuela
