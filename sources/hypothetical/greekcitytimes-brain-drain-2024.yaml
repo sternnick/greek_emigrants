@@ -21,6 +21,7 @@ independence:
   - greek-ministry-finance-brain-drain
 robots_txt_allows_fetch: true
 language: en
+language_iso639_2b: eng
 notes:
   el: 'ΜΜΕ. Φράση στο άρθρο: «Between 2010 and 2021, approximately 600,000 mostly educated Greeks left
     the country, according to the finance ministry». Το ίδιο άρθρο παραθέτει και ξεχωριστή μελέτη: 1,08

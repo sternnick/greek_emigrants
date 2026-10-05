@@ -17,7 +17,6 @@ import json
 import re
 import sys
 from pathlib import Path
-import pytest
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -51,16 +50,6 @@ def _i18n():
 
 i18n = _i18n()
 
-# The language registry (i18n/languages.json) and the i18n.codes()/ui_langs() helpers that
-# read it arrived together in the COAR commit. This test file is designed to run on either
-# side of that: with no registry, the registry-backed assertions skip and the structural
-# ones - the Arabic-token sweep above all - still run, so main gets regression protection
-# without needing code that is not there yet. When both branches merge, everything runs.
-HAS_REGISTRY = (ROOT / "i18n" / "languages.json").exists() and hasattr(i18n, "codes")
-needs_registry = pytest.mark.skipif(
-    not HAS_REGISTRY,
-    reason="no language registry on this branch (i18n/languages.json + i18n.codes)")
-
 
 def _text_files():
     for path in sorted(ROOT.rglob("*")):
@@ -83,7 +72,6 @@ def test_ui_catalogues_are_exactly_el_and_en():
     assert found == DATASET_LANGS, f"i18n/ catalogues {sorted(found)} != {sorted(DATASET_LANGS)}"
 
 
-@needs_registry
 def test_registry_agrees_with_the_catalogues():
     """ui: true must mean exactly the dataset languages, and match ui_langs()."""
     codes = i18n.codes()
@@ -94,7 +82,6 @@ def test_registry_agrees_with_the_catalogues():
     assert ui == catalogues, f"registry {sorted(ui)} vs catalogues {sorted(catalogues)}"
 
 
-@needs_registry
 def test_every_catalogue_key_is_registered_as_ui():
     codes = i18n.codes()
     for lang in DATASET_LANGS:
@@ -102,7 +89,6 @@ def test_every_catalogue_key_is_registered_as_ui():
         assert codes[lang]["iso639_1"] == lang
 
 
-@needs_registry
 def test_non_ui_language_is_justified_by_a_real_source():
     """A registered non-dataset language must be the actual language of a source.
 
@@ -120,7 +106,6 @@ def test_non_ui_language_is_justified_by_a_real_source():
     assert not undeclared, f"source language not in the registry: {sorted(undeclared)}"
 
 
-@needs_registry
 def test_source_provenance_languages_stay_out_of_the_ui():
     """A source language kept for provenance must never be marked ui."""
     for code, meta in i18n.codes().items():
@@ -129,26 +114,13 @@ def test_source_provenance_languages_stay_out_of_the_ui():
     assert set(i18n.ui_langs()) == DATASET_LANGS
 
 
-def test_generators_follow_the_language_list():
-    """Reports must be driven by the language list, whichever form this branch is on.
-
-    With a registry the generators must follow ui_langs(), so a new ui language is the
-    only way a report language can change. Without one they must still iterate exactly
-    the el/en pair literally - and on either branch, no generator may name any other
-    language in its loop.
-    """
+def test_generators_iterate_ui_langs_not_a_hardcoded_pair():
+    """Both report generators must follow the registry, so a new ui language is the
+    only way a report language can ever change."""
     for name in ("report.py", "report_flows.py"):
         src = (ROOT / "scripts" / name).read_text(encoding="utf-8")
-        if HAS_REGISTRY:
-            assert "for lang in i18n.ui_langs():" in src, f"{name} does not iterate ui_langs()"
-        else:
-            assert re.search(r'for lang in \("en", "el"\)', src), \
-                f"{name} does not iterate the el/en pair"
-        bad = re.findall(r'for lang in ([^)]*)\)', src)
-        for clause in bad:
-            stray = re.findall(r'"([a-z]{2})"', clause)
-            assert set(stray) <= DATASET_LANGS, f"{name} iterates {sorted(set(stray))}"
-        assert not re.search(r'reports?/.*\.(fr|de|sq)\.md', src), f"{name} emits a non-el/en report"
+        assert "for lang in i18n.ui_langs():" in src, f"{name} does not iterate ui_langs()"
+        assert not re.search(r'for lang in \("en", "el"\)', src), f"{name} re-hardcodes the pair"
 
 
 def test_generators_emit_only_el_and_en_files():
@@ -161,15 +133,9 @@ def test_generators_emit_only_el_and_en_files():
 
 
 def test_no_schema_enum_is_language_valued():
-    """No enum may admit a language code outside the dataset languages.
-
-    Runs on both branch shapes: the static {el, en} allowlist always, widened with the
-    registry's own codes when this branch has one.
-    """
-    langs = set(DATASET_LANGS)
-    if HAS_REGISTRY:
-        langs |= {m["iso639_1"] for m in i18n.codes().values()}
-        langs |= {m["iso639_2b"] for m in i18n.codes().values()}
+    """No enum may admit a language code outside el/en."""
+    langs = {m["iso639_1"] for m in i18n.codes().values()} | {
+        m["iso639_2b"] for m in i18n.codes().values()}
     for path in sorted((ROOT / "schemas").glob("*.json")):
         schema = json.loads(path.read_text(encoding="utf-8"))
 

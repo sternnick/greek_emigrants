@@ -10,6 +10,19 @@
 4. Καταχώρησε το country id στο `data/continents/<continent>.yaml`.
 5. Τρέξε `python scripts/validate.py` — πρέπει να περάσει.
 
+## Κόκκος επαλήθευσης
+
+Οι γρήγοροι έλεγχοι τρέχουν σε hook του commit· ενεργοποίητέ τον μία φορά ανά κλώνο:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+Τρέχει το `validate.py` και τους δύο `--check` των migrations (blocks ανεξαρτησίας
+και κωδικοί γλώσσας ISO 639), ώστε κανένα αρχείο να μη μπορεί να αποκκλίνει από
+αυτό που θα έγραφαν τα scripts παραγωγής. Η πλήρης σουίτα είναι ρητή:
+`python -m pytest tests/ -q`.
+
 ## Προσθήκη πηγής
 
 1. Διάλεξε φάκελο: `sources/confirmed/` ή `sources/hypothetical/`.

@@ -24,6 +24,7 @@ independence:
       estimator has no retrievable document of its own, so it is not declared in derives_from.
 robots_txt_allows_fetch: true
 language: en
+language_iso639_2b: eng
 notes:
   el: Πλησιέστερη τεκμηριωμένη κοινοτική τιμή για το ΗΒ πριν τις απογραφές του 2021. Διαβάστηκε αυτοπροσώπως
     από στιγμιότυπο (2020-09-22).

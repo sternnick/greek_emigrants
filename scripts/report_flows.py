@@ -7,6 +7,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import i18n
 from i18n import t  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -65,9 +66,9 @@ def render(lang: str) -> str:
 
 def main() -> None:
     REPORTS.mkdir(parents=True, exist_ok=True)
-    for lang in ("en", "el"):
+    for lang in i18n.ui_langs():
         text = render(lang)
-        out = REPORTS / f"flows.{lang}.md"
+        out = REPORTS / f"flows.{i18n.report_suffix(lang)}.md"
         out.write_text(text, encoding="utf-8")
         print(f"✓ Wrote {out}")
 
