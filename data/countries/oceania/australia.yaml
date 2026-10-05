@@ -60,14 +60,17 @@ records:
       είναι υποσύνολα συν σύνολο — αλλά ποια στήλη είναι το εθνικό σύνολο δεν επαληθεύεται χωρίς ετικέτες. Σημείωση:
       η τιμή 424.744 ανήκει στη γραμμή «French» του ίδιου φύλλου. count=null έως την ανάγνωση πίνακα ancestry του ABS
       με κεφαλίδες (backlog). Ο ευρέως επαναλαμβανόμενος αριθμός 424.000 φαίνεται να προέρχεται από το σύνολο της γραμμής
-      «French» (424.744) στο ίδιο φύλλο του workbook ABS — σφάλμα μεταγραφής που έχει διαδοθεί μέσω δευτερογενών πηγών.'
+      «French» (424.744) στο ίδιο φύλλο του workbook ABS — σφάλμα μεταγραφής που έχει διαδοθεί μέσω δευτερογενών πηγών.
+      Ο πίνακας ancestry του ABS απαιτεί εγγραφή στο TableBuilder (δωρεάν, με εταιρικό email). Backlog: εγγραφή + εξαγωγή
+      της γραμμής Greek με κεφαλίδες.'
     en: 'Previous record: 424,000 — present in no cell of the cited ABS file. The workbook stores no readable column
       headers: the ''Greek'' row (sheet 5) reads 301,829 | 384,688 | 152,571 | 103,914 | 137,255 | 8,460 | 4,393 | 15,219
       with a final column 1,108,364 (sum of the preceding = 1,108,329), i.e. sub-totals plus a total — but which column
       is the national figure cannot be verified without labels. Note: 424,744 belongs to the ''French'' row of the same
       sheet. count=null until the ABS ancestry table is read with headers (backlog). The widely repeated 424,000 figure
       appears to originate from the French row total (424,744) in the same ABS workbook sheet — a transcription error
-      that has propagated through secondary sources.'
+      that has propagated through secondary sources. The ABS ancestry table requires TableBuilder registration (free,
+      organisation email). Backlog: register + export Greek row with headers.'
   notes:
     el: 'ABS 2021, ancestry: Greek.'
     en: 'ABS 2021, ancestry: Greek.'
