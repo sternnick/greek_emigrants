@@ -32,10 +32,12 @@ def main() -> None:
         "confirmed": defaultdict(int),
         "hypothetical": defaultdict(int),
     }
+    totals_by_status: dict[str, int] = defaultdict(int)
 
     for f in sorted((DATA / "countries").rglob("*.yaml")):
         doc = load_yaml(f)
         cont_id = doc["continent"]
+        totals_by_status[doc.get("status", "complete")] += 1
         bucket = continents.setdefault(
             cont_id,
             {"countries": [], "totals": {"confirmed": defaultdict(int),
@@ -88,6 +90,7 @@ def main() -> None:
             "confirmed": dict(totals["confirmed"]),
             "hypothetical": dict(totals["hypothetical"]),
         },
+        "totals_by_status": dict(sorted(totals_by_status.items())),
         "continents": continents,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)

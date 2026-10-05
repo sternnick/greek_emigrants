@@ -46,6 +46,23 @@ def render(lang: str, doc: dict) -> str:
             lines.append(f"- **{def_label}**: {fmt(count, lang)}")
         lines.append("")
 
+    # Coverage by status
+    by_status = doc.get("totals_by_status", {})
+    lines.append(f"## {t(lang, 'report.status_summary')}")
+    lines.append("")
+    lines.append(f"| {t(lang, 'report.status')} | {t(lang, 'report.countries')} |")
+    lines.append("|---|---|")
+    for st in ("stub", "partial", "complete", "disputed"):
+        if by_status.get(st):
+            lines.append(f"| {t(lang, f'status.{st}')} | {by_status[st]} |")
+    lines.append(f"| **{t(lang, 'report.total')}** | **{sum(by_status.values())}** |")
+    if by_status.get("stub"):
+        lines.append("")
+        lines.append(
+            f"_{t(lang, 'report.stub_note').replace('{n}', fmt(by_status['stub'], lang))}_"
+        )
+    lines.append("")
+
     # Main table
     lines.append(f"## {t(lang, 'report.columns.country')}")
     lines.append("")
@@ -68,6 +85,9 @@ def render(lang: str, doc: dict) -> str:
         for c in sorted(cont["countries"], key=lambda x: x["id"]):
             conf = c["confirmed"]
             hyp = c["hypothetical"]
+            if not conf and not hyp:
+                # status: stub — scaffolded placeholder, nothing to report
+                continue
             conf_cell = fmt(conf["count"], lang) if conf else t(lang, "report.no_data")
             conf_year = str(conf["year"]) if conf else ""
             conf_def = t(lang, f"definition.{conf['definition']}") if conf else ""

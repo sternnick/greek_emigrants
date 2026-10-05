@@ -3,6 +3,47 @@ name:
   el: Ευρώπη
   en: Europe
 countries:
-  - albania
-  - germany
-  - united-kingdom
+- albania
+- andorra
+- austria
+- belarus
+- belgium
+- bosnia-and-herzegovina
+- bulgaria
+- croatia
+- czechia
+- denmark
+- estonia
+- finland
+- france
+- germany
+- greece
+- holy-see-vatican-city-state
+- hungary
+- iceland
+- ireland
+- italy
+- latvia
+- liechtenstein
+- lithuania
+- luxembourg
+- malta
+- moldova
+- monaco
+- montenegro
+- netherlands
+- north-macedonia
+- norway
+- poland
+- portugal
+- romania
+- russian-federation
+- san-marino
+- serbia
+- slovakia
+- slovenia
+- spain
+- sweden
+- switzerland
+- ukraine
+- united-kingdom
