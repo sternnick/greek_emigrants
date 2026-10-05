@@ -1,0 +1,19 @@
+id: us-acs-2023
+title:
+  el: "American Community Survey 2023"
+  en: "American Community Survey 2023"
+publisher:
+  el: "U.S. Census Bureau"
+  en: "U.S. Census Bureau"
+country: united-states
+year: 2023
+url: https://www.census.gov/programs-surveys/acs
+classification: confirmed
+type: survey
+scope: greek-origin
+reliability: high
+retrieved_at: "2026-10-05"
+language: en
+notes:
+  el: "Ετήσια έρευνα, ancestry: Greek."
+  en: "Annual survey, ancestry: Greek."

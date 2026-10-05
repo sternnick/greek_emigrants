@@ -1,0 +1,7 @@
+id: europe
+name:
+  el: Ευρώπη
+  en: Europe
+countries:
+  - germany
+  - united-kingdom

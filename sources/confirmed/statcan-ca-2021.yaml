@@ -1,0 +1,19 @@
+id: statcan-ca-2021
+title:
+  el: "Απογραφή Πληθυσμού 2021"
+  en: "Census of Population 2021"
+publisher:
+  el: "Statistics Canada"
+  en: "Statistics Canada"
+country: canada
+year: 2021
+url: https://www12.statcan.gc.ca/census-recensement/index-eng.cfm
+classification: confirmed
+type: census
+scope: greek-origin
+reliability: high
+retrieved_at: "2026-10-05"
+language: en
+notes:
+  el: "Εθνική απογραφή, ethnic origin: Greek."
+  en: "National census, ethnic origin: Greek."

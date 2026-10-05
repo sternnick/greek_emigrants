@@ -1,0 +1,29 @@
+id: united-states
+iso_alpha2: US
+name:
+  el: Ηνωμένες Πολιτείες Αμερικής
+  en: United States
+continent: north-america
+
+records:
+  - record_id: us-2023-acs
+    year: 2023
+    count: 1200000
+    source_ref: us-acs-2023
+    classification: confirmed
+    method: survey
+    definition: greek-origin
+    notes:
+      el: "American Community Survey 2023, ancestry: Greek."
+      en: "American Community Survey 2023, ancestry: Greek."
+
+  - record_id: us-2024-community
+    year: 2024
+    count: 3000000
+    source_ref: community-estimate-us-2024
+    classification: hypothetical
+    method: estimate
+    definition: greek-origin
+    notes:
+      el: "Εκτίμηση ομογενειακών φορέων ΗΠΑ."
+      en: "Estimate by US Greek-American organizations."

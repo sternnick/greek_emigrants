@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://greek-diaspora.local/schemas/source.schema.json",
+  "type": "object",
+  "required": [
+    "id", "title", "publisher", "country", "year",
+    "url", "classification", "type", "scope",
+    "reliability", "retrieved_at", "language"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/Slug" },
+    "title": { "$ref": "common.schema.json#/$defs/I18nString" },
+    "publisher": { "$ref": "common.schema.json#/$defs/I18nString" },
+    "country": { "$ref": "common.schema.json#/$defs/Slug" },
+    "year": { "type": "integer", "minimum": 1800, "maximum": 2100 },
+    "url": { "type": "string", "minLength": 1 },
+    "classification": { "$ref": "common.schema.json#/$defs/Classification" },
+    "type": { "$ref": "common.schema.json#/$defs/SourceType" },
+    "scope": { "$ref": "common.schema.json#/$defs/Definition" },
+    "reliability": { "$ref": "common.schema.json#/$defs/Reliability" },
+    "retrieved_at": { "type": "string", "format": "date" },
+    "language": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$" },
+    "notes": { "$ref": "common.schema.json#/$defs/I18nString" }
+  }
+}

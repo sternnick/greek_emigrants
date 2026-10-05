@@ -1,0 +1,29 @@
+id: united-kingdom
+iso_alpha2: GB
+name:
+  el: Ηνωμένο Βασίλειο
+  en: United Kingdom
+continent: europe
+
+records:
+  - record_id: uk-2021-census
+    year: 2021
+    count: 370000
+    source_ref: ons-uk-2021
+    classification: confirmed
+    method: census
+    definition: greek-origin
+    notes:
+      el: "Απογραφή ONS 2021, πληθυσμός ελληνικής καταγωγής."
+      en: "ONS 2021 census, population of Greek origin."
+
+  - record_id: uk-2024-community
+    year: 2024
+    count: 500000
+    source_ref: community-estimate-uk-2024
+    classification: hypothetical
+    method: estimate
+    definition: greek-origin
+    notes:
+      el: "Εκτίμηση ελληνικής κοινότητας."
+      en: "Greek community estimate."

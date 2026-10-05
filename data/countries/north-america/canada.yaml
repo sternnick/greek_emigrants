@@ -1,0 +1,29 @@
+id: canada
+iso_alpha2: CA
+name:
+  el: Καναδάς
+  en: Canada
+continent: north-america
+
+records:
+  - record_id: ca-2021-census
+    year: 2021
+    count: 270000
+    source_ref: statcan-ca-2021
+    classification: confirmed
+    method: census
+    definition: greek-origin
+    notes:
+      el: "Statistics Canada 2021, ethnic origin: Greek."
+      en: "Statistics Canada 2021, ethnic origin: Greek."
+
+  - record_id: ca-2024-community
+    year: 2024
+    count: 350000
+    source_ref: community-estimate-ca-2024
+    classification: hypothetical
+    method: estimate
+    definition: greek-origin
+    notes:
+      el: "Εκτίμηση ελληνικής κοινότητας Καναδά."
+      en: "Greek Canadian community estimate."

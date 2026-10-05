@@ -1,0 +1,7 @@
+id: north-america
+name:
+  el: Βόρεια Αμερική
+  en: North America
+countries:
+  - united-states
+  - canada

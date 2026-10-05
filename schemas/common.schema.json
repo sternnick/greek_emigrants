@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://greek-diaspora.local/schemas/common.schema.json",
+  "$defs": {
+    "I18nString": {
+      "type": "object",
+      "required": ["el", "en"],
+      "additionalProperties": false,
+      "properties": {
+        "el": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    },
+    "Slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "Classification": {
+      "type": "string",
+      "enum": ["confirmed", "hypothetical"]
+    },
+    "Definition": {
+      "type": "string",
+      "enum": ["greek-citizens", "greek-ethnic", "greek-origin", "greek-language"]
+    },
+    "Method": {
+      "type": "string",
+      "enum": ["census", "register", "survey", "estimate", "academic"]
+    },
+    "Reliability": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "SourceType": {
+      "type": "string",
+      "enum": [
+        "census",
+        "register",
+        "survey",
+        "official-statistics",
+        "community-estimate",
+        "media",
+        "academic-extrapolation",
+        "self-report"
+      ]
+    }
+  }
+}

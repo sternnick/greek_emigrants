@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://greek-diaspora.local/schemas/continent.schema.json",
+  "type": "object",
+  "required": ["id", "name", "countries"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/Slug" },
+    "name": { "$ref": "common.schema.json#/$defs/I18nString" },
+    "countries": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/Slug" },
+      "uniqueItems": true
+    }
+  }
+}

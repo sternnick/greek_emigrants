@@ -1,0 +1,92 @@
+generated_by: scripts/aggregate.py
+totals:
+  confirmed: 2717000
+  hypothetical: 5070000
+continents:
+  europe:
+    countries:
+    - id: germany
+      iso_alpha2: DE
+      name:
+        el: Γερμανία
+        en: Germany
+      confirmed:
+        count: 453000
+        year: 2022
+        source_ref: destatis-de-2022
+        definition: greek-citizens
+      hypothetical:
+        count: 520000
+        year: 2024
+        source_ref: community-estimate-de-2024
+        definition: greek-origin
+    - id: united-kingdom
+      iso_alpha2: GB
+      name:
+        el: Ηνωμένο Βασίλειο
+        en: United Kingdom
+      confirmed:
+        count: 370000
+        year: 2021
+        source_ref: ons-uk-2021
+        definition: greek-origin
+      hypothetical:
+        count: 500000
+        year: 2024
+        source_ref: community-estimate-uk-2024
+        definition: greek-origin
+    confirmed: 823000
+    hypothetical: 1020000
+  north-america:
+    countries:
+    - id: canada
+      iso_alpha2: CA
+      name:
+        el: Καναδάς
+        en: Canada
+      confirmed:
+        count: 270000
+        year: 2021
+        source_ref: statcan-ca-2021
+        definition: greek-origin
+      hypothetical:
+        count: 350000
+        year: 2024
+        source_ref: community-estimate-ca-2024
+        definition: greek-origin
+    - id: united-states
+      iso_alpha2: US
+      name:
+        el: Ηνωμένες Πολιτείες Αμερικής
+        en: United States
+      confirmed:
+        count: 1200000
+        year: 2023
+        source_ref: us-acs-2023
+        definition: greek-origin
+      hypothetical:
+        count: 3000000
+        year: 2024
+        source_ref: community-estimate-us-2024
+        definition: greek-origin
+    confirmed: 1470000
+    hypothetical: 3350000
+  oceania:
+    countries:
+    - id: australia
+      iso_alpha2: AU
+      name:
+        el: Αυστραλία
+        en: Australia
+      confirmed:
+        count: 424000
+        year: 2021
+        source_ref: abs-au-2021
+        definition: greek-origin
+      hypothetical:
+        count: 700000
+        year: 2024
+        source_ref: community-estimate-au-2024
+        definition: greek-origin
+    confirmed: 424000
+    hypothetical: 700000
