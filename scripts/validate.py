@@ -4,7 +4,8 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 import yaml
-from jsonschema import Draft202012Validator, RefResolver
+from jsonschema import Draft202012Validator
+from referencing import Registry, Resource
 
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMAS = ROOT / "schemas"
@@ -20,13 +21,18 @@ def load_yaml(path: Path) -> dict:
         return yaml.safe_load(f)
 
 
-def build_validator(schema_file: str) -> Draft202012Validator:
-    schema_path = SCHEMAS / schema_file
-    schema = load_yaml(schema_path)
-    store = {s.name: load_yaml(s) for s in SCHEMAS.glob("*.json")}
-    store[schema_file] = schema
-    resolver = RefResolver(base_uri=SCHEMAS.as_uri() + "/", referrer=schema, store=store)
-    return Draft202012Validator(schema, resolver=resolver)
+def build_registry() -> Registry:
+    resources = []
+    for f in SCHEMAS.glob("*.json"):
+        doc = load_yaml(f)
+        uri = doc.get("$id", f.as_uri())
+        resources.append((uri, Resource.from_contents(doc)))
+    return Registry().with_resources(resources)
+
+
+def make_validator(schema_file: str, registry: Registry) -> Draft202012Validator:
+    schema = load_yaml(SCHEMAS / schema_file)
+    return Draft202012Validator(schema, registry=registry)
 
 
 def validate_file(path: Path, validator: Draft202012Validator) -> None:
@@ -48,11 +54,10 @@ def collect_sources() -> dict[str, Path]:
             if sid in found:
                 errors.append(f"[DUP-SOURCE] id '{sid}' in {f} and {found[sid]}")
             found[sid] = f
-            expected_class = folder
-            if doc.get("classification") != expected_class:
+            if doc.get("classification") != folder:
                 errors.append(
                     f"[CLASS-MISMATCH] {f}: classification={doc.get('classification')} "
-                    f"but folder is '{expected_class}'"
+                    f"but folder is '{folder}'"
                 )
     return found
 
@@ -68,20 +73,30 @@ def collect_countries() -> dict[str, Path]:
     return found
 
 
-def check_source_refs(countries: dict[str, Path], sources: dict[str, Path]) -> None:
-    for cid, path in countries.items():
+# The dimensions that make two rows with the same (source_ref, year) different facts.
+# direction lives on the flow document, not on the record, so it is read from the doc.
+DIMENSIONS = ("direction", "definition", "population_type", "citizenship", "education")
+
+
+def check_source_refs(paths: list[Path], sources: dict[str, Path]) -> None:
+    for path in paths:
         doc = load_yaml(path)
-        seen: set[tuple[str, int]] = set()
+        direction = doc.get("direction")
+        seen: set[tuple] = set()
         for rec in doc.get("records", []):
             ref = rec.get("source_ref")
             if ref not in sources:
                 errors.append(f"[MISSING-SOURCE] {path}: source_ref '{ref}' not found")
-            key = (ref, rec.get("year"))
+            key = (ref, rec.get("year"), direction) + tuple(
+                rec.get(d) for d in DIMENSIONS if d != "direction"
+            )
             if key in seen:
-                errors.append(f"[DUP-RECORD] {path}: duplicate (source_ref,year)={key}")
+                errors.append(f"[DUP-RECORD] {path}: duplicate {key}")
             seen.add(key)
             if rec.get("count") is None:
-                warnings.append(f"[NULL-COUNT] {path}: record '{rec.get('record_id')}' has count=null")
+                warnings.append(
+                    f"[NULL-COUNT] {path}: record '{rec.get('record_id', rec.get('year'))}' has count=null"
+                )
 
 
 def check_continent_refs(countries: dict[str, Path]) -> None:
@@ -89,7 +104,7 @@ def check_continent_refs(countries: dict[str, Path]) -> None:
         doc = load_yaml(f)
         for cid in doc.get("countries", []):
             if cid not in countries:
-                errors.append(f"[MISSING-COUNTRY] {f}: continent lists '{cid}' but no file")
+                errors.append(f"[MISSING-COUNTRY] {f}: lists '{cid}' but no file")
     for cid, path in countries.items():
         doc = load_yaml(path)
         cont = doc.get("continent")
@@ -103,20 +118,27 @@ def check_continent_refs(countries: dict[str, Path]) -> None:
 
 
 def main() -> int:
-    country_validator = build_validator("country.schema.json")
-    continent_validator = build_validator("continent.schema.json")
-    source_validator = build_validator("source.schema.json")
+    registry = build_registry()
+    country_v = make_validator("country.schema.json", registry)
+    continent_v = make_validator("continent.schema.json", registry)
+    source_v = make_validator("source.schema.json", registry)
+    flow_v = make_validator("flow.schema.json", registry)
 
-    for f in (DATA / "countries").rglob("*.yaml"):
-        validate_file(f, country_validator)
+    country_files = list((DATA / "countries").rglob("*.yaml"))
+    for f in country_files:
+        validate_file(f, country_v)
     for f in (DATA / "continents").glob("*.yaml"):
-        validate_file(f, continent_validator)
+        validate_file(f, continent_v)
     for f in SOURCES.rglob("*.yaml"):
-        validate_file(f, source_validator)
+        validate_file(f, source_v)
+
+    flow_files = list((DATA / "flows").rglob("*.yaml")) if (DATA / "flows").exists() else []
+    for f in flow_files:
+        validate_file(f, flow_v)
 
     sources = collect_sources()
     countries = collect_countries()
-    check_source_refs(countries, sources)
+    check_source_refs(country_files + flow_files, sources)
     check_continent_refs(countries)
 
     for w in warnings:
@@ -127,7 +149,7 @@ def main() -> int:
         print(f"\n{len(errors)} error(s), {len(warnings)} warning(s).")
         return 1
     print(f"✓ All checks passed ({len(countries)} countries, {len(sources)} sources, "
-          f"{len(warnings)} warning(s)).")
+          f"{len(flow_files)} flow files, {len(warnings)} warning(s)).")
     return 0
 
 

@@ -7,7 +7,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from i18n import t, load as load_i18n  # noqa: E402
+from i18n import t  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 WORLDWIDE = ROOT / "data" / "aggregate" / "worldwide.yaml"
@@ -23,23 +23,44 @@ def fmt(n: int | None, lang: str) -> str:
 
 def render(lang: str, doc: dict) -> str:
     continents = doc["continents"]
-    totals = doc["totals"]
+    totals = doc["totals_by_definition"]
 
     lines: list[str] = []
     lines.append(f"# {t(lang, 'report.title')}")
     lines.append("")
     lines.append(f"*{t(lang, 'report.generated')}: {date.today().isoformat()}*")
     lines.append("")
+
+    # Totals by definition
+    lines.append(f"## {t(lang, 'report.totals')}")
+    lines.append("")
+    for cls in ("confirmed", "hypothetical"):
+        cls_label = t(lang, f"classification.{cls}")
+        lines.append(f"### {cls_label}")
+        lines.append("")
+        items = totals.get(cls, {})
+        if not items:
+            lines.append(f"- {t(lang, 'report.no_data')}")
+        for definition, count in sorted(items.items()):
+            def_label = t(lang, f"definition.{definition}")
+            lines.append(f"- **{def_label}**: {fmt(count, lang)}")
+        lines.append("")
+
+    # Main table
+    lines.append(f"## {t(lang, 'report.columns.country')}")
+    lines.append("")
     lines.append(
         f"| {t(lang, 'report.columns.continent')} "
         f"| {t(lang, 'report.columns.country')} "
         f"| {t(lang, 'report.columns.confirmed')} "
         f"| {t(lang, 'report.columns.year')} "
+        f"| {t(lang, 'report.columns.definition')} "
         f"| {t(lang, 'report.columns.hypothetical')} "
         f"| {t(lang, 'report.columns.year')} "
+        f"| {t(lang, 'report.columns.definition')} "
         f"| {t(lang, 'report.columns.source')} |"
     )
-    lines.append("|---|---|---|---|---|---|---|")
+    lines.append("|---|---|---|---|---|---|---|---|---|")
 
     for cont_id in sorted(continents):
         cont = continents[cont_id]
@@ -49,25 +70,18 @@ def render(lang: str, doc: dict) -> str:
             hyp = c["hypothetical"]
             conf_cell = fmt(conf["count"], lang) if conf else t(lang, "report.no_data")
             conf_year = str(conf["year"]) if conf else ""
+            conf_def = t(lang, f"definition.{conf['definition']}") if conf else ""
             hyp_cell = fmt(hyp["count"], lang) if hyp else t(lang, "report.no_data")
             hyp_year = str(hyp["year"]) if hyp else ""
+            hyp_def = t(lang, f"definition.{hyp['definition']}") if hyp else ""
             src = conf["source_ref"] if conf else (hyp["source_ref"] if hyp else "")
             lines.append(
                 f"| {cont_label} | {c['name'][lang]} "
-                f"| {conf_cell} | {conf_year} "
-                f"| {hyp_cell} | {hyp_year} "
+                f"| {conf_cell} | {conf_year} | {conf_def} "
+                f"| {hyp_cell} | {hyp_year} | {hyp_def} "
                 f"| `{src}` |"
             )
 
-    lines.append("")
-    lines.append(f"## {t(lang, 'report.totals')}")
-    lines.append("")
-    lines.append(
-        f"- **{t(lang, 'report.columns.confirmed')}**: {fmt(totals['confirmed'], lang)}"
-    )
-    lines.append(
-        f"- **{t(lang, 'report.columns.hypothetical')}**: {fmt(totals['hypothetical'], lang)}"
-    )
     lines.append("")
     return "\n".join(lines)
 

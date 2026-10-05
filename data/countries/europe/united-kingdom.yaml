@@ -13,6 +13,7 @@ records:
     classification: confirmed
     method: census
     definition: greek-origin
+    population_type: diaspora
     notes:
       el: "Απογραφή ONS 2021, πληθυσμός ελληνικής καταγωγής."
       en: "ONS 2021 census, population of Greek origin."
@@ -24,6 +25,7 @@ records:
     classification: hypothetical
     method: estimate
     definition: greek-origin
+    population_type: diaspora
     notes:
       el: "Εκτίμηση ελληνικής κοινότητας."
       en: "Greek community estimate."

@@ -1,0 +1,19 @@
+id: instat-al-2023
+title:
+  el: "Απογραφή Πληθυσμού και Κατοικιών 2023"
+  en: "Population and Housing Census 2023"
+publisher:
+  el: "Ινστιτούτο Στατιστικής Αλβανίας (INSTAT)"
+  en: "Institute of Statistics of Albania (INSTAT)"
+country: albania
+year: 2023
+url: https://www.instat.gov.al/en/publications/books/2024/albanian-population-and-housing-census-2023/
+classification: confirmed
+type: census
+scope: greek-ethnic
+reliability: high
+retrieved_at: "2026-10-05"
+language: en
+notes:
+  el: "Επίσημη απογραφή (αποτελέσματα 28/6/2024). Το νούμερο διαβάστηκε από δευτερογενή πηγή που παραθέτει το PDF της απογραφής: ο πίνακας εθνικότητας CE14 στο PxWeb απαιτεί διαδραστικό query και δεν αποδόθηκε αυτόματα. Ο αριθμός είναι πολιτικά αμφιλεγόμενος."
+  en: "Official census (results published 2024-06-28). The figure was read from a secondary source that cites the census PDF: the ethnicity table CE14 in PxWeb needs an interactive query and did not render automatically. The number is politically contested."

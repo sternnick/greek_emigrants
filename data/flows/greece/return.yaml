@@ -1,0 +1,13 @@
+country: greece
+direction: return
+
+records:
+  - year: 2023
+    count: 47200
+    source_ref: greece-in-figures-2023
+    classification: confirmed
+    citizenship: greek-citizens
+    education: any
+    notes:
+      el: "Έλληνες πολίτες που επέστρεψαν στην Ελλάδα το 2023. Πρώτη χρονιά με καθαρή επιστροφή μετά το 2008."
+      en: "Greek citizens who returned to Greece in 2023. First net return year since 2008."

@@ -1,10 +1,32 @@
 generated_by: scripts/aggregate.py
-totals:
-  confirmed: 2717000
-  hypothetical: 5070000
+totals_by_definition:
+  confirmed:
+    greek-ethnic: 23485
+    greek-citizens: 453000
+    greek-origin: 2264000
+  hypothetical:
+    greek-ethnic: 287000
+    greek-origin: 5070000
 continents:
   europe:
     countries:
+    - id: albania
+      iso_alpha2: AL
+      name:
+        el: Αλβανία
+        en: Albania
+      confirmed:
+        count: 23485
+        year: 2023
+        source_ref: instat-al-2023
+        definition: greek-ethnic
+        population_type: indigenous-minority
+      hypothetical:
+        count: 287000
+        year: 2013
+        source_ref: omonoia-al-2013
+        definition: greek-ethnic
+        population_type: indigenous-minority
     - id: germany
       iso_alpha2: DE
       name:
@@ -15,11 +37,13 @@ continents:
         year: 2022
         source_ref: destatis-de-2022
         definition: greek-citizens
+        population_type: diaspora
       hypothetical:
         count: 520000
         year: 2024
         source_ref: community-estimate-de-2024
         definition: greek-origin
+        population_type: diaspora
     - id: united-kingdom
       iso_alpha2: GB
       name:
@@ -30,13 +54,21 @@ continents:
         year: 2021
         source_ref: ons-uk-2021
         definition: greek-origin
+        population_type: diaspora
       hypothetical:
         count: 500000
         year: 2024
         source_ref: community-estimate-uk-2024
         definition: greek-origin
-    confirmed: 823000
-    hypothetical: 1020000
+        population_type: diaspora
+    totals:
+      confirmed:
+        greek-ethnic: 23485
+        greek-citizens: 453000
+        greek-origin: 370000
+      hypothetical:
+        greek-ethnic: 287000
+        greek-origin: 1020000
   north-america:
     countries:
     - id: canada
@@ -49,11 +81,13 @@ continents:
         year: 2021
         source_ref: statcan-ca-2021
         definition: greek-origin
+        population_type: diaspora
       hypothetical:
         count: 350000
         year: 2024
         source_ref: community-estimate-ca-2024
         definition: greek-origin
+        population_type: diaspora
     - id: united-states
       iso_alpha2: US
       name:
@@ -64,13 +98,18 @@ continents:
         year: 2023
         source_ref: us-acs-2023
         definition: greek-origin
+        population_type: diaspora
       hypothetical:
         count: 3000000
         year: 2024
         source_ref: community-estimate-us-2024
         definition: greek-origin
-    confirmed: 1470000
-    hypothetical: 3350000
+        population_type: diaspora
+    totals:
+      confirmed:
+        greek-origin: 1470000
+      hypothetical:
+        greek-origin: 3350000
   oceania:
     countries:
     - id: australia
@@ -83,10 +122,15 @@ continents:
         year: 2021
         source_ref: abs-au-2021
         definition: greek-origin
+        population_type: diaspora
       hypothetical:
         count: 700000
         year: 2024
         source_ref: community-estimate-au-2024
         definition: greek-origin
-    confirmed: 424000
-    hypothetical: 700000
+        population_type: diaspora
+    totals:
+      confirmed:
+        greek-origin: 424000
+      hypothetical:
+        greek-origin: 700000

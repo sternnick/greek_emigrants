@@ -26,5 +26,20 @@
   "continent.south-america": "Νότια Αμερική",
   "continent.oceania": "Ωκεανία",
   "continent.asia": "Ασία",
-  "continent.africa": "Αφρική"
+  "continent.africa": "Αφρική",
+  "population_type.diaspora": "Διασπορά",
+  "population_type.indigenous-minority": "Αυτόχθονη μειονότητα",
+  "flow.direction.outflow": "Εκροή (φεύγουν από την Ελλάδα)",
+  "flow.direction.return": "Επιστροφή (γυρίζουν στην Ελλάδα)",
+  "flow.columns.year": "Έτος",
+  "flow.columns.count": "Αριθμός",
+  "flow.columns.direction": "Κατεύθυνση",
+  "flow.columns.citizenship": "Υπηκοότητα",
+  "flow.columns.education": "Εκπαίδευση",
+  "flow.title": "Μεταναστευτικές ροές — Ελλάδα",
+  "citizenship.greek-citizens": "Έλληνες πολίτες",
+  "citizenship.all-residents": "Όλοι οι κάτοικοι",
+  "education.any": "Οποιοδήποτε εκπαιδευτικό επίπεδο",
+  "education.tertiary": "Πτυχιούχοι τριτοβάθμιας",
+  "education.postgraduate": "Μεταπτυχίες"
 }

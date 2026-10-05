@@ -13,6 +13,7 @@ records:
     classification: confirmed
     method: census
     definition: greek-citizens
+    population_type: diaspora
     notes:
       el: "Απογραφή Destatis 2022, υπηκοότητα Ελλάδας."
       en: "Destatis 2022 census, Greek citizenship."
@@ -24,6 +25,7 @@ records:
     classification: hypothetical
     method: estimate
     definition: greek-origin
+    population_type: diaspora
     notes:
       el: "Εκτίμηση ελληνικών κοινοτικών φορέων."
       en: "Estimate by Greek community organizations."

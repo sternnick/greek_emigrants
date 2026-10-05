@@ -3,5 +3,6 @@ name:
   el: Ευρώπη
   en: Europe
 countries:
+  - albania
   - germany
   - united-kingdom

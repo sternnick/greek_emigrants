@@ -1,0 +1,34 @@
+country: greece
+direction: outflow
+
+records:
+  - year: 2023
+    count: 32800
+    source_ref: greece-in-figures-2023
+    classification: confirmed
+    citizenship: greek-citizens
+    education: any
+    notes:
+      el: "Έλληνες πολίτες που έφυγαν από την Ελλάδα το 2023."
+      en: "Greek citizens who left Greece in 2023."
+
+  - year: 2023
+    count: 35000
+    source_ref: greece-in-figures-2023
+    classification: confirmed
+    citizenship: all-residents
+    education: any
+    notes:
+      el: "Σύνολο μόνιμων κατοίκων που έφυγαν (ανεξαρτήτως υπηκοότητας)."
+      en: "All permanent residents who left (any citizenship)."
+
+  - year: 2010
+    period_end: 2021
+    count: 600000
+    source_ref: greekcitytimes-brain-drain-2024
+    classification: hypothetical
+    citizenship: greek-citizens
+    education: tertiary
+    notes:
+      el: "Σωρευτική εκτίμηση πτυχιούχων που έφυγαν (2010–2021)."
+      en: "Cumulative estimate of tertiary-educated who left (2010–2021)."

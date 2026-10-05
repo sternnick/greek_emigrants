@@ -13,6 +13,7 @@ records:
     classification: confirmed
     method: census
     definition: greek-origin
+    population_type: diaspora
     notes:
       el: "ABS 2021, ancestry: Greek."
       en: "ABS 2021, ancestry: Greek."
@@ -24,6 +25,7 @@ records:
     classification: hypothetical
     method: estimate
     definition: greek-origin
+    population_type: diaspora
     notes:
       el: "Εκτίμηση ελληνικών κοινοτήτων Αυστραλίας."
       en: "Greek Australian community estimate."

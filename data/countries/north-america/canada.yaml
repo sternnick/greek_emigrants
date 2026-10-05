@@ -13,6 +13,7 @@ records:
     classification: confirmed
     method: census
     definition: greek-origin
+    population_type: diaspora
     notes:
       el: "Statistics Canada 2021, ethnic origin: Greek."
       en: "Statistics Canada 2021, ethnic origin: Greek."
@@ -24,6 +25,7 @@ records:
     classification: hypothetical
     method: estimate
     definition: greek-origin
+    population_type: diaspora
     notes:
       el: "Εκτίμηση ελληνικής κοινότητας Καναδά."
       en: "Greek Canadian community estimate."

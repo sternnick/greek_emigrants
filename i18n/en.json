@@ -26,5 +26,20 @@
   "continent.south-america": "South America",
   "continent.oceania": "Oceania",
   "continent.asia": "Asia",
-  "continent.africa": "Africa"
+  "continent.africa": "Africa",
+  "population_type.diaspora": "Diaspora",
+  "population_type.indigenous-minority": "Indigenous minority",
+  "flow.direction.outflow": "Outflow (leaving Greece)",
+  "flow.direction.return": "Return (coming back to Greece)",
+  "flow.columns.year": "Year",
+  "flow.columns.count": "Count",
+  "flow.columns.direction": "Direction",
+  "flow.columns.citizenship": "Citizenship",
+  "flow.columns.education": "Education",
+  "flow.title": "Migration flows — Greece",
+  "citizenship.greek-citizens": "Greek citizens",
+  "citizenship.all-residents": "All residents",
+  "education.any": "Any education level",
+  "education.tertiary": "Tertiary educated",
+  "education.postgraduate": "Postgraduate"
 }

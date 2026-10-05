@@ -13,6 +13,7 @@ records:
     classification: confirmed
     method: survey
     definition: greek-origin
+    population_type: diaspora
     notes:
       el: "American Community Survey 2023, ancestry: Greek."
       en: "American Community Survey 2023, ancestry: Greek."
@@ -24,6 +25,7 @@ records:
     classification: hypothetical
     method: estimate
     definition: greek-origin
+    population_type: diaspora
     notes:
       el: "Εκτίμηση ομογενειακών φορέων ΗΠΑ."
       en: "Estimate by US Greek-American organizations."

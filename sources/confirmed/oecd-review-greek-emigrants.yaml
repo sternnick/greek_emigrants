@@ -1,0 +1,19 @@
+id: oecd-review-greek-emigrants
+title:
+  el: "Ανασκόπηση Ελλήνων Μεταναστών"
+  en: "A Review of Greek Emigrants"
+publisher:
+  el: "Οργανισμός Οικονομικής Συνεργασίας και Ανάπτυξης (ΟΟΣΑ)"
+  en: "Organisation for Economic Co-operation and Development (OECD)"
+country: greece
+year: 2026
+url: https://www.oecd.org/en/publications/a-review-of-greek-emigrants_729f06a5-en.html
+classification: confirmed
+type: official-statistics
+scope: greek-citizens
+reliability: high
+retrieved_at: "2026-10-05"
+language: en
+notes:
+  el: "Έκθεση ΟΟΣΑ (σειρά Talent Abroad), δημοσιεύτηκε 3/7/2026. Μοναδικό διαθέσιμο νούμερο στη σελίδα: «περισσότεροι από 800.000 Έλληνες γεννημένοι στην Ελλάδα μένουν σε χώρες ΟΟΣΑ» — ο ορισμός είναι τόπος γέννησης, όχι υπηκοότητα. Το per-country δένεται δεν βρήκε στη σελίδα και το κείμενο του PDF δεν ήταν ανακτήσιμο. Απαιτείται fetch του PDF."
+  en: "OECD report (Talent Abroad series), published 2026-07-03. Only figure on the landing page: 'more than 800 000 Greek-born individuals reside in OECD countries' — the definition is birthplace, NOT citizenship. The per-country distribution table was not on the page and the PDF text was not retrievable with the available tools. Fetch of the PDF still required."

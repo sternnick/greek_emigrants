@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://greek-diaspora.local/schemas/flow.schema.json",
+  "type": "object",
+  "required": ["country", "direction", "records"],
+  "additionalProperties": false,
+  "properties": {
+    "country": { "$ref": "common.schema.json#/$defs/Slug" },
+    "direction": { "$ref": "common.schema.json#/$defs/FlowDirection" },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["year", "count", "source_ref", "classification"],
+        "additionalProperties": false,
+        "properties": {
+          "year": { "type": "integer", "minimum": 1800, "maximum": 2100 },
+          "period_end": { "type": "integer", "minimum": 1800, "maximum": 2100 },
+          "count": {
+            "oneOf": [
+              { "type": "integer", "minimum": 0 },
+              { "type": "null" }
+            ]
+          },
+          "source_ref": { "$ref": "common.schema.json#/$defs/Slug" },
+          "classification": { "$ref": "common.schema.json#/$defs/Classification" },
+          "citizenship": {
+            "type": "string",
+            "enum": ["greek-citizens", "all-residents"]
+          },
+          "education": {
+            "type": "string",
+            "enum": ["any", "tertiary", "postgraduate"]
+          },
+          "notes": { "$ref": "common.schema.json#/$defs/I18nString" }
+        }
+      }
+    }
+  }
+}

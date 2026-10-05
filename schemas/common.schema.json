@@ -23,6 +23,10 @@
       "type": "string",
       "enum": ["greek-citizens", "greek-ethnic", "greek-origin", "greek-language"]
     },
+    "PopulationType": {
+      "type": "string",
+      "enum": ["diaspora", "indigenous-minority"]
+    },
     "Method": {
       "type": "string",
       "enum": ["census", "register", "survey", "estimate", "academic"]
@@ -43,6 +47,10 @@
         "academic-extrapolation",
         "self-report"
       ]
+    },
+    "FlowDirection": {
+      "type": "string",
+      "enum": ["outflow", "return"]
     }
   }
 }
