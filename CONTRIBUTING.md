@@ -10,17 +10,23 @@
 4. Register the country id in the matching `data/continents/<continent>.yaml`.
 5. Run `python scripts/validate.py` — it must pass.
 
+## Git hooks
+
+This repo ships a pre-commit hook in `.githooks/pre-commit` that runs
+`validate.py` and both migration `--check` gates. Git does not look there
+by default. Enable it once per clone:
+
+    git config core.hooksPath .githooks
+
+The hook is advisory for humans and mandatory for CI. See issue #9.
+
 ## Validation gate
 
-The fast checks run in a commit hook; enable it once per clone:
-
-```bash
-git config core.hooksPath .githooks
-```
-
-It runs `validate.py` plus the two migration `--check`s (independence blocks and
-ISO 639 language codes), so a file cannot drift from what the generator scripts
-would write. The full suite is explicit: `python -m pytest tests/ -q`.
+The hook above runs `validate.py` plus the two migration `--check`s (independence
+blocks and ISO 639 language codes), so a file cannot drift from what the generator
+scripts would write, and it runs the language guard test, so neither a third UI
+language nor a foreign-script token can slip in unexamined. The rest of the suite
+is explicit: `python -m pytest tests/ -q`.
 
 ## Adding a source
 
