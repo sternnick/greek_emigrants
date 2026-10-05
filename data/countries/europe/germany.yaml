@@ -4,28 +4,64 @@ name:
   el: Γερμανία
   en: Germany
 continent: europe
-
 records:
-  - record_id: de-2022-census
-    year: 2022
-    count: 453000
-    source_ref: destatis-de-2022
-    classification: confirmed
-    method: census
-    definition: greek-citizens
-    population_type: diaspora
-    notes:
-      el: "Απογραφή Destatis 2022, υπηκοότητα Ελλάδας."
-      en: "Destatis 2022 census, Greek citizenship."
-
-  - record_id: de-2024-community
-    year: 2024
-    count: 520000
-    source_ref: community-estimate-de-2024
-    classification: hypothetical
-    method: estimate
-    definition: greek-origin
-    population_type: diaspora
-    notes:
-      el: "Εκτίμηση ελληνικών κοινοτικών φορέων."
-      en: "Estimate by Greek community organizations."
+- record_id: de-2022-census
+  year: 2022
+  count: 453000
+  source_ref: destatis-de-2022
+  classification: confirmed
+  method: census
+  definition: greek-citizens
+  population_type: diaspora
+  evidence:
+  - source_ref: destatis-de-2022
+    url: https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Migration-Integration/Tabellen/auslaendische-bevoelkerung-staatsangehoerigkeit-jahre.html
+    accessed_at: '2026-10-05'
+    page_or_table: Ausländische Bevölkerung — nach Staatsangehörigkeit, Jahresschnitte · Reihe Griechenland, Spalte
+      2022
+    quote:
+      el: Griechenland 347 225 353 730 359 045 361 270 362 565 364 285 363 650 363 205
+      en: Griechenland 347 225 353 730 359 045 361 270 362 565 364 285 363 650 363 205
+    quote_language: de
+  verification:
+    independent_sources: 1
+    confidence: single-source
+  dispute_note:
+    el: 'Η τιμή 453.000 δεν βρέθηκε σε πίνακα της Destatis. Δημοσιευμένη τιμή 2022: 361.270 (πίνακας υπηκοότητας).
+      Ζητείται απόφαση owner: διόρθωση σε 361.270 ή επανακαθορισμός.'
+    en: 'The value 453,000 was not found in any current Destatis table. Published 2022 value: 361,270 (citizenship
+      table); nearest relative: ~435 thousand born-in-Greece migration background (2025, in 1,000). Owner decision
+      requested: correct to 361,270 or redefine.'
+  notes:
+    el: Απογραφή Destatis 2022, υπηκοότητα Ελλάδας.
+    en: Destatis 2022 census, Greek citizenship.
+- record_id: de-2024-community
+  year: 2024
+  count: null
+  source_ref: community-estimate-de-2024
+  classification: hypothetical
+  method: estimate
+  definition: greek-origin
+  population_type: diaspora
+  evidence:
+  - source_ref: community-estimate-de-2024
+    url: http://www.auswaertiges-amt.de/diplo/de/Laenderinformationen/Griechenland/Bilateral.html
+    accessed_at: '2026-10-05'
+    archive_url: https://web.archive.org/web/20060617155007/http://www.auswaertiges-amt.de/diplo/de/Laenderinformationen/Griechenland/Bilateral.html
+    page_or_table: bilaterale Beziehungen — griechische Gemeinde (archived 2006; snapshot existence per Wikipedia
+      citation, not re-fetched)
+  verification:
+    independent_sources: 1
+    confidence: single-source
+    independence_note:
+      el: Ιδιόκτητη εκτίμηση κοινοτικού φορέα, μη ανεξαρτητοποιήσιμη.
+      en: Community body's own estimate, not independently verifiable.
+  dispute_note:
+    el: Το 520.000 (2024) δεν βρέθηκε σε ανακτήσιμο URL. Η αρχειοθετημένη σελίδα του γερμανικού ΥΠΕΞ (2006) αναφέρει
+      320.000. Το record διατηρείται με count=null.
+    en: The 520,000 (2024) figure was not found at any retrievable URL. The German Federal Foreign Office bilateral
+      page (archived 2006, carried via a Wikipedia reference) reports 320,000. Record kept with count=null until
+      a source page is found.
+  notes:
+    el: Εκτίμηση ελληνικών κοινοτικών φορέων.
+    en: Estimate by Greek community organizations.

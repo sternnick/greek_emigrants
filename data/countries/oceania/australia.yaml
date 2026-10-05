@@ -4,28 +4,61 @@ name:
   el: Αυστραλία
   en: Australia
 continent: oceania
-
 records:
-  - record_id: au-2021-census
-    year: 2021
-    count: 424000
-    source_ref: abs-au-2021
-    classification: confirmed
-    method: census
-    definition: greek-origin
-    population_type: diaspora
-    notes:
-      el: "ABS 2021, ancestry: Greek."
-      en: "ABS 2021, ancestry: Greek."
-
-  - record_id: au-2024-community
-    year: 2024
-    count: 700000
-    source_ref: community-estimate-au-2024
-    classification: hypothetical
-    method: estimate
-    definition: greek-origin
-    population_type: diaspora
-    notes:
-      el: "Εκτίμηση ελληνικών κοινοτήτων Αυστραλίας."
-      en: "Greek Australian community estimate."
+- record_id: au-2021-census
+  year: 2021
+  count: 424000
+  source_ref: abs-au-2021
+  classification: confirmed
+  method: census
+  definition: greek-origin
+  population_type: diaspora
+  evidence:
+  - source_ref: abs-au-2021
+    url: https://www.abs.gov.au/statistics/people/people-and-communities/cultural-diversity-census/2021
+    accessed_at: '2026-10-05'
+    archive_url: https://web.archive.org/web/20220628015500/https://www.abs.gov.au/statistics/people/people-and-communities/cultural-diversity-census/2021
+    published_at: '2022-06-28'
+    page_or_table: Cultural diversity data summary.xlsx · sheet 5 · row Greek (raw cell values)
+    quote:
+      el: Greek 301829 384688 152571 103914 137255 8460 4393 15219 1108364
+      en: Greek 301829 384688 152571 103914 137255 8460 4393 15219 1108364
+    quote_language: en
+  verification:
+    independent_sources: 1
+    confidence: single-source
+  dispute_note:
+    el: Η τιμή 424.000 δεν εμφανίζεται σε κανένα κελί του published αρχείου· οι τιμές της γραμμής Greek παρατίθενται
+      στην απόδειξη. Έκδοση 2022-10 φέρεται να ανέφερε 424.750 — δεν επαληθεύτηκε.
+    en: The record's 424,000 appears in no cell of the published file; the 'Greek' row values are quoted in the
+      evidence. An earlier report (2022-10) allegedly cited 424,750 — unverified; the live file is byte-identical
+      to the 2022 Wayback capture.
+  notes:
+    el: 'ABS 2021, ancestry: Greek.'
+    en: 'ABS 2021, ancestry: Greek.'
+- record_id: au-2024-community
+  year: 2024
+  count: null
+  source_ref: community-estimate-au-2024
+  classification: hypothetical
+  method: estimate
+  definition: greek-origin
+  population_type: diaspora
+  evidence:
+  - source_ref: community-estimate-au-2024
+    url: http://www.ausgreeknet.com/greeksaroundtheglobe.htm
+    accessed_at: '2026-10-05'
+    archive_url: http://web.archive.org/web/20060619165420/http://www.ausgreeknet.com/greeksaroundtheglobe.htm
+    page_or_table: Greeks Around the Globe (figures inside a Flash object; not extractable from the snapshot)
+  verification:
+    independent_sources: 1
+    confidence: single-source
+  dispute_note:
+    el: 'Το 700.000 (2024) δεν επαληθεύτηκε από κείμενο: ο επιμελητής (ausgreeknet, 2006) το ενσωματώνει σε Flash
+      object. Η τιμή ταιριάζει με αναφορές τρίτων αλλά παραμένει μη εξακριβώσιμη.'
+    en: 'The 700,000 (2024) figure could not be verified from text: the aggregator (ausgreeknet.com, archived 2006)
+      embeds figures in a Flash object. The value matches third-party reports of that aggregator but stays unverified;
+      a SWF string extraction could restore the evidence.'
+  notes:
+    el: Εκτίμηση ελληνικών κοινοτήτων Αυστραλίας.
+    en: Greek Australian community estimate.

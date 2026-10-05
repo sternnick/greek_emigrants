@@ -4,28 +4,57 @@ name:
   el: Καναδάς
   en: Canada
 continent: north-america
-
 records:
-  - record_id: ca-2021-census
-    year: 2021
-    count: 270000
-    source_ref: statcan-ca-2021
-    classification: confirmed
-    method: census
-    definition: greek-origin
-    population_type: diaspora
-    notes:
-      el: "Statistics Canada 2021, ethnic origin: Greek."
-      en: "Statistics Canada 2021, ethnic origin: Greek."
-
-  - record_id: ca-2024-community
-    year: 2024
-    count: 350000
-    source_ref: community-estimate-ca-2024
-    classification: hypothetical
-    method: estimate
-    definition: greek-origin
-    population_type: diaspora
-    notes:
-      el: "Εκτίμηση ελληνικής κοινότητας Καναδά."
-      en: "Greek Canadian community estimate."
+- record_id: ca-2021-census
+  year: 2021
+  count: 270000
+  source_ref: statcan-ca-2021
+  classification: confirmed
+  method: census
+  definition: greek-origin
+  population_type: diaspora
+  evidence:
+  - source_ref: statcan-ca-2021
+    url: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810033801
+    accessed_at: '2026-10-05'
+    published_at: '2022-10-26'
+    page_or_table: Table 98-10-0338-01 · Greek · Total - Generation status · Total single and multiple responses
+    quote:
+      el: Greek 262,135 134,820 127,320
+      en: Greek 262,135 134,820 127,320
+    quote_language: en
+  verification:
+    independent_sources: 1
+    confidence: single-source
+  dispute_note:
+    el: 'Δημοσιευμένη τιμή: 262.135 (απογραφή 2021, single+multiple responses). Το record αναφέρει 270.000.'
+    en: 'Published value: 262,135 (2021 census, single + multiple responses). The record states 270,000. Owner decision
+      requested.'
+  notes:
+    el: 'Statistics Canada 2021, ethnic origin: Greek.'
+    en: 'Statistics Canada 2021, ethnic origin: Greek.'
+- record_id: ca-2024-community
+  year: 2024
+  count: null
+  source_ref: community-estimate-ca-2024
+  classification: hypothetical
+  method: estimate
+  definition: greek-origin
+  population_type: diaspora
+  evidence:
+  - source_ref: community-estimate-ca-2024
+    url: http://www.ausgreeknet.com/greeksaroundtheglobe.htm
+    accessed_at: '2026-10-05'
+    archive_url: http://web.archive.org/web/20060619165420/http://www.ausgreeknet.com/greeksaroundtheglobe.htm
+    page_or_table: Greeks Around the Globe (figures inside a Flash object; not extractable from the snapshot)
+  verification:
+    independent_sources: 1
+    confidence: single-source
+  dispute_note:
+    el: Το 350.000 (2024) δεν βρέθηκε. Ο παλαιός επιμελητής ausgreeknet (αρχείο 2006) ανέφερε 720.000 για τον Καναδά
+      — οι τιμές διαφωνούν.
+    en: The 350,000 (2024) figure was not found. The older aggregator ausgreeknet.com (archived 2006; figure embedded
+      in a Flash object, not text-extractable) reportedly stated 720,000 for Canada — the values disagree.
+  notes:
+    el: Εκτίμηση ελληνικής κοινότητας Καναδά.
+    en: Greek Canadian community estimate.

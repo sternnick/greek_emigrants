@@ -21,7 +21,41 @@
     },
     "Definition": {
       "type": "string",
-      "enum": ["greek-citizens", "greek-ethnic", "greek-origin", "greek-language"]
+      "enum": ["greek-citizens", "greek-ethnic", "greek-origin", "greek-language", "greek-born"]
+    },
+    "EvidenceCitation": {
+      "type": "object",
+      "required": ["source_ref", "url", "accessed_at"],
+      "additionalProperties": false,
+      "properties": {
+        "source_ref": { "$ref": "#/$defs/Slug" },
+        "url": { "type": "string", "format": "uri" },
+        "archive_url": { "type": "string", "format": "uri" },
+        "accessed_at": { "type": "string", "format": "date" },
+        "published_at": { "type": "string", "format": "date" },
+        "updated_at": { "type": "string", "format": "date" },
+        "page_or_table": { "type": "string" },
+        "quote": { "$ref": "#/$defs/I18nString" },
+        "quote_language": { "type": "string" }
+      }
+    },
+    "Verification": {
+      "type": "object",
+      "required": ["independent_sources", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "independent_sources": { "type": "integer", "minimum": 0, "maximum": 20 },
+        "confidence": {
+          "type": "string",
+          "enum": ["single-source", "corroborated", "well-established"]
+        },
+        "corroborating_refs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Slug" },
+          "uniqueItems": true
+        },
+        "independence_note": { "$ref": "#/$defs/I18nString" }
+      }
     },
     "PopulationType": {
       "type": "string",
@@ -45,7 +79,10 @@
         "community-estimate",
         "media",
         "academic-extrapolation",
-        "self-report"
+        "self-report",
+        "government-portal",
+        "international-org",
+        "diaspora-federation"
       ]
     },
     "FlowDirection": {

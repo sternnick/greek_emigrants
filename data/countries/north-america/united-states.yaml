@@ -4,28 +4,57 @@ name:
   el: Ηνωμένες Πολιτείες Αμερικής
   en: United States
 continent: north-america
-
 records:
-  - record_id: us-2023-acs
-    year: 2023
-    count: 1200000
-    source_ref: us-acs-2023
-    classification: confirmed
-    method: survey
-    definition: greek-origin
-    population_type: diaspora
-    notes:
-      el: "American Community Survey 2023, ancestry: Greek."
-      en: "American Community Survey 2023, ancestry: Greek."
-
-  - record_id: us-2024-community
-    year: 2024
-    count: 3000000
-    source_ref: community-estimate-us-2024
-    classification: hypothetical
-    method: estimate
-    definition: greek-origin
-    population_type: diaspora
-    notes:
-      el: "Εκτίμηση ομογενειακών φορέων ΗΠΑ."
-      en: "Estimate by US Greek-American organizations."
+- record_id: us-2023-acs
+  year: 2023
+  count: 1200000
+  source_ref: us-acs-2023
+  classification: confirmed
+  method: survey
+  definition: greek-origin
+  population_type: diaspora
+  evidence:
+  - source_ref: us-acs-2023
+    url: https://data.census.gov/table/ACSDT1Y2023.B04006?g=010XX00US
+    accessed_at: '2026-10-05'
+    page_or_table: B04006 People Reporting Ancestry · row Greek, Estimate, United States, 2023 ACS 1-year
+    quote:
+      el: Greek 1,220,215 ±24,049
+      en: Greek 1,220,215 ±24,049
+    quote_language: en
+  verification:
+    independent_sources: 1
+    confidence: single-source
+  dispute_note:
+    el: 'Δημοσιευμένη τιμή: 1.220.215 (±24.049). Η τιμή 1.200.000 του record είναι στρογγυλοποιημένη προς τα κάτω
+      (−1,6%).'
+    en: 'Published value: 1,220,215 (±24,049). The record''s 1,200,000 is a downward rounding (−1.6%). Recommend
+      updating count to the published figure.'
+  notes:
+    el: 'American Community Survey 2023, ancestry: Greek.'
+    en: 'American Community Survey 2023, ancestry: Greek.'
+- record_id: us-2024-community
+  year: 2024
+  count: null
+  source_ref: community-estimate-us-2024
+  classification: hypothetical
+  method: estimate
+  definition: greek-origin
+  population_type: diaspora
+  evidence:
+  - source_ref: community-estimate-us-2024
+    url: https://2009-2017.state.gov/r/pa/ei/bgn/3395.htm
+    accessed_at: '2026-10-05'
+    page_or_table: 'Background Note: Greece (site currently unreachable; carried via a Wikipedia reference)'
+  verification:
+    independent_sources: 1
+    confidence: single-source
+  dispute_note:
+    el: Το 3.000.000 (2024) δεν εντοπίστηκε σε πηγή. Το αρχείο state.gov (2009–2017) είναι προσωρινά εκτός λειτουργίας
+      και δεν βρέθηκε προσιτό snapshot.
+    en: The 3,000,000 (2024) figure was not located at a source page. The 2009-2017.state.gov background-notes archive
+      was returning errors during research and no retrievable snapshot was found (Internet Archive API unavailable
+      mid-research; retry candidate).
+  notes:
+    el: Εκτίμηση ομογενειακών φορέων ΗΠΑ.
+    en: Estimate by US Greek-American organizations.
