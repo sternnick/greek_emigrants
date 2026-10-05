@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 # Fast consistency checks for a data repository. Enable with:
 #   git config core.hooksPath .githooks
-# Full tests stay explicit: python -m pytest tests/ -q
+#   (or run scripts/bootstrap.sh once after cloning)
+# The language guard runs here because it is what keeps the el+en rule enforced;
+# it costs <0.3 s. The rest of the suite stays explicit: python -m pytest tests/ -q
 set -euo pipefail
 python scripts/validate.py
 python scripts/migrate_sources_v2.py --check
 python scripts/migrate_language_codes.py --check
+python3 -m pytest tests/test_language_registry.py -q
