@@ -8,7 +8,735 @@ totals_by_definition:
   hypothetical:
     greek-ethnic: 287000
     greek-origin: 400000
+totals_by_status:
+  complete: 1
+  disputed: 5
+  stub: 189
 continents:
+  africa:
+    countries:
+    - id: algeria
+      iso_alpha2: DZ
+      name:
+        el: Αλγερία
+        en: Algeria
+      confirmed: null
+      hypothetical: null
+    - id: angola
+      iso_alpha2: AO
+      name:
+        el: Ανγκόλα
+        en: Angola
+      confirmed: null
+      hypothetical: null
+    - id: benin
+      iso_alpha2: BJ
+      name:
+        el: Μπενίν
+        en: Benin
+      confirmed: null
+      hypothetical: null
+    - id: botswana
+      iso_alpha2: BW
+      name:
+        el: Μποτσουάνα
+        en: Botswana
+      confirmed: null
+      hypothetical: null
+    - id: burkina-faso
+      iso_alpha2: BF
+      name:
+        el: Μπουρκίνα Φάσο
+        en: Burkina Faso
+      confirmed: null
+      hypothetical: null
+    - id: burundi
+      iso_alpha2: BI
+      name:
+        el: Μπουρούντι
+        en: Burundi
+      confirmed: null
+      hypothetical: null
+    - id: c-te-d-ivoire
+      iso_alpha2: CI
+      name:
+        el: Ακτή Ελεφαντοστού
+        en: Côte d'Ivoire
+      confirmed: null
+      hypothetical: null
+    - id: cabo-verde
+      iso_alpha2: CV
+      name:
+        el: Πράσινο Ακρωτήριο
+        en: Cabo Verde
+      confirmed: null
+      hypothetical: null
+    - id: cameroon
+      iso_alpha2: CM
+      name:
+        el: Καμερούν
+        en: Cameroon
+      confirmed: null
+      hypothetical: null
+    - id: central-african-republic
+      iso_alpha2: CF
+      name:
+        el: Δημοκρατία Κεντρικής Αφρικής
+        en: Central African Republic
+      confirmed: null
+      hypothetical: null
+    - id: chad
+      iso_alpha2: TD
+      name:
+        el: Τσαντ
+        en: Chad
+      confirmed: null
+      hypothetical: null
+    - id: comoros
+      iso_alpha2: KM
+      name:
+        el: Κομόρες
+        en: Comoros
+      confirmed: null
+      hypothetical: null
+    - id: congo
+      iso_alpha2: CG
+      name:
+        el: Κονγκό
+        en: Congo
+      confirmed: null
+      hypothetical: null
+    - id: djibouti
+      iso_alpha2: DJ
+      name:
+        el: Τζιμπουτί
+        en: Djibouti
+      confirmed: null
+      hypothetical: null
+    - id: dr-congo
+      iso_alpha2: CD
+      name:
+        el: Λαϊκή Δημοκρατία του Κονγκό
+        en: DR Congo
+      confirmed: null
+      hypothetical: null
+    - id: egypt
+      iso_alpha2: EG
+      name:
+        el: Αίγυπτος
+        en: Egypt
+      confirmed: null
+      hypothetical: null
+    - id: equatorial-guinea
+      iso_alpha2: GQ
+      name:
+        el: Ισημερινή Γουινέα
+        en: Equatorial Guinea
+      confirmed: null
+      hypothetical: null
+    - id: eritrea
+      iso_alpha2: ER
+      name:
+        el: Ερυθραία
+        en: Eritrea
+      confirmed: null
+      hypothetical: null
+    - id: eswatini
+      iso_alpha2: SZ
+      name:
+        el: Εσουατίνι
+        en: Eswatini
+      confirmed: null
+      hypothetical: null
+    - id: ethiopia
+      iso_alpha2: ET
+      name:
+        el: Αιθιοπία
+        en: Ethiopia
+      confirmed: null
+      hypothetical: null
+    - id: gabon
+      iso_alpha2: GA
+      name:
+        el: Γκαμπόν
+        en: Gabon
+      confirmed: null
+      hypothetical: null
+    - id: gambia
+      iso_alpha2: GM
+      name:
+        el: Γκάμπια
+        en: Gambia
+      confirmed: null
+      hypothetical: null
+    - id: ghana
+      iso_alpha2: GH
+      name:
+        el: Γκάνα
+        en: Ghana
+      confirmed: null
+      hypothetical: null
+    - id: guinea-bissau
+      iso_alpha2: GW
+      name:
+        el: Γουινέα-Μπισσάου
+        en: Guinea-Bissau
+      confirmed: null
+      hypothetical: null
+    - id: guinea
+      iso_alpha2: GN
+      name:
+        el: Γουινέα
+        en: Guinea
+      confirmed: null
+      hypothetical: null
+    - id: kenya
+      iso_alpha2: KE
+      name:
+        el: Κένυα
+        en: Kenya
+      confirmed: null
+      hypothetical: null
+    - id: lesotho
+      iso_alpha2: LS
+      name:
+        el: Λεσότο
+        en: Lesotho
+      confirmed: null
+      hypothetical: null
+    - id: liberia
+      iso_alpha2: LR
+      name:
+        el: Λιβερία
+        en: Liberia
+      confirmed: null
+      hypothetical: null
+    - id: libya
+      iso_alpha2: LY
+      name:
+        el: Λιβύη
+        en: Libya
+      confirmed: null
+      hypothetical: null
+    - id: madagascar
+      iso_alpha2: MG
+      name:
+        el: Μαδαγασκάρη
+        en: Madagascar
+      confirmed: null
+      hypothetical: null
+    - id: malawi
+      iso_alpha2: MW
+      name:
+        el: Μαλάουι
+        en: Malawi
+      confirmed: null
+      hypothetical: null
+    - id: mali
+      iso_alpha2: ML
+      name:
+        el: Μάλι
+        en: Mali
+      confirmed: null
+      hypothetical: null
+    - id: mauritania
+      iso_alpha2: MR
+      name:
+        el: Μαυριτανία
+        en: Mauritania
+      confirmed: null
+      hypothetical: null
+    - id: mauritius
+      iso_alpha2: MU
+      name:
+        el: Μαυρίκιος
+        en: Mauritius
+      confirmed: null
+      hypothetical: null
+    - id: morocco
+      iso_alpha2: MA
+      name:
+        el: Μαρόκο
+        en: Morocco
+      confirmed: null
+      hypothetical: null
+    - id: mozambique
+      iso_alpha2: MZ
+      name:
+        el: Μοζαμβίκη
+        en: Mozambique
+      confirmed: null
+      hypothetical: null
+    - id: namibia
+      iso_alpha2: NA
+      name:
+        el: Ναμίμπια
+        en: Namibia
+      confirmed: null
+      hypothetical: null
+    - id: niger
+      iso_alpha2: NE
+      name:
+        el: Νίγηρας
+        en: Niger
+      confirmed: null
+      hypothetical: null
+    - id: nigeria
+      iso_alpha2: NG
+      name:
+        el: Νιγηρία
+        en: Nigeria
+      confirmed: null
+      hypothetical: null
+    - id: rwanda
+      iso_alpha2: RW
+      name:
+        el: Ρουάντα
+        en: Rwanda
+      confirmed: null
+      hypothetical: null
+    - id: sao-tome-and-principe
+      iso_alpha2: ST
+      name:
+        el: Σάο Τομέ και Πρίνσιπε
+        en: Sao Tome and Principe
+      confirmed: null
+      hypothetical: null
+    - id: senegal
+      iso_alpha2: SN
+      name:
+        el: Σενεγάλη
+        en: Senegal
+      confirmed: null
+      hypothetical: null
+    - id: seychelles
+      iso_alpha2: SC
+      name:
+        el: Σεϋχέλλες
+        en: Seychelles
+      confirmed: null
+      hypothetical: null
+    - id: sierra-leone
+      iso_alpha2: SL
+      name:
+        el: Σιέρα Λεόνε
+        en: Sierra Leone
+      confirmed: null
+      hypothetical: null
+    - id: somalia
+      iso_alpha2: SO
+      name:
+        el: Σομαλία
+        en: Somalia
+      confirmed: null
+      hypothetical: null
+    - id: south-africa
+      iso_alpha2: ZA
+      name:
+        el: Νότια Αφρική
+        en: South Africa
+      confirmed: null
+      hypothetical: null
+    - id: south-sudan
+      iso_alpha2: SS
+      name:
+        el: Νότιο Σουδάν
+        en: South Sudan
+      confirmed: null
+      hypothetical: null
+    - id: sudan
+      iso_alpha2: SD
+      name:
+        el: Σουδάν
+        en: Sudan
+      confirmed: null
+      hypothetical: null
+    - id: tanzania
+      iso_alpha2: TZ
+      name:
+        el: Τανζανία
+        en: Tanzania
+      confirmed: null
+      hypothetical: null
+    - id: togo
+      iso_alpha2: TG
+      name:
+        el: Τόγκο
+        en: Togo
+      confirmed: null
+      hypothetical: null
+    - id: tunisia
+      iso_alpha2: TN
+      name:
+        el: Τυνησία
+        en: Tunisia
+      confirmed: null
+      hypothetical: null
+    - id: uganda
+      iso_alpha2: UG
+      name:
+        el: Ουγκάντα
+        en: Uganda
+      confirmed: null
+      hypothetical: null
+    - id: zambia
+      iso_alpha2: ZM
+      name:
+        el: Ζάμπια
+        en: Zambia
+      confirmed: null
+      hypothetical: null
+    - id: zimbabwe
+      iso_alpha2: ZW
+      name:
+        el: Ζιμπάμπουε
+        en: Zimbabwe
+      confirmed: null
+      hypothetical: null
+    totals:
+      confirmed: {}
+      hypothetical: {}
+  asia:
+    countries:
+    - id: afghanistan
+      iso_alpha2: AF
+      name:
+        el: Αφγανιστάν
+        en: Afghanistan
+      confirmed: null
+      hypothetical: null
+    - id: armenia
+      iso_alpha2: AM
+      name:
+        el: Αρμενία
+        en: Armenia
+      confirmed: null
+      hypothetical: null
+    - id: azerbaijan
+      iso_alpha2: AZ
+      name:
+        el: Αζερμπαϊτζάν
+        en: Azerbaijan
+      confirmed: null
+      hypothetical: null
+    - id: bahrain
+      iso_alpha2: BH
+      name:
+        el: Μπαχρέιν
+        en: Bahrain
+      confirmed: null
+      hypothetical: null
+    - id: bangladesh
+      iso_alpha2: BD
+      name:
+        el: Μπανγκλαντές
+        en: Bangladesh
+      confirmed: null
+      hypothetical: null
+    - id: bhutan
+      iso_alpha2: BT
+      name:
+        el: Μπουτάν
+        en: Bhutan
+      confirmed: null
+      hypothetical: null
+    - id: brunei-darussalam
+      iso_alpha2: BN
+      name:
+        el: Μπρουνέι Νταρουσαλάμ
+        en: Brunei Darussalam
+      confirmed: null
+      hypothetical: null
+    - id: cambodia
+      iso_alpha2: KH
+      name:
+        el: Καμπότζη
+        en: Cambodia
+      confirmed: null
+      hypothetical: null
+    - id: china
+      iso_alpha2: CN
+      name:
+        el: Κίνα
+        en: China
+      confirmed: null
+      hypothetical: null
+    - id: cyprus
+      iso_alpha2: CY
+      name:
+        el: Κύπρος
+        en: Cyprus
+      confirmed: null
+      hypothetical: null
+    - id: georgia
+      iso_alpha2: GE
+      name:
+        el: Γεωργία
+        en: Georgia
+      confirmed: null
+      hypothetical: null
+    - id: india
+      iso_alpha2: IN
+      name:
+        el: Ινδία
+        en: India
+      confirmed: null
+      hypothetical: null
+    - id: indonesia
+      iso_alpha2: ID
+      name:
+        el: Ινδονησία
+        en: Indonesia
+      confirmed: null
+      hypothetical: null
+    - id: iran
+      iso_alpha2: IR
+      name:
+        el: Ιράν
+        en: Iran
+      confirmed: null
+      hypothetical: null
+    - id: iraq
+      iso_alpha2: IQ
+      name:
+        el: Ιράκ
+        en: Iraq
+      confirmed: null
+      hypothetical: null
+    - id: israel
+      iso_alpha2: IL
+      name:
+        el: Ισραήλ
+        en: Israel
+      confirmed: null
+      hypothetical: null
+    - id: japan
+      iso_alpha2: JP
+      name:
+        el: Ιαπωνία
+        en: Japan
+      confirmed: null
+      hypothetical: null
+    - id: jordan
+      iso_alpha2: JO
+      name:
+        el: Ιορδανία
+        en: Jordan
+      confirmed: null
+      hypothetical: null
+    - id: kazakhstan
+      iso_alpha2: KZ
+      name:
+        el: Καζακστάν
+        en: Kazakhstan
+      confirmed: null
+      hypothetical: null
+    - id: kuwait
+      iso_alpha2: KW
+      name:
+        el: Κουβέιτ
+        en: Kuwait
+      confirmed: null
+      hypothetical: null
+    - id: kyrgyzstan
+      iso_alpha2: KG
+      name:
+        el: Κιργιζία
+        en: Kyrgyzstan
+      confirmed: null
+      hypothetical: null
+    - id: laos
+      iso_alpha2: LA
+      name:
+        el: Λαϊκή Δημοκρατία του Λάος
+        en: Laos
+      confirmed: null
+      hypothetical: null
+    - id: lebanon
+      iso_alpha2: LB
+      name:
+        el: Λίβανος
+        en: Lebanon
+      confirmed: null
+      hypothetical: null
+    - id: malaysia
+      iso_alpha2: MY
+      name:
+        el: Μαλαισία
+        en: Malaysia
+      confirmed: null
+      hypothetical: null
+    - id: maldives
+      iso_alpha2: MV
+      name:
+        el: Μαλδίβες
+        en: Maldives
+      confirmed: null
+      hypothetical: null
+    - id: mongolia
+      iso_alpha2: MN
+      name:
+        el: Μογγολία
+        en: Mongolia
+      confirmed: null
+      hypothetical: null
+    - id: myanmar
+      iso_alpha2: MM
+      name:
+        el: Μιανμάρ
+        en: Myanmar
+      confirmed: null
+      hypothetical: null
+    - id: nepal
+      iso_alpha2: NP
+      name:
+        el: Νεπάλ
+        en: Nepal
+      confirmed: null
+      hypothetical: null
+    - id: north-korea
+      iso_alpha2: KP
+      name:
+        el: Βόρεια Κορέα
+        en: North Korea
+      confirmed: null
+      hypothetical: null
+    - id: oman
+      iso_alpha2: OM
+      name:
+        el: Ομάν
+        en: Oman
+      confirmed: null
+      hypothetical: null
+    - id: pakistan
+      iso_alpha2: PK
+      name:
+        el: Πακιστάν
+        en: Pakistan
+      confirmed: null
+      hypothetical: null
+    - id: palestine
+      iso_alpha2: PS
+      name:
+        el: Παλαιστίνη
+        en: Palestine
+      confirmed: null
+      hypothetical: null
+    - id: philippines
+      iso_alpha2: PH
+      name:
+        el: Φιλιππίνες
+        en: Philippines
+      confirmed: null
+      hypothetical: null
+    - id: qatar
+      iso_alpha2: QA
+      name:
+        el: Κατάρ
+        en: Qatar
+      confirmed: null
+      hypothetical: null
+    - id: saudi-arabia
+      iso_alpha2: SA
+      name:
+        el: Σαουδική Αραβία
+        en: Saudi Arabia
+      confirmed: null
+      hypothetical: null
+    - id: singapore
+      iso_alpha2: SG
+      name:
+        el: Σιγκαπούρη
+        en: Singapore
+      confirmed: null
+      hypothetical: null
+    - id: south-korea
+      iso_alpha2: KR
+      name:
+        el: Νότια Κορέα
+        en: South Korea
+      confirmed: null
+      hypothetical: null
+    - id: sri-lanka
+      iso_alpha2: LK
+      name:
+        el: Σρι Λάνκα
+        en: Sri Lanka
+      confirmed: null
+      hypothetical: null
+    - id: syria
+      iso_alpha2: SY
+      name:
+        el: Αραβική Δημοκρατία της Συρίας
+        en: Syria
+      confirmed: null
+      hypothetical: null
+    - id: t-rkiye
+      iso_alpha2: TR
+      name:
+        el: Türkiye
+        en: Türkiye
+      confirmed: null
+      hypothetical: null
+    - id: tajikistan
+      iso_alpha2: TJ
+      name:
+        el: Τατζικιστάν
+        en: Tajikistan
+      confirmed: null
+      hypothetical: null
+    - id: thailand
+      iso_alpha2: TH
+      name:
+        el: Ταϊλάνδη
+        en: Thailand
+      confirmed: null
+      hypothetical: null
+    - id: timor-leste
+      iso_alpha2: TL
+      name:
+        el: Τιμόρ-Λέστε
+        en: Timor-Leste
+      confirmed: null
+      hypothetical: null
+    - id: turkmenistan
+      iso_alpha2: TM
+      name:
+        el: Τουρκμενιστάν
+        en: Turkmenistan
+      confirmed: null
+      hypothetical: null
+    - id: united-arab-emirates
+      iso_alpha2: AE
+      name:
+        el: Ηνωμένα Αραβικά Εμιράτα
+        en: United Arab Emirates
+      confirmed: null
+      hypothetical: null
+    - id: uzbekistan
+      iso_alpha2: UZ
+      name:
+        el: Ουζμπεκιστάν
+        en: Uzbekistan
+      confirmed: null
+      hypothetical: null
+    - id: vietnam
+      iso_alpha2: VN
+      name:
+        el: Βιετνάμ
+        en: Vietnam
+      confirmed: null
+      hypothetical: null
+    - id: yemen
+      iso_alpha2: YE
+      name:
+        el: Υεμένη
+        en: Yemen
+      confirmed: null
+      hypothetical: null
+    totals:
+      confirmed: {}
+      hypothetical: {}
   europe:
     countries:
     - id: albania
@@ -28,6 +756,90 @@ continents:
         source_ref: omonoia-al-2013
         definition: greek-ethnic
         population_type: indigenous-minority
+    - id: andorra
+      iso_alpha2: AD
+      name:
+        el: Ανδόρρα
+        en: Andorra
+      confirmed: null
+      hypothetical: null
+    - id: austria
+      iso_alpha2: AT
+      name:
+        el: Αυστρία
+        en: Austria
+      confirmed: null
+      hypothetical: null
+    - id: belarus
+      iso_alpha2: BY
+      name:
+        el: Λευκορωσία
+        en: Belarus
+      confirmed: null
+      hypothetical: null
+    - id: belgium
+      iso_alpha2: BE
+      name:
+        el: Βέλγιο
+        en: Belgium
+      confirmed: null
+      hypothetical: null
+    - id: bosnia-and-herzegovina
+      iso_alpha2: BA
+      name:
+        el: Βοσνία και Ερζεγοβίνη
+        en: Bosnia and Herzegovina
+      confirmed: null
+      hypothetical: null
+    - id: bulgaria
+      iso_alpha2: BG
+      name:
+        el: Βουλγαρία
+        en: Bulgaria
+      confirmed: null
+      hypothetical: null
+    - id: croatia
+      iso_alpha2: HR
+      name:
+        el: Κροατία
+        en: Croatia
+      confirmed: null
+      hypothetical: null
+    - id: czechia
+      iso_alpha2: CZ
+      name:
+        el: Τσεχία
+        en: Czechia
+      confirmed: null
+      hypothetical: null
+    - id: denmark
+      iso_alpha2: DK
+      name:
+        el: Δανία
+        en: Denmark
+      confirmed: null
+      hypothetical: null
+    - id: estonia
+      iso_alpha2: EE
+      name:
+        el: Εσθονία
+        en: Estonia
+      confirmed: null
+      hypothetical: null
+    - id: finland
+      iso_alpha2: FI
+      name:
+        el: Φινλανδία
+        en: Finland
+      confirmed: null
+      hypothetical: null
+    - id: france
+      iso_alpha2: FR
+      name:
+        el: Γαλλία
+        en: France
+      confirmed: null
+      hypothetical: null
     - id: germany
       iso_alpha2: DE
       name:
@@ -39,6 +851,209 @@ continents:
         source_ref: destatis-de-2022
         definition: greek-citizens
         population_type: diaspora
+      hypothetical: null
+    - id: greece
+      iso_alpha2: GR
+      name:
+        el: Ελλάδα
+        en: Greece
+      confirmed: null
+      hypothetical: null
+    - id: holy-see-vatican-city-state
+      iso_alpha2: VA
+      name:
+        el: Αγία Έδρα (το Κράτος της Πόλεως του Βατικανού)
+        en: Holy See (Vatican City State)
+      confirmed: null
+      hypothetical: null
+    - id: hungary
+      iso_alpha2: HU
+      name:
+        el: Ουγγαρία
+        en: Hungary
+      confirmed: null
+      hypothetical: null
+    - id: iceland
+      iso_alpha2: IS
+      name:
+        el: Ισλανδία
+        en: Iceland
+      confirmed: null
+      hypothetical: null
+    - id: ireland
+      iso_alpha2: IE
+      name:
+        el: Ιρλανδία
+        en: Ireland
+      confirmed: null
+      hypothetical: null
+    - id: italy
+      iso_alpha2: IT
+      name:
+        el: Ιταλία
+        en: Italy
+      confirmed: null
+      hypothetical: null
+    - id: latvia
+      iso_alpha2: LV
+      name:
+        el: Λετονία
+        en: Latvia
+      confirmed: null
+      hypothetical: null
+    - id: liechtenstein
+      iso_alpha2: LI
+      name:
+        el: Λίχτενσταϊν
+        en: Liechtenstein
+      confirmed: null
+      hypothetical: null
+    - id: lithuania
+      iso_alpha2: LT
+      name:
+        el: Λιθουανία
+        en: Lithuania
+      confirmed: null
+      hypothetical: null
+    - id: luxembourg
+      iso_alpha2: LU
+      name:
+        el: Λουξεμβούργο
+        en: Luxembourg
+      confirmed: null
+      hypothetical: null
+    - id: malta
+      iso_alpha2: MT
+      name:
+        el: Μάλτα
+        en: Malta
+      confirmed: null
+      hypothetical: null
+    - id: moldova
+      iso_alpha2: MD
+      name:
+        el: Μολδαβίας
+        en: Moldova
+      confirmed: null
+      hypothetical: null
+    - id: monaco
+      iso_alpha2: MC
+      name:
+        el: Μονακό
+        en: Monaco
+      confirmed: null
+      hypothetical: null
+    - id: montenegro
+      iso_alpha2: ME
+      name:
+        el: Μαυροβούνιο
+        en: Montenegro
+      confirmed: null
+      hypothetical: null
+    - id: netherlands
+      iso_alpha2: NL
+      name:
+        el: Ολλανδία
+        en: Netherlands
+      confirmed: null
+      hypothetical: null
+    - id: north-macedonia
+      iso_alpha2: MK
+      name:
+        el: Βόρεια Μακεδονία
+        en: North Macedonia
+      confirmed: null
+      hypothetical: null
+    - id: norway
+      iso_alpha2: 'NO'
+      name:
+        el: Νορβηγία
+        en: Norway
+      confirmed: null
+      hypothetical: null
+    - id: poland
+      iso_alpha2: PL
+      name:
+        el: Πολωνία
+        en: Poland
+      confirmed: null
+      hypothetical: null
+    - id: portugal
+      iso_alpha2: PT
+      name:
+        el: Πορτογαλία
+        en: Portugal
+      confirmed: null
+      hypothetical: null
+    - id: romania
+      iso_alpha2: RO
+      name:
+        el: Ρουμανία
+        en: Romania
+      confirmed: null
+      hypothetical: null
+    - id: russian-federation
+      iso_alpha2: RU
+      name:
+        el: Ρωσική Ομοσπονδία
+        en: Russian Federation
+      confirmed: null
+      hypothetical: null
+    - id: san-marino
+      iso_alpha2: SM
+      name:
+        el: Άγιος Μαρίνος
+        en: San Marino
+      confirmed: null
+      hypothetical: null
+    - id: serbia
+      iso_alpha2: RS
+      name:
+        el: Σερβία
+        en: Serbia
+      confirmed: null
+      hypothetical: null
+    - id: slovakia
+      iso_alpha2: SK
+      name:
+        el: Σλοβακία
+        en: Slovakia
+      confirmed: null
+      hypothetical: null
+    - id: slovenia
+      iso_alpha2: SI
+      name:
+        el: Σλοβενία
+        en: Slovenia
+      confirmed: null
+      hypothetical: null
+    - id: spain
+      iso_alpha2: ES
+      name:
+        el: Ισπανία
+        en: Spain
+      confirmed: null
+      hypothetical: null
+    - id: sweden
+      iso_alpha2: SE
+      name:
+        el: Σουηδία
+        en: Sweden
+      confirmed: null
+      hypothetical: null
+    - id: switzerland
+      iso_alpha2: CH
+      name:
+        el: Ελβετία
+        en: Switzerland
+      confirmed: null
+      hypothetical: null
+    - id: ukraine
+      iso_alpha2: UA
+      name:
+        el: Ουκρανία
+        en: Ukraine
+      confirmed: null
       hypothetical: null
     - id: united-kingdom
       iso_alpha2: GB
@@ -67,6 +1082,34 @@ continents:
         greek-origin: 400000
   north-america:
     countries:
+    - id: antigua-and-barbuda
+      iso_alpha2: AG
+      name:
+        el: Αντίγκουα και Μπαρμπούντα
+        en: Antigua and Barbuda
+      confirmed: null
+      hypothetical: null
+    - id: bahamas
+      iso_alpha2: BS
+      name:
+        el: Μπαχάμες
+        en: Bahamas
+      confirmed: null
+      hypothetical: null
+    - id: barbados
+      iso_alpha2: BB
+      name:
+        el: Μπαρμπάντος
+        en: Barbados
+      confirmed: null
+      hypothetical: null
+    - id: belize
+      iso_alpha2: BZ
+      name:
+        el: Μπελίζ
+        en: Belize
+      confirmed: null
+      hypothetical: null
     - id: canada
       iso_alpha2: CA
       name:
@@ -78,6 +1121,125 @@ continents:
         source_ref: statcan-ca-2021
         definition: greek-origin
         population_type: diaspora
+      hypothetical: null
+    - id: costa-rica
+      iso_alpha2: CR
+      name:
+        el: Κόστα Ρίκα
+        en: Costa Rica
+      confirmed: null
+      hypothetical: null
+    - id: cuba
+      iso_alpha2: CU
+      name:
+        el: Κούβα
+        en: Cuba
+      confirmed: null
+      hypothetical: null
+    - id: dominica
+      iso_alpha2: DM
+      name:
+        el: Ντομίνικα
+        en: Dominica
+      confirmed: null
+      hypothetical: null
+    - id: dominican-republic
+      iso_alpha2: DO
+      name:
+        el: Δομινικανή Δημοκρατία
+        en: Dominican Republic
+      confirmed: null
+      hypothetical: null
+    - id: el-salvador
+      iso_alpha2: SV
+      name:
+        el: Ελ Σαλβαδόρ
+        en: El Salvador
+      confirmed: null
+      hypothetical: null
+    - id: grenada
+      iso_alpha2: GD
+      name:
+        el: Γρενάδα
+        en: Grenada
+      confirmed: null
+      hypothetical: null
+    - id: guatemala
+      iso_alpha2: GT
+      name:
+        el: Γουατεμάλα
+        en: Guatemala
+      confirmed: null
+      hypothetical: null
+    - id: haiti
+      iso_alpha2: HT
+      name:
+        el: Αϊτή
+        en: Haiti
+      confirmed: null
+      hypothetical: null
+    - id: honduras
+      iso_alpha2: HN
+      name:
+        el: Ονδούρα
+        en: Honduras
+      confirmed: null
+      hypothetical: null
+    - id: jamaica
+      iso_alpha2: JM
+      name:
+        el: Τζαμάικα
+        en: Jamaica
+      confirmed: null
+      hypothetical: null
+    - id: mexico
+      iso_alpha2: MX
+      name:
+        el: Μεξικό
+        en: Mexico
+      confirmed: null
+      hypothetical: null
+    - id: nicaragua
+      iso_alpha2: NI
+      name:
+        el: Νικαράγουα
+        en: Nicaragua
+      confirmed: null
+      hypothetical: null
+    - id: panama
+      iso_alpha2: PA
+      name:
+        el: Παναμάς
+        en: Panama
+      confirmed: null
+      hypothetical: null
+    - id: saint-kitts-and-nevis
+      iso_alpha2: KN
+      name:
+        el: Άγιος Χριστόφορος και Νέβις
+        en: Saint Kitts and Nevis
+      confirmed: null
+      hypothetical: null
+    - id: saint-lucia
+      iso_alpha2: LC
+      name:
+        el: Αγία Λουκία
+        en: Saint Lucia
+      confirmed: null
+      hypothetical: null
+    - id: saint-vincent-and-the-grenadines
+      iso_alpha2: VC
+      name:
+        el: Άγιος Βικέντιος και Γρεναδίνες
+        en: Saint Vincent and the Grenadines
+      confirmed: null
+      hypothetical: null
+    - id: trinidad-and-tobago
+      iso_alpha2: TT
+      name:
+        el: Τρινιντάντ και Τομπάγκο
+        en: Trinidad and Tobago
+      confirmed: null
       hypothetical: null
     - id: united-states
       iso_alpha2: US
@@ -102,6 +1264,186 @@ continents:
       name:
         el: Αυστραλία
         en: Australia
+      confirmed: null
+      hypothetical: null
+    - id: fiji
+      iso_alpha2: FJ
+      name:
+        el: Φίτζι
+        en: Fiji
+      confirmed: null
+      hypothetical: null
+    - id: kiribati
+      iso_alpha2: KI
+      name:
+        el: Κιριμπάτι
+        en: Kiribati
+      confirmed: null
+      hypothetical: null
+    - id: marshall-islands
+      iso_alpha2: MH
+      name:
+        el: Νήσοι Μάρσαλ
+        en: Marshall Islands
+      confirmed: null
+      hypothetical: null
+    - id: micronesia
+      iso_alpha2: FM
+      name:
+        el: Μικρονησία
+        en: Micronesia
+      confirmed: null
+      hypothetical: null
+    - id: nauru
+      iso_alpha2: NR
+      name:
+        el: Ναουρού
+        en: Nauru
+      confirmed: null
+      hypothetical: null
+    - id: new-zealand
+      iso_alpha2: NZ
+      name:
+        el: Νέα Ζηλανδία
+        en: New Zealand
+      confirmed: null
+      hypothetical: null
+    - id: palau
+      iso_alpha2: PW
+      name:
+        el: Παλάου
+        en: Palau
+      confirmed: null
+      hypothetical: null
+    - id: papua-new-guinea
+      iso_alpha2: PG
+      name:
+        el: Παπούα Νέα Γουινέα
+        en: Papua New Guinea
+      confirmed: null
+      hypothetical: null
+    - id: samoa
+      iso_alpha2: WS
+      name:
+        el: Σαμόα
+        en: Samoa
+      confirmed: null
+      hypothetical: null
+    - id: solomon-islands
+      iso_alpha2: SB
+      name:
+        el: Νήσοι Σολομώντα
+        en: Solomon Islands
+      confirmed: null
+      hypothetical: null
+    - id: tonga
+      iso_alpha2: TO
+      name:
+        el: Τόνγκα
+        en: Tonga
+      confirmed: null
+      hypothetical: null
+    - id: tuvalu
+      iso_alpha2: TV
+      name:
+        el: Τουβαλού
+        en: Tuvalu
+      confirmed: null
+      hypothetical: null
+    - id: vanuatu
+      iso_alpha2: VU
+      name:
+        el: Βανουάτου
+        en: Vanuatu
+      confirmed: null
+      hypothetical: null
+    totals:
+      confirmed: {}
+      hypothetical: {}
+  south-america:
+    countries:
+    - id: argentina
+      iso_alpha2: AR
+      name:
+        el: Αργεντινή
+        en: Argentina
+      confirmed: null
+      hypothetical: null
+    - id: bolivia
+      iso_alpha2: BO
+      name:
+        el: Βολιβία
+        en: Bolivia
+      confirmed: null
+      hypothetical: null
+    - id: brazil
+      iso_alpha2: BR
+      name:
+        el: Βραζιλία
+        en: Brazil
+      confirmed: null
+      hypothetical: null
+    - id: chile
+      iso_alpha2: CL
+      name:
+        el: Χιλή
+        en: Chile
+      confirmed: null
+      hypothetical: null
+    - id: colombia
+      iso_alpha2: CO
+      name:
+        el: Κολομβία
+        en: Colombia
+      confirmed: null
+      hypothetical: null
+    - id: ecuador
+      iso_alpha2: EC
+      name:
+        el: Ισημερινός
+        en: Ecuador
+      confirmed: null
+      hypothetical: null
+    - id: guyana
+      iso_alpha2: GY
+      name:
+        el: Γουιάνα
+        en: Guyana
+      confirmed: null
+      hypothetical: null
+    - id: paraguay
+      iso_alpha2: PY
+      name:
+        el: Παραγουάη
+        en: Paraguay
+      confirmed: null
+      hypothetical: null
+    - id: peru
+      iso_alpha2: PE
+      name:
+        el: Περού
+        en: Peru
+      confirmed: null
+      hypothetical: null
+    - id: suriname
+      iso_alpha2: SR
+      name:
+        el: Σουρινάμ
+        en: Suriname
+      confirmed: null
+      hypothetical: null
+    - id: uruguay
+      iso_alpha2: UY
+      name:
+        el: Ουρουγουάη
+        en: Uruguay
+      confirmed: null
+      hypothetical: null
+    - id: venezuela
+      iso_alpha2: VE
+      name:
+        el: Βενεζουέλα
+        en: Venezuela
       confirmed: null
       hypothetical: null
     totals:

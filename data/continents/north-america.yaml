@@ -3,5 +3,26 @@ name:
   el: Βόρεια Αμερική
   en: North America
 countries:
-  - united-states
-  - canada
+- antigua-and-barbuda
+- bahamas
+- barbados
+- belize
+- canada
+- costa-rica
+- cuba
+- dominica
+- dominican-republic
+- el-salvador
+- grenada
+- guatemala
+- haiti
+- honduras
+- jamaica
+- mexico
+- nicaragua
+- panama
+- saint-kitts-and-nevis
+- saint-lucia
+- saint-vincent-and-the-grenadines
+- trinidad-and-tobago
+- united-states

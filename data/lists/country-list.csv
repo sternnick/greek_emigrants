@@ -1,0 +1,251 @@
+# Bundled country list — DO NOT hand-edit; regenerate with scripts/build_country_list.py
+# Sources: UN M49 https://unstats.un.org/unsd/methodology/m49/overview/ ; ISO 3166-1 via iso-codes ; el names via the ISO 3166-1 Greek locale catalog
+# Americas split at the Isthmus of Panama: SPLIT_AT_ISTHMUS = True
+iso_alpha2,iso_alpha3,numeric,name_en,name_el,iso_name_en,continent,m49_region,m49_subregion,sovereign,note
+DZ,DZA,012,Algeria,Αλγερία,Algeria,africa,Africa,Northern Africa,yes,
+EG,EGY,818,Egypt,Αίγυπτος,Egypt,africa,Africa,Northern Africa,yes,
+LY,LBY,434,Libya,Λιβύη,Libya,africa,Africa,Northern Africa,yes,
+MA,MAR,504,Morocco,Μαρόκο,Morocco,africa,Africa,Northern Africa,yes,
+SD,SDN,729,Sudan,Σουδάν,Sudan,africa,Africa,Northern Africa,yes,
+TN,TUN,788,Tunisia,Τυνησία,Tunisia,africa,Africa,Northern Africa,yes,
+EH,ESH,732,Western Sahara,Δυτική Σαχάρα,Western Sahara,africa,Africa,Northern Africa,no,UN Non-Self-Governing Territory
+IO,IOT,086,British Indian Ocean Territory,Βρετανικό Έδαφος Ινδικού Ωκεανού,British Indian Ocean Territory,africa,Africa,Sub-Saharan Africa,no,UK Indian Ocean territory
+BI,BDI,108,Burundi,Μπουρούντι,Burundi,africa,Africa,Sub-Saharan Africa,yes,
+KM,COM,174,Comoros,Κομόρες,Comoros,africa,Africa,Sub-Saharan Africa,yes,
+DJ,DJI,262,Djibouti,Τζιμπουτί,Djibouti,africa,Africa,Sub-Saharan Africa,yes,
+ER,ERI,232,Eritrea,Ερυθραία,Eritrea,africa,Africa,Sub-Saharan Africa,yes,
+ET,ETH,231,Ethiopia,Αιθιοπία,Ethiopia,africa,Africa,Sub-Saharan Africa,yes,
+TF,ATF,260,French Southern Territories,Γαλλικά Νότια Εδάφη,French Southern Territories,africa,Africa,Sub-Saharan Africa,no,French overseas territory
+KE,KEN,404,Kenya,Κένυα,Kenya,africa,Africa,Sub-Saharan Africa,yes,
+MG,MDG,450,Madagascar,Μαδαγασκάρη,Madagascar,africa,Africa,Sub-Saharan Africa,yes,
+MW,MWI,454,Malawi,Μαλάουι,Malawi,africa,Africa,Sub-Saharan Africa,yes,
+MU,MUS,480,Mauritius,Μαυρίκιος,Mauritius,africa,Africa,Sub-Saharan Africa,yes,
+YT,MYT,175,Mayotte,Μαγιότ,Mayotte,africa,Africa,Sub-Saharan Africa,no,French overseas department
+MZ,MOZ,508,Mozambique,Μοζαμβίκη,Mozambique,africa,Africa,Sub-Saharan Africa,yes,
+RE,REU,638,Réunion,Ρεϋνιόν,Réunion,africa,Africa,Sub-Saharan Africa,no,French overseas department
+RW,RWA,646,Rwanda,Ρουάντα,Rwanda,africa,Africa,Sub-Saharan Africa,yes,
+SC,SYC,690,Seychelles,Σεϋχέλλες,Seychelles,africa,Africa,Sub-Saharan Africa,yes,
+SO,SOM,706,Somalia,Σομαλία,Somalia,africa,Africa,Sub-Saharan Africa,yes,
+SS,SSD,728,South Sudan,Νότιο Σουδάν,South Sudan,africa,Africa,Sub-Saharan Africa,yes,
+UG,UGA,800,Uganda,Ουγκάντα,Uganda,africa,Africa,Sub-Saharan Africa,yes,
+TZ,TZA,834,Tanzania,Τανζανία,"Tanzania, United Republic of",africa,Africa,Sub-Saharan Africa,yes,
+ZM,ZMB,894,Zambia,Ζάμπια,Zambia,africa,Africa,Sub-Saharan Africa,yes,
+ZW,ZWE,716,Zimbabwe,Ζιμπάμπουε,Zimbabwe,africa,Africa,Sub-Saharan Africa,yes,
+AO,AGO,024,Angola,Ανγκόλα,Angola,africa,Africa,Sub-Saharan Africa,yes,
+CM,CMR,120,Cameroon,Καμερούν,Cameroon,africa,Africa,Sub-Saharan Africa,yes,
+CF,CAF,140,Central African Republic,Δημοκρατία Κεντρικής Αφρικής,Central African Republic,africa,Africa,Sub-Saharan Africa,yes,
+TD,TCD,148,Chad,Τσαντ,Chad,africa,Africa,Sub-Saharan Africa,yes,
+CG,COG,178,Congo,Κονγκό,Congo,africa,Africa,Sub-Saharan Africa,yes,
+CD,COD,180,DR Congo,Λαϊκή Δημοκρατία του Κονγκό,"Congo, The Democratic Republic of the",africa,Africa,Sub-Saharan Africa,yes,
+GQ,GNQ,226,Equatorial Guinea,Ισημερινή Γουινέα,Equatorial Guinea,africa,Africa,Sub-Saharan Africa,yes,
+GA,GAB,266,Gabon,Γκαμπόν,Gabon,africa,Africa,Sub-Saharan Africa,yes,
+ST,STP,678,Sao Tome and Principe,Σάο Τομέ και Πρίνσιπε,Sao Tome and Principe,africa,Africa,Sub-Saharan Africa,yes,
+BW,BWA,072,Botswana,Μποτσουάνα,Botswana,africa,Africa,Sub-Saharan Africa,yes,
+SZ,SWZ,748,Eswatini,Εσουατίνι,Eswatini,africa,Africa,Sub-Saharan Africa,yes,
+LS,LSO,426,Lesotho,Λεσότο,Lesotho,africa,Africa,Sub-Saharan Africa,yes,
+NA,NAM,516,Namibia,Ναμίμπια,Namibia,africa,Africa,Sub-Saharan Africa,yes,
+ZA,ZAF,710,South Africa,Νότια Αφρική,South Africa,africa,Africa,Sub-Saharan Africa,yes,
+BJ,BEN,204,Benin,Μπενίν,Benin,africa,Africa,Sub-Saharan Africa,yes,
+BF,BFA,854,Burkina Faso,Μπουρκίνα Φάσο,Burkina Faso,africa,Africa,Sub-Saharan Africa,yes,
+CV,CPV,132,Cabo Verde,Πράσινο Ακρωτήριο,Cabo Verde,africa,Africa,Sub-Saharan Africa,yes,
+CI,CIV,384,Côte d'Ivoire,Ακτή Ελεφαντοστού,Côte d'Ivoire,africa,Africa,Sub-Saharan Africa,yes,
+GM,GMB,270,Gambia,Γκάμπια,Gambia,africa,Africa,Sub-Saharan Africa,yes,
+GH,GHA,288,Ghana,Γκάνα,Ghana,africa,Africa,Sub-Saharan Africa,yes,
+GN,GIN,324,Guinea,Γουινέα,Guinea,africa,Africa,Sub-Saharan Africa,yes,
+GW,GNB,624,Guinea-Bissau,Γουινέα-Μπισσάου,Guinea-Bissau,africa,Africa,Sub-Saharan Africa,yes,
+LR,LBR,430,Liberia,Λιβερία,Liberia,africa,Africa,Sub-Saharan Africa,yes,
+ML,MLI,466,Mali,Μάλι,Mali,africa,Africa,Sub-Saharan Africa,yes,
+MR,MRT,478,Mauritania,Μαυριτανία,Mauritania,africa,Africa,Sub-Saharan Africa,yes,
+NE,NER,562,Niger,Νίγηρας,Niger,africa,Africa,Sub-Saharan Africa,yes,
+NG,NGA,566,Nigeria,Νιγηρία,Nigeria,africa,Africa,Sub-Saharan Africa,yes,
+SH,SHN,654,Saint Helena,Σεντ Ελένα,"Saint Helena, Ascension and Tristan da Cunha",africa,Africa,Sub-Saharan Africa,no,UK overseas territory
+SN,SEN,686,Senegal,Σενεγάλη,Senegal,africa,Africa,Sub-Saharan Africa,yes,
+SL,SLE,694,Sierra Leone,Σιέρα Λεόνε,Sierra Leone,africa,Africa,Sub-Saharan Africa,yes,
+TG,TGO,768,Togo,Τόγκο,Togo,africa,Africa,Sub-Saharan Africa,yes,
+AI,AIA,660,Anguilla,Ανγκουίλα,Anguilla,north-america,Americas,Latin America and the Caribbean,no,UK overseas territory
+AG,ATG,028,Antigua and Barbuda,Αντίγκουα και Μπαρμπούντα,Antigua and Barbuda,north-america,Americas,Latin America and the Caribbean,yes,
+AW,ABW,533,Aruba,Αρούμπα,Aruba,north-america,Americas,Latin America and the Caribbean,no,constituent country of the Kingdom of the Netherlands
+BS,BHS,044,Bahamas,Μπαχάμες,Bahamas,north-america,Americas,Latin America and the Caribbean,yes,
+BB,BRB,052,Barbados,Μπαρμπάντος,Barbados,north-america,Americas,Latin America and the Caribbean,yes,
+BQ,BES,535,Bonaire,Μποναίρ,"Bonaire, Sint Eustatius and Saba",north-america,Americas,Latin America and the Caribbean,no,special municipality of the Netherlands
+VG,VGB,092,Virgin Islands,Παρθένοι Νήσοι,"Virgin Islands, British",north-america,Americas,Latin America and the Caribbean,no,UK overseas territory
+KY,CYM,136,Cayman Islands,Νησιά Κέιμαν,Cayman Islands,north-america,Americas,Latin America and the Caribbean,no,UK overseas territory
+CU,CUB,192,Cuba,Κούβα,Cuba,north-america,Americas,Latin America and the Caribbean,yes,
+CW,CUW,531,Curaçao,Κουρασάο,Curaçao,north-america,Americas,Latin America and the Caribbean,no,constituent country of the Kingdom of the Netherlands
+DM,DMA,212,Dominica,Ντομίνικα,Dominica,north-america,Americas,Latin America and the Caribbean,yes,
+DO,DOM,214,Dominican Republic,Δομινικανή Δημοκρατία,Dominican Republic,north-america,Americas,Latin America and the Caribbean,yes,
+GD,GRD,308,Grenada,Γρενάδα,Grenada,north-america,Americas,Latin America and the Caribbean,yes,
+GP,GLP,312,Guadeloupe,Γουαδελούπη,Guadeloupe,north-america,Americas,Latin America and the Caribbean,no,French overseas department
+HT,HTI,332,Haiti,Αϊτή,Haiti,north-america,Americas,Latin America and the Caribbean,yes,
+JM,JAM,388,Jamaica,Τζαμάικα,Jamaica,north-america,Americas,Latin America and the Caribbean,yes,
+MQ,MTQ,474,Martinique,Μαρτινίκα,Martinique,north-america,Americas,Latin America and the Caribbean,no,French overseas department
+MS,MSR,500,Montserrat,Μοντσεράτ,Montserrat,north-america,Americas,Latin America and the Caribbean,no,UK overseas territory
+PR,PRI,630,Puerto Rico,Πουέρτο Ρίκο,Puerto Rico,north-america,Americas,Latin America and the Caribbean,no,US unincorporated territory
+BL,BLM,652,Saint Barthélemy,Άγιος Βαρθολομαίος,Saint Barthélemy,north-america,Americas,Latin America and the Caribbean,no,French overseas collectivity
+KN,KNA,659,Saint Kitts and Nevis,Άγιος Χριστόφορος και Νέβις,Saint Kitts and Nevis,north-america,Americas,Latin America and the Caribbean,yes,
+LC,LCA,662,Saint Lucia,Αγία Λουκία,Saint Lucia,north-america,Americas,Latin America and the Caribbean,yes,
+MF,MAF,663,Saint Martin (French part),Άγιος Μαρτίνος (Γαλλικό τμήμα),Saint Martin (French part),north-america,Americas,Latin America and the Caribbean,no,French overseas collectivity
+VC,VCT,670,Saint Vincent and the Grenadines,Άγιος Βικέντιος και Γρεναδίνες,Saint Vincent and the Grenadines,north-america,Americas,Latin America and the Caribbean,yes,
+SX,SXM,534,Sint Maarten (Dutch part),Άγιος Μαρτίνος (Ολλανδικό τμήμα),Sint Maarten (Dutch part),north-america,Americas,Latin America and the Caribbean,no,constituent country of the Kingdom of the Netherlands
+TT,TTO,780,Trinidad and Tobago,Τρινιντάντ και Τομπάγκο,Trinidad and Tobago,north-america,Americas,Latin America and the Caribbean,yes,
+TC,TCA,796,Turks and Caicos Islands,Τερκς και Κάικος Νήσοι,Turks and Caicos Islands,north-america,Americas,Latin America and the Caribbean,no,UK overseas territory
+VI,VIR,850,Virgin Islands,Παρθένοι Νήσοι,"Virgin Islands, U.S.",north-america,Americas,Latin America and the Caribbean,no,US unincorporated territory
+BZ,BLZ,084,Belize,Μπελίζ,Belize,north-america,Americas,Latin America and the Caribbean,yes,
+CR,CRI,188,Costa Rica,Κόστα Ρίκα,Costa Rica,north-america,Americas,Latin America and the Caribbean,yes,
+SV,SLV,222,El Salvador,Ελ Σαλβαδόρ,El Salvador,north-america,Americas,Latin America and the Caribbean,yes,
+GT,GTM,320,Guatemala,Γουατεμάλα,Guatemala,north-america,Americas,Latin America and the Caribbean,yes,
+HN,HND,340,Honduras,Ονδούρα,Honduras,north-america,Americas,Latin America and the Caribbean,yes,
+MX,MEX,484,Mexico,Μεξικό,Mexico,north-america,Americas,Latin America and the Caribbean,yes,
+NI,NIC,558,Nicaragua,Νικαράγουα,Nicaragua,north-america,Americas,Latin America and the Caribbean,yes,
+PA,PAN,591,Panama,Παναμάς,Panama,north-america,Americas,Latin America and the Caribbean,yes,
+AR,ARG,032,Argentina,Αργεντινή,Argentina,south-america,Americas,Latin America and the Caribbean,yes,
+BO,BOL,068,Bolivia,Βολιβία,"Bolivia, Plurinational State of",south-america,Americas,Latin America and the Caribbean,yes,
+BV,BVT,074,Bouvet Island,Νήσος Μπουβέ,Bouvet Island,south-america,Americas,Latin America and the Caribbean,no,Norwegian dependency
+BR,BRA,076,Brazil,Βραζιλία,Brazil,south-america,Americas,Latin America and the Caribbean,yes,
+CL,CHL,152,Chile,Χιλή,Chile,south-america,Americas,Latin America and the Caribbean,yes,
+CO,COL,170,Colombia,Κολομβία,Colombia,south-america,Americas,Latin America and the Caribbean,yes,
+EC,ECU,218,Ecuador,Ισημερινός,Ecuador,south-america,Americas,Latin America and the Caribbean,yes,
+FK,FLK,238,Falkland Islands (Malvinas),Νήσοι Φώκλαντ (Μαλβίνες),Falkland Islands (Malvinas),south-america,Americas,Latin America and the Caribbean,no,UK overseas territory
+GF,GUF,254,French Guiana,Γαλλική Γουιάνα,French Guiana,south-america,Americas,Latin America and the Caribbean,no,French overseas department
+GY,GUY,328,Guyana,Γουιάνα,Guyana,south-america,Americas,Latin America and the Caribbean,yes,
+PY,PRY,600,Paraguay,Παραγουάη,Paraguay,south-america,Americas,Latin America and the Caribbean,yes,
+PE,PER,604,Peru,Περού,Peru,south-america,Americas,Latin America and the Caribbean,yes,
+GS,SGS,239,South Georgia and the South Sandwich Islands,Νήσοι Νότια Γεωργία και Νότιες Σάντουιτς,South Georgia and the South Sandwich Islands,south-america,Americas,Latin America and the Caribbean,no,UK overseas territory
+SR,SUR,740,Suriname,Σουρινάμ,Suriname,south-america,Americas,Latin America and the Caribbean,yes,
+UY,URY,858,Uruguay,Ουρουγουάη,Uruguay,south-america,Americas,Latin America and the Caribbean,yes,
+VE,VEN,862,Venezuela,Βενεζουέλα,"Venezuela, Bolivarian Republic of",south-america,Americas,Latin America and the Caribbean,yes,
+BM,BMU,060,Bermuda,Βερμούδες,Bermuda,north-america,Americas,Northern America,no,UK overseas territory
+CA,CAN,124,Canada,Καναδάς,Canada,north-america,Americas,Northern America,yes,
+GL,GRL,304,Greenland,Γροιλανδία,Greenland,north-america,Americas,Northern America,no,constituent country of the Kingdom of Denmark
+PM,SPM,666,Saint Pierre and Miquelon,Σαιν Πιερ και Μικελόν,Saint Pierre and Miquelon,north-america,Americas,Northern America,no,French overseas collectivity
+US,USA,840,United States,Ηνωμένες Πολιτείες,United States,north-america,Americas,Northern America,yes,
+KZ,KAZ,398,Kazakhstan,Καζακστάν,Kazakhstan,asia,Asia,Central Asia,yes,
+KG,KGZ,417,Kyrgyzstan,Κιργιζία,Kyrgyzstan,asia,Asia,Central Asia,yes,
+TJ,TJK,762,Tajikistan,Τατζικιστάν,Tajikistan,asia,Asia,Central Asia,yes,
+TM,TKM,795,Turkmenistan,Τουρκμενιστάν,Turkmenistan,asia,Asia,Central Asia,yes,
+UZ,UZB,860,Uzbekistan,Ουζμπεκιστάν,Uzbekistan,asia,Asia,Central Asia,yes,
+CN,CHN,156,China,Κίνα,China,asia,Asia,Eastern Asia,yes,
+HK,HKG,344,Hong Kong,Χονγκ Κονγκ,Hong Kong,asia,Asia,Eastern Asia,no,SAR of China
+MO,MAC,446,Macao,Μακάο,Macao,asia,Asia,Eastern Asia,no,SAR of China
+KP,PRK,408,North Korea,Βόρεια Κορέα,"Korea, Democratic People's Republic of",asia,Asia,Eastern Asia,yes,
+JP,JPN,392,Japan,Ιαπωνία,Japan,asia,Asia,Eastern Asia,yes,
+MN,MNG,496,Mongolia,Μογγολία,Mongolia,asia,Asia,Eastern Asia,yes,
+KR,KOR,410,South Korea,Νότια Κορέα,"Korea, Republic of",asia,Asia,Eastern Asia,yes,
+BN,BRN,096,Brunei Darussalam,Μπρουνέι Νταρουσαλάμ,Brunei Darussalam,asia,Asia,South-eastern Asia,yes,
+KH,KHM,116,Cambodia,Καμπότζη,Cambodia,asia,Asia,South-eastern Asia,yes,
+ID,IDN,360,Indonesia,Ινδονησία,Indonesia,asia,Asia,South-eastern Asia,yes,
+LA,LAO,418,Laos,Λαϊκή Δημοκρατία του Λάος,Lao People's Democratic Republic,asia,Asia,South-eastern Asia,yes,
+MY,MYS,458,Malaysia,Μαλαισία,Malaysia,asia,Asia,South-eastern Asia,yes,
+MM,MMR,104,Myanmar,Μιανμάρ,Myanmar,asia,Asia,South-eastern Asia,yes,
+PH,PHL,608,Philippines,Φιλιππίνες,Philippines,asia,Asia,South-eastern Asia,yes,
+SG,SGP,702,Singapore,Σιγκαπούρη,Singapore,asia,Asia,South-eastern Asia,yes,
+TH,THA,764,Thailand,Ταϊλάνδη,Thailand,asia,Asia,South-eastern Asia,yes,
+TL,TLS,626,Timor-Leste,Τιμόρ-Λέστε,Timor-Leste,asia,Asia,South-eastern Asia,yes,
+VN,VNM,704,Vietnam,Βιετνάμ,Viet Nam,asia,Asia,South-eastern Asia,yes,
+AF,AFG,004,Afghanistan,Αφγανιστάν,Afghanistan,asia,Asia,Southern Asia,yes,
+BD,BGD,050,Bangladesh,Μπανγκλαντές,Bangladesh,asia,Asia,Southern Asia,yes,
+BT,BTN,064,Bhutan,Μπουτάν,Bhutan,asia,Asia,Southern Asia,yes,
+IN,IND,356,India,Ινδία,India,asia,Asia,Southern Asia,yes,
+IR,IRN,364,Iran,Ιράν,"Iran, Islamic Republic of",asia,Asia,Southern Asia,yes,
+MV,MDV,462,Maldives,Μαλδίβες,Maldives,asia,Asia,Southern Asia,yes,
+NP,NPL,524,Nepal,Νεπάλ,Nepal,asia,Asia,Southern Asia,yes,
+PK,PAK,586,Pakistan,Πακιστάν,Pakistan,asia,Asia,Southern Asia,yes,
+LK,LKA,144,Sri Lanka,Σρι Λάνκα,Sri Lanka,asia,Asia,Southern Asia,yes,
+AM,ARM,051,Armenia,Αρμενία,Armenia,asia,Asia,Western Asia,yes,
+AZ,AZE,031,Azerbaijan,Αζερμπαϊτζάν,Azerbaijan,asia,Asia,Western Asia,yes,
+BH,BHR,048,Bahrain,Μπαχρέιν,Bahrain,asia,Asia,Western Asia,yes,
+CY,CYP,196,Cyprus,Κύπρος,Cyprus,asia,Asia,Western Asia,yes,
+GE,GEO,268,Georgia,Γεωργία,Georgia,asia,Asia,Western Asia,yes,
+IQ,IRQ,368,Iraq,Ιράκ,Iraq,asia,Asia,Western Asia,yes,
+IL,ISR,376,Israel,Ισραήλ,Israel,asia,Asia,Western Asia,yes,
+JO,JOR,400,Jordan,Ιορδανία,Jordan,asia,Asia,Western Asia,yes,
+KW,KWT,414,Kuwait,Κουβέιτ,Kuwait,asia,Asia,Western Asia,yes,
+LB,LBN,422,Lebanon,Λίβανος,Lebanon,asia,Asia,Western Asia,yes,
+OM,OMN,512,Oman,Ομάν,Oman,asia,Asia,Western Asia,yes,
+QA,QAT,634,Qatar,Κατάρ,Qatar,asia,Asia,Western Asia,yes,
+SA,SAU,682,Saudi Arabia,Σαουδική Αραβία,Saudi Arabia,asia,Asia,Western Asia,yes,
+PS,PSE,275,Palestine,Παλαιστίνη,"Palestine, State of",asia,Asia,Western Asia,yes,
+SY,SYR,760,Syria,Αραβική Δημοκρατία της Συρίας,Syrian Arab Republic,asia,Asia,Western Asia,yes,
+TR,TUR,792,Türkiye,Türkiye,Türkiye,asia,Asia,Western Asia,yes,
+AE,ARE,784,United Arab Emirates,Ηνωμένα Αραβικά Εμιράτα,United Arab Emirates,asia,Asia,Western Asia,yes,
+YE,YEM,887,Yemen,Υεμένη,Yemen,asia,Asia,Western Asia,yes,
+BY,BLR,112,Belarus,Λευκορωσία,Belarus,europe,Europe,Eastern Europe,yes,
+BG,BGR,100,Bulgaria,Βουλγαρία,Bulgaria,europe,Europe,Eastern Europe,yes,
+CZ,CZE,203,Czechia,Τσεχία,Czechia,europe,Europe,Eastern Europe,yes,
+HU,HUN,348,Hungary,Ουγγαρία,Hungary,europe,Europe,Eastern Europe,yes,
+PL,POL,616,Poland,Πολωνία,Poland,europe,Europe,Eastern Europe,yes,
+MD,MDA,498,Moldova,Μολδαβίας,"Moldova, Republic of",europe,Europe,Eastern Europe,yes,
+RO,ROU,642,Romania,Ρουμανία,Romania,europe,Europe,Eastern Europe,yes,
+RU,RUS,643,Russian Federation,Ρωσική Ομοσπονδία,Russian Federation,europe,Europe,Eastern Europe,yes,
+SK,SVK,703,Slovakia,Σλοβακία,Slovakia,europe,Europe,Eastern Europe,yes,
+UA,UKR,804,Ukraine,Ουκρανία,Ukraine,europe,Europe,Eastern Europe,yes,
+AX,ALA,248,Åland Islands,Νήσοι Ώλαντ,Åland Islands,europe,Europe,Northern Europe,no,autonomous region of Finland
+DK,DNK,208,Denmark,Δανία,Denmark,europe,Europe,Northern Europe,yes,
+EE,EST,233,Estonia,Εσθονία,Estonia,europe,Europe,Northern Europe,yes,
+FO,FRO,234,Faroe Islands,Νησιά Φερόε,Faroe Islands,europe,Europe,Northern Europe,no,constituent country of the Kingdom of Denmark
+FI,FIN,246,Finland,Φινλανδία,Finland,europe,Europe,Northern Europe,yes,
+GG,GGY,831,Guernsey,Γκέρνσεϊ,Guernsey,europe,Europe,Northern Europe,no,Crown dependency
+IS,ISL,352,Iceland,Ισλανδία,Iceland,europe,Europe,Northern Europe,yes,
+IE,IRL,372,Ireland,Ιρλανδία,Ireland,europe,Europe,Northern Europe,yes,
+IM,IMN,833,Isle of Man,Νήσος του Μαν,Isle of Man,europe,Europe,Northern Europe,no,Crown dependency
+JE,JEY,832,Jersey,Τζέρσεϊ,Jersey,europe,Europe,Northern Europe,no,Crown dependency
+LV,LVA,428,Latvia,Λετονία,Latvia,europe,Europe,Northern Europe,yes,
+LT,LTU,440,Lithuania,Λιθουανία,Lithuania,europe,Europe,Northern Europe,yes,
+NO,NOR,578,Norway,Νορβηγία,Norway,europe,Europe,Northern Europe,yes,
+SJ,SJM,744,Svalbard and Jan Mayen,Σβάλμπαρντ και Γιαν Μαγέν,Svalbard and Jan Mayen,europe,Europe,Northern Europe,no,Norwegian territory
+SE,SWE,752,Sweden,Σουηδία,Sweden,europe,Europe,Northern Europe,yes,
+GB,GBR,826,United Kingdom,Ηνωμένο Βασίλειο,United Kingdom,europe,Europe,Northern Europe,yes,
+AL,ALB,008,Albania,Αλβανία,Albania,europe,Europe,Southern Europe,yes,
+AD,AND,020,Andorra,Ανδόρρα,Andorra,europe,Europe,Southern Europe,yes,
+BA,BIH,070,Bosnia and Herzegovina,Βοσνία και Ερζεγοβίνη,Bosnia and Herzegovina,europe,Europe,Southern Europe,yes,
+HR,HRV,191,Croatia,Κροατία,Croatia,europe,Europe,Southern Europe,yes,
+GI,GIB,292,Gibraltar,Γιβραλτάρ,Gibraltar,europe,Europe,Southern Europe,no,UK overseas territory
+GR,GRC,300,Greece,Ελλάδα,Greece,europe,Europe,Southern Europe,yes,
+VA,VAT,336,Holy See (Vatican City State),Αγία Έδρα (το Κράτος της Πόλεως του Βατικανού),Holy See (Vatican City State),europe,Europe,Southern Europe,yes,
+IT,ITA,380,Italy,Ιταλία,Italy,europe,Europe,Southern Europe,yes,
+MT,MLT,470,Malta,Μάλτα,Malta,europe,Europe,Southern Europe,yes,
+ME,MNE,499,Montenegro,Μαυροβούνιο,Montenegro,europe,Europe,Southern Europe,yes,
+MK,MKD,807,North Macedonia,Βόρεια Μακεδονία,North Macedonia,europe,Europe,Southern Europe,yes,
+PT,PRT,620,Portugal,Πορτογαλία,Portugal,europe,Europe,Southern Europe,yes,
+SM,SMR,674,San Marino,Άγιος Μαρίνος,San Marino,europe,Europe,Southern Europe,yes,
+RS,SRB,688,Serbia,Σερβία,Serbia,europe,Europe,Southern Europe,yes,
+SI,SVN,705,Slovenia,Σλοβενία,Slovenia,europe,Europe,Southern Europe,yes,
+ES,ESP,724,Spain,Ισπανία,Spain,europe,Europe,Southern Europe,yes,
+AT,AUT,040,Austria,Αυστρία,Austria,europe,Europe,Western Europe,yes,
+BE,BEL,056,Belgium,Βέλγιο,Belgium,europe,Europe,Western Europe,yes,
+FR,FRA,250,France,Γαλλία,France,europe,Europe,Western Europe,yes,
+DE,DEU,276,Germany,Γερμανία,Germany,europe,Europe,Western Europe,yes,
+LI,LIE,438,Liechtenstein,Λίχτενσταϊν,Liechtenstein,europe,Europe,Western Europe,yes,
+LU,LUX,442,Luxembourg,Λουξεμβούργο,Luxembourg,europe,Europe,Western Europe,yes,
+MC,MCO,492,Monaco,Μονακό,Monaco,europe,Europe,Western Europe,yes,
+NL,NLD,528,Netherlands,Ολλανδία,Netherlands,europe,Europe,Western Europe,yes,
+CH,CHE,756,Switzerland,Ελβετία,Switzerland,europe,Europe,Western Europe,yes,
+AU,AUS,036,Australia,Αυστραλία,Australia,oceania,Oceania,Australia and New Zealand,yes,
+CX,CXR,162,Christmas Island,Νήσοι Χριστουγέννων,Christmas Island,oceania,Oceania,Australia and New Zealand,no,external territory of Australia
+CC,CCK,166,Cocos (Keeling) Islands,Νήσοι Κόκος (Κήλινγκ),Cocos (Keeling) Islands,oceania,Oceania,Australia and New Zealand,no,external territory of Australia
+HM,HMD,334,Heard Island and McDonald Islands,Νήσος Χερντ και Νήσοι ΜακΝτόναλντ,Heard Island and McDonald Islands,oceania,Oceania,Australia and New Zealand,no,external territory of Australia
+NZ,NZL,554,New Zealand,Νέα Ζηλανδία,New Zealand,oceania,Oceania,Australia and New Zealand,yes,
+NF,NFK,574,Norfolk Island,Νήσος Νόρφολκ,Norfolk Island,oceania,Oceania,Australia and New Zealand,no,external territory of Australia
+FJ,FJI,242,Fiji,Φίτζι,Fiji,oceania,Oceania,Melanesia,yes,
+NC,NCL,540,New Caledonia,Νέα Καληδονία,New Caledonia,oceania,Oceania,Melanesia,no,French special collectivity
+PG,PNG,598,Papua New Guinea,Παπούα Νέα Γουινέα,Papua New Guinea,oceania,Oceania,Melanesia,yes,
+SB,SLB,090,Solomon Islands,Νήσοι Σολομώντα,Solomon Islands,oceania,Oceania,Melanesia,yes,
+VU,VUT,548,Vanuatu,Βανουάτου,Vanuatu,oceania,Oceania,Melanesia,yes,
+GU,GUM,316,Guam,Γκουάμ,Guam,oceania,Oceania,Micronesia,no,US unincorporated territory
+KI,KIR,296,Kiribati,Κιριμπάτι,Kiribati,oceania,Oceania,Micronesia,yes,
+MH,MHL,584,Marshall Islands,Νήσοι Μάρσαλ,Marshall Islands,oceania,Oceania,Micronesia,yes,
+FM,FSM,583,Micronesia,Μικρονησία,"Micronesia, Federated States of",oceania,Oceania,Micronesia,yes,
+NR,NRU,520,Nauru,Ναουρού,Nauru,oceania,Oceania,Micronesia,yes,
+MP,MNP,580,Northern Mariana Islands,Βόρειες Μαριάνες Νήσοι,Northern Mariana Islands,oceania,Oceania,Micronesia,no,US commonwealth
+PW,PLW,585,Palau,Παλάου,Palau,oceania,Oceania,Micronesia,yes,
+UM,UMI,581,United States Minor Outlying Islands,Απομακρυσμένες Νησίδες των Ηνωμένων Πολιτειών,United States Minor Outlying Islands,oceania,Oceania,Micronesia,no,US minor outlying islands
+AS,ASM,016,American Samoa,Αμερικανική Σαμόα,American Samoa,oceania,Oceania,Polynesia,no,US unincorporated territory
+CK,COK,184,Cook Islands,Νήσοι Κουκ,Cook Islands,oceania,Oceania,Polynesia,no,free state in association with New Zealand
+PF,PYF,258,French Polynesia,Γαλλική Πολυνησία,French Polynesia,oceania,Oceania,Polynesia,no,French overseas collectivity
+NU,NIU,570,Niue,Νιούεϊ,Niue,oceania,Oceania,Polynesia,no,self-governing state in association with New Zealand
+PN,PCN,612,Pitcairn,Πίτκαϊρν,Pitcairn,oceania,Oceania,Polynesia,no,UK overseas territory
+WS,WSM,882,Samoa,Σαμόα,Samoa,oceania,Oceania,Polynesia,yes,
+TK,TKL,772,Tokelau,Τοκελάου,Tokelau,oceania,Oceania,Polynesia,no,dependent territory of New Zealand
+TO,TON,776,Tonga,Τόνγκα,Tonga,oceania,Oceania,Polynesia,yes,
+TV,TUV,798,Tuvalu,Τουβαλού,Tuvalu,oceania,Oceania,Polynesia,yes,
+WF,WLF,876,Wallis and Futuna,Ουαλίς και Φουτούνα,Wallis and Futuna,oceania,Oceania,Polynesia,no,French overseas collectivity
