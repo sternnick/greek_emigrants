@@ -19,6 +19,7 @@ independence:
   primary_data_collector: true
 robots_txt_allows_fetch: true
 language: en
+language_iso639_2b: eng
 notes:
   el: 'Επίσημη απογραφή (αποτελέσματα 28/6/2024). Το νούμερο διαβάστηκε από δευτερογενή πηγή που παραθέτει
     το PDF της απογραφής: ο πίνακας εθνικότητας CE14 στο PxWeb απαιτεί διαδραστικό query και δεν αποδόθηκε

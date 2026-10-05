@@ -10,6 +10,18 @@
 4. Register the country id in the matching `data/continents/<continent>.yaml`.
 5. Run `python scripts/validate.py` — it must pass.
 
+## Validation gate
+
+The fast checks run in a commit hook; enable it once per clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+It runs `validate.py` plus the two migration `--check`s (independence blocks and
+ISO 639 language codes), so a file cannot drift from what the generator scripts
+would write. The full suite is explicit: `python -m pytest tests/ -q`.
+
 ## Adding a source
 
 1. Pick folder: `sources/confirmed/` or `sources/hypothetical/`.

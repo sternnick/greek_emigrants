@@ -26,6 +26,7 @@ independence:
       ministry).
 robots_txt_allows_fetch: false
 language: en
+language_iso639_2b: eng
 notes:
   el: Υπολογισμός κυβέρνησης για διαρροή εγκεφάλων. Κατά τα άλλα τεκμηριωμένος ως επιβεβαιωμένος, αλλά
     χωρίς ανακτήσιμο έγγραφο → hypothetical με confidence single-source.

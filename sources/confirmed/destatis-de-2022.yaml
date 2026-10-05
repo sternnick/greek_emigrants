@@ -18,6 +18,7 @@ independence:
   primary_data_collector: true
 robots_txt_allows_fetch: true
 language: de
+language_iso639_2b: deu
 notes:
   el: Επίσημη απογραφή, υπηκοότητα Ελλάδας.
   en: Official census, Greek citizenship.

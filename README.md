@@ -53,6 +53,74 @@ Outputs:
 - `greek-origin` — ancestry of any generation
 - `greek-language` — speak Greek at home
 
+## Repository metadata (COAR)
+
+Machine-readable description of this dataset, following COAR's recommendations for
+multilingual and non-English content ([source](https://coar-repositories.org/what-we-do/multilingual-and-non-english-content/),
+accessed 2026-10-05). Languages are declared in both ISO 639 systems because COAR
+asks for "standard (two-letter or three-letter) language codes".
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": {
+    "en": "Greek Diaspora Dataset",
+    "el": "Δεδομένα Ελληνικής Διασποράς"
+  },
+  "inLanguage": ["eng", "ell"],
+  "languages": [
+    {
+      "iso639_1": "en",
+      "iso639_2b": "eng",
+      "name_native": "English",
+      "role": "dataset language",
+      "direction": "ltr",
+      "script": "Latn"
+    },
+    {
+      "iso639_1": "el",
+      "iso639_2b": "ell",
+      "name_native": "Ελληνικά",
+      "role": "dataset language",
+      "direction": "ltr",
+      "script": "Grek"
+    }
+  ],
+  "additionalLanguage": [
+    {
+      "iso639_1": "de",
+      "iso639_2b": "deu",
+      "name_native": "Deutsch",
+      "role": "language of a quoted source"
+    }
+  ],
+  "keywords": {
+    "en": ["Greek diaspora", "emigration", "return migration", "brain drain", "census", "migration statistics"],
+    "el": ["ελληνική διασπορά", "μετανάστευση", "επιστροφή μεταναστών", "brain drain", "απογραφή", "μεταναστευτικά στατιστικά"]
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "codeLicense": "MIT",
+  "conformsTo": [
+    "https://coar-repositories.org/what-we-do/multilingual-and-non-english-content/",
+    "https://www.iso.org/standard/22109.html"
+  ],
+  "isPartOf": "https://github.com/sternnick/greek_emigrants",
+  "creativeWorkStatus": "Draft — PRs open",
+  "measurementTechnique": "documented secondary analysis of official statistics"
+}
+```
+
+The same table, for humans:
+
+| language | ISO 639-1 | ISO 639-2/B | native name | script | role here |
+|---|---|---|---|---|---|
+| English | `en` | `eng` | English | Latn | dataset language |
+| Greek | `el` | `ell` | Ελληνικά | Grek | dataset language |
+| German | `de` | `deu` | Deutsch | Latn | language of a quoted source |
+
+How each COAR recommendation is met: [docs/multilingual-metadata.md](docs/multilingual-metadata.md).
+
 ## License
 
 Data: CC BY 4.0. Code: MIT.

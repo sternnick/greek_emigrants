@@ -5,6 +5,7 @@ import sys
 from pathlib import Path
 import yaml
 from jsonschema import Draft202012Validator
+import i18n  # noqa: E402
 from referencing import Registry, Resource
 
 import os
@@ -100,6 +101,50 @@ def load_source_meta() -> dict[str, dict]:
                 "derives": ind.get("derives_from") or [],
             }
     return meta
+
+
+def check_language_codes(sources: dict[str, dict]) -> None:
+    """COAR wants machine-readable language metadata: both ISO 639 systems, agreeing.
+
+    `language` is the two-letter code the reports and quote rules use;
+    `language_iso639_2b` is the bibliographic code a repository publishes. The
+    mapping lives once, in i18n/languages.json, so a file cannot invent a pair.
+    """
+    try:
+        langs = i18n.codes()
+    except FileNotFoundError:
+        errors.append("[LANGUAGES] i18n/languages.json is missing")
+        return
+    by1 = {m["iso639_1"]: m for m in langs.values()}
+    for sid, path in sorted(sources.items()):
+        doc = load_yaml(path) if isinstance(path, Path) else path
+        lang = doc.get("language")
+        b = doc.get("language_iso639_2b")
+        if lang not in by1:
+            errors.append(f"[LANG-CODE] sources/{sid}: language '{lang}' is not in i18n/languages.json")
+            continue
+        want = by1[lang]["iso639_2b"]
+        if b != want:
+            errors.append(f"[LANG-CODE] sources/{sid}: language '{lang}' needs "
+                          f"language_iso639_2b '{want}', found {b!r}")
+
+
+def check_quote_languages(files: list[Path]) -> None:
+    """A quote must declare a language the registry knows."""
+    try:
+        known = {m["iso639_1"] for m in i18n.codes().values()} | {m["iso639_2b"] for m in i18n.codes().values()}
+    except FileNotFoundError:
+        return
+    for f in files:
+        doc = load_yaml(f)
+        for rec in doc.get("records", []):
+            for i, ev in enumerate(rec.get("evidence") or []):
+                if not ev.get("quote"):
+                    continue
+                ql = (ev.get("quote") or {}).get("language") or ev.get("quote_language")
+                if ql not in known:
+                    errors.append(f"[QUOTE-LANG] {f.name} record {rec.get('record_id', rec.get('year'))} "
+                                  f"evidence[{i}]: quote_language {ql!r} is not a registered ISO 639 code")
 
 
 def check_derives(meta: dict[str, dict]) -> None:
@@ -274,6 +319,8 @@ def main() -> int:
 
     meta = load_source_meta()
     check_derives(meta)
+    check_language_codes(sources)
+    check_quote_languages(country_files + flow_files)
     check_status_semantics(country_files)
     for f in country_files:
         for rec in load_yaml(f).get("records", []):

@@ -18,6 +18,7 @@ independence:
   primary_data_collector: true
 robots_txt_allows_fetch: false
 language: el
+language_iso639_2b: ell
 notes:
   el: Εκτίμηση, όχι επίσημη απογραφή.
   en: Estimate, not an official census.
