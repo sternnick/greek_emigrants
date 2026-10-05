@@ -12,7 +12,7 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["year", "count", "source_ref", "classification"],
+        "required": ["year", "count", "source_ref", "classification", "evidence", "verification"],
         "additionalProperties": false,
         "properties": {
           "year": { "type": "integer", "minimum": 1800, "maximum": 2100 },
@@ -24,6 +24,17 @@
             ]
           },
           "source_ref": { "$ref": "common.schema.json#/$defs/Slug" },
+          "computed": {
+            "type": "boolean",
+            "description": "true = derived from other records by arithmetic, not measured."
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "common.schema.json#/$defs/EvidenceCitation" }
+          },
+          "verification": { "$ref": "common.schema.json#/$defs/Verification" },
+          "dispute_note": { "$ref": "common.schema.json#/$defs/I18nString" },
           "classification": { "$ref": "common.schema.json#/$defs/Classification" },
           "citizenship": {
             "type": "string",

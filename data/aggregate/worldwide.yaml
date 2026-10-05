@@ -1,4 +1,13 @@
 generated_by: scripts/aggregate.py
+net_flows:
+  greece:
+    year: 2023
+    departures: 32800
+    departures_source: hatzidakis-return-2025
+    returns: 47200
+    returns_source: hatzidakis-return-2025
+    net_emigration: 0
+    net_return: 14400
 totals_by_definition:
   confirmed:
     greek-ethnic: 23485

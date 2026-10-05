@@ -25,6 +25,52 @@ def pick_latest(records: list[dict], classification: str) -> dict | None:
     return max(subset, key=lambda r: r["year"])
 
 
+def latest_national(flow_file: Path) -> dict | None:
+    """Latest confirmed, non-null, greek-citizens record of one direction.
+
+    Deterministic: newest year, first qualifying record in the file. Conflicting
+    values from a second carrier (OECD vs national figures) stay visible in the
+    flow files and the flows report; the balance uses the national pair.
+    """
+    if not flow_file.exists():
+        return None
+    doc = yaml.safe_load(flow_file.read_text(encoding="utf-8"))
+    candidates = [
+        r for r in doc.get("records", [])
+        if r.get("classification") == "confirmed" and r.get("count") is not None
+        and r.get("citizenship", "greek-citizens") == "greek-citizens"
+    ]
+    return max(candidates, key=lambda r: r["year"]) if candidates else None
+
+
+def net_flow_totals() -> dict:
+    """Returns minus departures, per country.
+
+    net.yaml is deliberately NOT read here: it is arithmetic over these same
+    records, and summing it would count every flow twice.
+    """
+    out: dict[str, dict] = {}
+    base = DATA / "flows"
+    if not base.exists():
+        return out
+    for country_dir in sorted(p for p in base.iterdir() if p.is_dir()):
+        dep = latest_national(country_dir / "outflow.yaml")
+        ret = latest_national(country_dir / "return.yaml")
+        if not dep or not ret:
+            continue
+        balance = ret["count"] - dep["count"]
+        out[country_dir.name] = {
+            "year": max(dep["year"], ret["year"]),
+            "departures": dep["count"],
+            "departures_source": dep["source_ref"],
+            "returns": ret["count"],
+            "returns_source": ret["source_ref"],
+            "net_emigration": max(0, -balance),
+            "net_return": max(0, balance),
+        }
+    return out
+
+
 def main() -> None:
     continents: dict[str, dict] = {}
     # totals[classification][definition] = sum
@@ -86,6 +132,7 @@ def main() -> None:
 
     out_doc = {
         "generated_by": "scripts/aggregate.py",
+        "net_flows": net_flow_totals(),
         "totals_by_definition": {
             "confirmed": dict(totals["confirmed"]),
             "hypothetical": dict(totals["hypothetical"]),
