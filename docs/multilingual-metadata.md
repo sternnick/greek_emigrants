@@ -27,7 +27,8 @@ Here is how each of those is met, and where the enforcement lives.
 | a human-readable field | `{el, en}` object | keys *are* the tags | `check_bilingual_fields()` |
 
 `i18n/languages.json` is the only place a code pair is written. Nothing else in
-the repo carries a language table, so a source cannot claim `el`/`fra`.
+the repo carries a language table, so a source cannot claim a code the
+registry does not list.
 
 **Why two systems.** ISO 639-1 is what humans and file names use (`summary.el.md`);
 ISO 639-2/B is the bibliographic code repository software and OAI-PMH expose. The
