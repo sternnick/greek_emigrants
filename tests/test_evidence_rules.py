@@ -65,7 +65,7 @@ def make_tree(base: Path, record_extras=None, source_derives=None,
         "id": "st-src", "title": {"el": "τ", "en": "t"}, "publisher": {"el": "τ", "en": "t"},
         "country": "testland", "year": 2022, "url": "https://example.com/t",
         "classification": "confirmed", "type": "census", "scope": "greek-citizens",
-        "reliability": "high", "language": "en",
+        "reliability": "high", "language": "en", "language_iso639_2b": "eng",
         "publication": {"retrieved_at": "2026-10-05"},
         "independence": {"primary_data_collector": True},
     }

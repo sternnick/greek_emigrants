@@ -93,7 +93,7 @@ def migrate_doc(doc: dict) -> dict:
 
     order = ["id", "title", "publisher", "country", "year", "url", "classification",
              "type", "scope", "reliability", "publication", "independence",
-             "agency", "robots_txt_allows_fetch", "language", "notes"]
+             "agency", "robots_txt_allows_fetch", "language", "language_iso639_2b", "notes"]
     return {k: doc[k] for k in order if k in doc}
 
 

@@ -28,6 +28,7 @@ agency:
   en: Federal Foreign Office
 robots_txt_allows_fetch: false
 language: de
+language_iso639_2b: deu
 notes:
   el: Φορέας της παλαιότερης κοινοτικής εκτίμησης (~320.000). Καταγράφεται ως dated record με count=null,
     γιατί ο αριθμός δεν διαβάστηκε αυτοπροσώπως από το στιγμιότυπο.

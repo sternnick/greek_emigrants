@@ -1,0 +1,42 @@
+{
+  "_about": {
+    "code_systems": {
+      "iso639_1": "ISO 639-1 — two-letter codes, used by `language`/`quote_language` fields and report file names.",
+      "iso639_2b": "ISO 639-2/B — three-letter bibliographic codes, used by `language_iso639_2b` and published as repository language metadata."
+    },
+    "note": "Language-specific UI strings live in en.json / el.json. This file is language-neutral data, so it exists once.",
+    "purpose": "Machine-readable language registry for the dataset (COAR multilingual compliance).",
+    "ui": "Only two languages are this dataset's own: en and el — every human-readable field is written in both. de appears solely because two quoted sources are written in German; it is not a dataset language and has no UI strings."
+  },
+  "languages": {
+    "de": {
+      "direction": "ltr",
+      "iso639_1": "de",
+      "iso639_2b": "deu",
+      "name_en": "German",
+      "name_native": "Deutsch",
+      "script": "Latn",
+      "ui": false
+    },
+    "el": {
+      "direction": "ltr",
+      "iso639_1": "el",
+      "iso639_2b": "ell",
+      "name_en": "Greek",
+      "name_native": "Ελληνικά",
+      "report_suffix": "el",
+      "script": "Grek",
+      "ui": true
+    },
+    "en": {
+      "direction": "ltr",
+      "iso639_1": "en",
+      "iso639_2b": "eng",
+      "name_en": "English",
+      "name_native": "English",
+      "report_suffix": "en",
+      "script": "Latn",
+      "ui": true
+    }
+  }
+}

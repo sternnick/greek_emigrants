@@ -23,6 +23,7 @@ independence:
       are embedded in a Flash object and are not text-extractable from the snapshot.
 robots_txt_allows_fetch: false
 language: en
+language_iso639_2b: eng
 notes:
   el: Ο φορέας των παλαιών κοινοτικών τιμών για Καναδά (~720.000) και Αυστραλία (~700.000). Το στιγμιότυπο
     ανακτήθηκε (2006), αλλά οι αριθμοί δεν διαβάστηκαν → dated records με count=null.

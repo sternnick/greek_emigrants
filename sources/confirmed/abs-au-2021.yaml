@@ -19,6 +19,7 @@ independence:
   primary_data_collector: true
 robots_txt_allows_fetch: true
 language: en
+language_iso639_2b: eng
 notes:
   el: 'Εθνική απογραφή, ancestry: Greek.'
   en: 'National census, ancestry: Greek.'

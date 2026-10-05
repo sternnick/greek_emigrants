@@ -5,7 +5,7 @@
   "required": [
     "id", "title", "publisher", "country", "year",
     "url", "classification", "type", "scope",
-    "reliability", "publication", "independence", "language"
+    "reliability", "publication", "independence", "language", "language_iso639_2b"
   ],
   "additionalProperties": false,
   "properties": {
@@ -46,6 +46,11 @@
     "agency": { "$ref": "common.schema.json#/$defs/I18nString" },
     "robots_txt_allows_fetch": { "type": "boolean" },
     "language": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$" },
+    "language_iso639_2b": {
+      "type": "string",
+      "pattern": "^[a-z]{3}$",
+      "description": "ISO 639-2/B bibliographic code for the same language, for repository/COAR language metadata. Must agree with `language` — checked against i18n/languages.json."
+    },
     "notes": { "$ref": "common.schema.json#/$defs/I18nString" }
   }
 }

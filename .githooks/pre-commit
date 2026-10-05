@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Fast consistency checks for a data repository. Enable with:
+#   git config core.hooksPath .githooks
+# Full tests stay explicit: python -m pytest tests/ -q
+set -euo pipefail
+python scripts/validate.py
+python scripts/migrate_sources_v2.py --check
+python scripts/migrate_language_codes.py --check

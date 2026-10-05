@@ -18,6 +18,7 @@ independence:
   primary_data_collector: true
 robots_txt_allows_fetch: false
 language: en
+language_iso639_2b: eng
 notes:
   el: Επίσημα στοιχεία ροών μετανάστευσης.
   en: Official migration flow data.

@@ -19,6 +19,7 @@ independence:
   primary_data_collector: true
 robots_txt_allows_fetch: true
 language: en
+language_iso639_2b: eng
 notes:
   el: Ιδιοαναφορά μειονοτικής οργάνωσης, όχι επίσημη μέτρηση· δεν αναγνωρίζεται από την αλβανική κυβέρνηση.
     Ο αρχικός ειδησεογραφικός σύνδεσμος (Balkaneu, 11/12/2013) τώρα δίνει 410 Gone, γι' αυτό η παραπομπή
