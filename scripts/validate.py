@@ -176,6 +176,33 @@ def check_verification(record: dict, path: Path, meta: dict[str, dict]) -> None:
             warnings.append(f"[NO-QUOTE] {where}: evidence for '{evref}' has no verbatim quote")
 
 
+def check_status_semantics(country_files: list[Path]) -> None:
+    """Country/record status must be consistent with the records present."""
+    for path in country_files:
+        doc = load_yaml(path)
+        recs = doc.get("records", [])
+        cstatus = doc.get("status")
+        classes = {r.get("classification") for r in recs}
+        if cstatus == "stub" and recs:
+            errors.append(f"[STATUS-STUB] {path}: status=stub but {len(recs)} record(s) present")
+        if cstatus == "complete" and not {"confirmed", "hypothetical"} <= classes:
+            errors.append(
+                f"[STATUS-COMPLETE] {path}: status=complete requires both a confirmed and "
+                f"a hypothetical record (present: {sorted(c for c in classes if c)})"
+            )
+        if cstatus == "disputed" and not any(r.get("status") == "disputed" for r in recs):
+            errors.append(
+                f"[STATUS-DISPUTED] {path}: status=disputed requires at least one record "
+                f"with record-level status: disputed"
+            )
+        for rec in recs:
+            if rec.get("status") == "disputed" and not rec.get("dispute_note"):
+                errors.append(
+                    f"[DISPUTE-NOTE] {path} '{rec.get('record_id')}': record status=disputed "
+                    f"requires a dispute_note"
+                )
+
+
 def check_source_refs(paths: list[Path], sources: dict[str, Path]) -> None:
     for path in paths:
         doc = load_yaml(path)
@@ -247,6 +274,7 @@ def main() -> int:
 
     meta = load_source_meta()
     check_derives(meta)
+    check_status_semantics(country_files)
     for f in country_files:
         for rec in load_yaml(f).get("records", []):
             check_verification(rec, f, meta)

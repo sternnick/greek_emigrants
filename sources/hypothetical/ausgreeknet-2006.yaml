@@ -1,0 +1,30 @@
+id: ausgreeknet-2006
+title:
+  el: Greeks Around the Globe (διαδικτυακός επιμελητής)
+  en: Greeks Around the Globe (web aggregator)
+publisher:
+  el: ausgreeknet.com
+  en: ausgreeknet.com
+country: greece
+year: 2006
+url: http://www.ausgreeknet.com/greeksaroundtheglobe.htm
+classification: hypothetical
+type: community-estimate
+scope: greek-origin
+reliability: low
+publication:
+  retrieved_at: '2026-10-05'
+independence:
+  primary_data_collector: false
+  notes:
+    el: Ιστοσελίδα-επιμελητής που συγκέντρωνε κοινοτικές εκτιμήσεις ανά χώρα· δεν συνέλεξε δεδομένα. Οι
+      τιμές είναι ενσωματωμένες σε Flash object και δεν εξάγονται ως κείμενο από το στιγμιότυπο.
+    en: Aggregator site collecting per-country community estimates; it collected no data. Its figures
+      are embedded in a Flash object and are not text-extractable from the snapshot.
+robots_txt_allows_fetch: false
+language: en
+notes:
+  el: Ο φορέας των παλαιών κοινοτικών τιμών για Καναδά (~720.000) και Αυστραλία (~700.000). Το στιγμιότυπο
+    ανακτήθηκε (2006), αλλά οι αριθμοί δεν διαβάστηκαν → dated records με count=null.
+  en: Carrier of the older community figures for Canada (~720,000) and Australia (~700,000). The 2006
+    snapshot was retrieved, but the numbers could not be read → dated records with count=null.

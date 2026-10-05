@@ -1,0 +1,35 @@
+id: fa-de-2006
+title:
+  el: Διμερείς σχέσεις Ελλάδας–Γερμανίας (αρχειοθετημένη σελίδα, 2006)
+  en: Greek-German bilateral relations (archived page, 2006)
+publisher:
+  el: Auswärtiges Amt (Ομοσπονδιακό Υπουργείο Εξωτερικών της Γερμανίας)
+  en: Auswärtiges Amt (German Federal Foreign Office)
+country: germany
+year: 2006
+url: http://www.auswaertiges-amt.de/diplo/de/Laenderinformationen/Griechenland/Bilateral.html
+classification: hypothetical
+type: government-portal
+scope: greek-origin
+reliability: low
+publication:
+  retrieved_at: '2026-10-05'
+independence:
+  primary_data_collector: false
+  notes:
+    el: Κρατική πύλη που μεταδίδει εκτίμηση της ελληνικής κοινότητας· δεν συνέλεξε η ίδια τα δεδομένα.
+      Δεν ανακτήθηκε αυτοπροσώπως (archive.org μη διαθέσιμο κατά το evidence pass 2026-10-05)· η ύπαρξη
+      του στιγμιότυπου στηρίζεται σε παραπομπή τρίτης πηγής.
+    en: A government portal transmitting a Greek-community estimate; it did not collect the data. Not
+      retrieved first-hand (archive.org unavailable during the 2026-10-05 evidence pass); snapshot existence
+      rests on a third-party citation.
+agency:
+  el: Ομοσπονδιακή Υπηρεσία Εξωτερικών
+  en: Federal Foreign Office
+robots_txt_allows_fetch: false
+language: de
+notes:
+  el: Φορέας της παλαιότερης κοινοτικής εκτίμησης (~320.000). Καταγράφεται ως dated record με count=null,
+    γιατί ο αριθμός δεν διαβάστηκε αυτοπροσώπως από το στιγμιότυπο.
+  en: Carrier of the older community estimate (~320,000). Kept as a dated record with count=null because
+    the number was not read first-hand from the snapshot.

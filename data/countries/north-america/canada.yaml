@@ -4,10 +4,35 @@ name:
   el: Καναδάς
   en: Canada
 continent: north-america
+status: disputed
 records:
+- record_id: ca-2006-community
+  year: 2006
+  count: null
+  source_ref: ausgreeknet-2006
+  classification: hypothetical
+  method: estimate
+  definition: greek-origin
+  population_type: diaspora
+  evidence:
+  - source_ref: ausgreeknet-2006
+    url: http://www.ausgreeknet.com/greeksaroundtheglobe.htm
+    accessed_at: '2026-10-05'
+    archive_url: http://web.archive.org/web/20060619165420/http://www.ausgreeknet.com/greeksaroundtheglobe.htm
+    page_or_table: Greeks Around the Globe — figures inside a Flash object; snapshot retrieved, numbers not text-extractable
+  verification:
+    independent_sources: 0
+    confidence: single-source
+    independence_note:
+      el: Επιμελητής που συγκέντρωνε κοινοτικές εκτιμήσεις· δεν συνέλεξε δεδομένα.
+      en: Aggregator compiling community estimates; collected no data.
+  status: historical
+  notes:
+    el: Ιστορική εκτίμηση, superseded. Αναφερόμενη τιμή ~720.000 — μη εξαγώγιμη από το Flash, γι' αυτό count=null.
+    en: Historical estimate, superseded. Reported value ~720,000 — not extractable from the Flash object, hence count=null.
 - record_id: ca-2021-census
   year: 2021
-  count: 270000
+  count: 262135
   source_ref: statcan-ca-2021
   classification: confirmed
   method: census
@@ -26,10 +51,11 @@ records:
   verification:
     independent_sources: 1
     confidence: single-source
+  status: disputed
   dispute_note:
-    el: 'Δημοσιευμένη τιμή: 262.135 (απογραφή 2021, single+multiple responses). Το record αναφέρει 270.000.'
-    en: 'Published value: 262,135 (2021 census, single + multiple responses). The record states 270,000. Owner decision
-      requested.'
+    el: 'Προηγούμενη καταχώριση: 270.000. Διορθώθηκε στις 2026-10-05 στη δημοσιευμένη τιμή του πίνακα 98-10-0338-01:
+      262.135.'
+    en: 'Previous record: 270,000. Corrected 2026-10-05 to the published value of table 98-10-0338-01: 262,135.'
   notes:
     el: 'Statistics Canada 2021, ethnic origin: Greek.'
     en: 'Statistics Canada 2021, ethnic origin: Greek.'
@@ -50,6 +76,7 @@ records:
   verification:
     independent_sources: 1
     confidence: single-source
+  status: disputed
   dispute_note:
     el: Το 350.000 (2024) δεν βρέθηκε. Ο παλαιός επιμελητής ausgreeknet (αρχείο 2006) ανέφερε 720.000 για τον Καναδά
       — οι τιμές διαφωνούν.
