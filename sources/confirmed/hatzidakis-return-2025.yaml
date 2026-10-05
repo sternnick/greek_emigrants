@@ -28,6 +28,7 @@ independence:
       — not 2025-05-06, which was a provisional note.
 robots_txt_allows_fetch: true
 language: el
+language_iso639_2b: ell
 notes:
   el: 'Φέρει δύο στοιχεία: το ισοζύγιο 2023 (47.200 επιστροφές έναντι 32.800 εκροών) και τη σωρευτική
     επιστροφή 400.000 από τους 600.000 της περιόδου της κρίσης, η οποία αποδίδεται ρητά σε στοιχεία της

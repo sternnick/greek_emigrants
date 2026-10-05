@@ -30,6 +30,7 @@ independence:
       on any date.'
 robots_txt_allows_fetch: false
 language: el
+language_iso639_2b: ell
 notes:
   el: 'Τα σωρευτικά που αποδίδονται εδώ (773.296 αναχωρήσεις / 473.044 επιστροφές 2010-2024, 130.101 /
     110.223 για 2022-2024, 51.993 το 2024) κρατούνται με count=null μέχρι να βρεθεί ανακτήσιμος φορέας.

@@ -28,6 +28,7 @@ independence:
       no archive), while here the same numbers are attributed to the published study.'
 robots_txt_allows_fetch: true
 language: el
+language_iso639_2b: ell
 notes:
   el: 'Φέρει τα ακριβή μεγέθη που η key-findings σελίδα του OECD στρογγυλοποιεί (46.091 αντί 46.000, 36.931
     αντί 37.000) και το 2024 (51.993 επιστροφές, 32.141 αναχωρήσεις). Εσωτερικός έλεγχος συμβατότητας:
