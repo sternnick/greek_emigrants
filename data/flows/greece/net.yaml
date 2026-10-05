@@ -90,3 +90,33 @@ records:
   notes:
     el: Παράγεται από μη επαληθεύσιμες συνιστώσες· κρατείται για το χρονοδιάγραμμα.
     en: Derived from unverified components; kept for the timeline.
+- year: 2024
+  count: 19852
+  source_ref: naftemporiki-brain-gain-2026
+  classification: confirmed
+  computed: true
+  citizenship: greek-citizens
+  education: any
+  evidence:
+  - source_ref: naftemporiki-brain-gain-2026
+    url: https://www.naftemporiki.gr/finance/economy/2132861/oosa-gia-proti-fora-apo-tin-krisi-epistrefoyn-perissoteroi-ellines-ap-osoys-feygoyn/
+    accessed_at: '2026-10-05'
+    published_at: '2026-07-03'
+    page_or_table: article body, section «Χρονιά-καμπή το 2023»
+    quote:
+      el: Το 2023 επέστρεψαν 46.091 Έλληνες, έναντι 36.931 που έφυγαν, ενώ το 2024 οι επιστροφές αυξήθηκαν στις 51.993,
+        με τις αναχωρήσεις να περιορίζονται στις 32.141
+      en: Το 2023 επέστρεψαν 46.091 Έλληνες, έναντι 36.931 που έφυγαν, ενώ το 2024 οι επιστροφές αυξήθηκαν στις 51.993,
+        με τις αναχωρήσεις να περιορίζονται στις 32.141
+    quote_language: el
+  verification:
+    independent_sources: 1
+    confidence: single-source
+    corroborating_refs:
+    - oecd-review-greek-emigrants
+    independence_note:
+      el: Ρεπορτάζ για την κοινή μελέτη ΟΟΣΑ–ΕΚΤ. Ο φορέας δεν συνέλεξε δεδομένα.
+      en: A report on the joint OECD-EKT study. The carrier collected no data.
+  notes:
+    el: 'Καθαρό ισοζύγιο 2024: 51.993 − 32.141 = +19.852 (υπολογισμένο).'
+    en: '2024 net balance: 51,993 - 32,141 = +19,852 (computed).'

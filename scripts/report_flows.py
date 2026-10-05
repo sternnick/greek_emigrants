@@ -70,10 +70,9 @@ def render(lang: str) -> str:
     lines.append("")
     lines.append(
         f"| {t(lang, 'flow.columns.year')} | {t(lang, 'flow.net.balance')} "
-        f"| {t(lang, 'flow.net.returns')} | {t(lang, 'flow.net.departures')} "
-        f"| {t(lang, 'report.columns.source')} |"
+        f"| {t(lang, 'flow.net.computed')} | {t(lang, 'report.columns.source')} |"
     )
-    lines.append("|---|---|---|---|---|")
+    lines.append("|---|---|---|---|")
     for f in sorted(FLOWS.rglob("*.yaml")):
         doc = yaml.safe_load(f.read_text(encoding="utf-8"))
         if doc["direction"] != "net":
@@ -86,7 +85,7 @@ def render(lang: str) -> str:
             balance = (f"+{fmt(count, lang)}" if count is not None
                        else t(lang, "report.no_data"))
             lines.append(
-                f"| {year} | {balance} | — | — | `{rec['source_ref']}` |"
+                f"| {year} | {balance} | {t(lang, 'flow.net.yes')} | `{rec['source_ref']}` |"
             )
 
     aggregated = ROOT / "data" / "aggregate" / "worldwide.yaml"

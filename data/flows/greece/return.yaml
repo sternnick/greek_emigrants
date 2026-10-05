@@ -66,8 +66,8 @@ records:
       el: Ο OECD αναπαράγει εθνικά/ευρωπαϊκά δεδομένα· δεν συνέλεξε δεδομένα.
       en: OECD reproduces national/European data; it collected none.
   notes:
-    el: Όπως δημοσιεύτηκε στην OECD Review 2026.
-    en: As published in the 2026 OECD Review.
+    el: Οι πίνακες της μελέτης δίνουν 46.091· η σελίδα key findings του OECD το στρογγυλοποιεί.
+    en: The study's own tables give 46.091; the OECD key-findings page rounds it.
 - year: 2022
   count: 29000
   source_ref: oecd-review-greek-emigrants
@@ -119,35 +119,42 @@ records:
         Eurostat.
       en: A cumulative figure quoted by the government, which elsewhere attributes the cumulative series to Eurostat.
   notes:
-    el: Επιστροφές της γενιάς της κρίσης ως τα τέλη 2023 (400.000 από 600.000). Το διάστημα δεν δίνεται ρητά· year=2010 χρησιμοποιείται ως αφετηρία της περιόδου.
+    el: Επιστροφές της γενιάς της κρίσης ως τα τέλη 2023 (400.000 από 600.000). Το διάστημα δεν δίνεται ρητά· year=2010
+      χρησιμοποιείται ως αφετηρία της περιόδου.
     en: Returns of the crisis generation up to end-2023 (400,000 of 600,000). The window is not stated explicitly; year=2010
       is used as the period's start.
 - year: 2010
   period_end: 2024
-  count: null
-  source_ref: skertso-brain-gain-2026
+  count: 473044
+  source_ref: naftemporiki-brain-gain-2026
   classification: confirmed
   citizenship: greek-citizens
   education: any
   dispute_note:
-    el: 'Τιμή 473.044 (σωρευτικές επιστροφές 2010–2024) αποδίδεται στον Skertsos αλλά δεν επιβεβαιώθηκε: το παρατιθέμενο
-      URL είναι 404 και δεν υπάρχει κανένα στιγμιότυπο archive.org. Κρατείται count=null until a retrievable carrier is
-      found. Σύγκριση: η κυβέρνηση δίνει 400.000 ως τα τέλη 2023.'
-    en: 'The value 473,044 (cumulative returns 2010–2024) is attributed to Skertsos but was not confirmed: the cited URL
-      is 404 and no archive.org capture exists. Kept as count=null until a retrievable carrier is found. For comparison,
-      the government gives 400,000 up to end-2023.'
+    el: Επιβεβαιώθηκε από ξεχωριστό domain (naftemporiki.gr) που αποδίδει το νούμερο στη δημοσιευμένη μελέτη ΟΟΣΑ–ΕΚΤ. Δεν
+      είναι αυτόνομος αριθμός Σκερτσου — το businessdaily.gr URL παραμένει 404 χωρίς αρχειακό αντίγραφο.
+    en: Confirmed from a different domain (naftemporiki.gr), which attributes the figure to the published OECD-EKT study.
+      It is not a stand-alone Skertsos figure - the businessdaily.gr URL remains 404 with no archive copy.
   evidence:
-  - source_ref: skertso-brain-gain-2026
-    url: https://www.businessdaily.gr/oikonomia/ergas%C3%ADa/2026-05-15/479419/
+  - source_ref: naftemporiki-brain-gain-2026
+    url: https://www.naftemporiki.gr/finance/economy/2132861/oosa-gia-proti-fora-apo-tin-krisi-epistrefoyn-perissoteroi-ellines-ap-osoys-feygoyn/
     accessed_at: '2026-10-05'
-    page_or_table: 'NOT RETRIEVED — live URL 404 (also under Camoufox); Wayback availability API returns archived_snapshots:
-      {} (no capture on any date)'
+    published_at: '2026-07-03'
+    page_or_table: article body, section «Έξι στους δέκα έχουν ήδη επιστρέψει»
+    quote:
+      el: Η μελέτη δείχνει ότι από το 2010 έως το 2024 εγκατέλειψαν την Ελλάδα 773.296 Έλληνες πολίτες. Στο ίδιο διάστημα
+        επέστρεψαν 473.044, γεγονός που σημαίνει ότι περίπου έξι στους δέκα από όσους μετανάστευσαν έχουν ήδη επαναπατριστεί
+      en: Η μελέτη δείχνει ότι από το 2010 έως το 2024 εγκατέλειψαν την Ελλάδα 773.296 Έλληνες πολίτες. Στο ίδιο διάστημα
+        επέστρεψαν 473.044, γεγονός που σημαίνει ότι περίπου έξι στους δέκα από όσους μετανάστευσαν έχουν ήδη επαναπατριστεί
+    quote_language: el
   verification: &id001
-    independent_sources: 0
+    independent_sources: 1
     confidence: single-source
+    corroborating_refs:
+    - oecd-review-greek-emigrants
     independence_note:
-      el: Ρεπορτάζ χωρίς ανακτήσιμο φορέα· δεν έχει επιβεβαιωθεί κανένας αριθμός.
-      en: A report with no retrievable carrier; no figure confirmed from it.
+      el: Ρεπορτάζ για την κοινή μελέτη ΟΟΣΑ–ΕΚΤ. Ο φορέας δεν συνέλεξε δεδομένα.
+      en: A report on the joint OECD-EKT study. The carrier collected no data.
 - year: 2022
   period_end: 2024
   count: null
@@ -156,28 +163,41 @@ records:
   citizenship: greek-citizens
   education: any
   dispute_note:
-    el: Αναφερόμενες τιμές 130.101 επιστροφές (2022–2024) — μη επιβεβαιώσιμες, ο φορέας είναι νεκρός και ασυναρμολόγητος.
-    en: Reported 130,101 returns (2022–2024) — unverifiable, the carrier is dead and uncached.
+    el: 'Οι 130.101 (2022–2024) δεν εμφανίστηκαν σε κανέναν ανακτήσιμο φορέα. Σταυρωτικός έλεγχος με τη μελέτη: 46.091 +
+      51.993 = 98.084 για το 2023–2024, άρα το 130.101 προϋποθέτει 2022 ≈ 32.000, που δεν επιβεβαιώνεται. count=null.'
+    en: 'The 130,101 (2022-2024) never appeared on any retrievable carrier. Cross-check against the study: 46,091 + 51,993
+      = 98,084 for 2023-2024, so 130,101 would require 2022 to be ~32,000, which is not confirmed. count=null.'
   evidence:
   - source_ref: skertso-brain-gain-2026
     url: https://www.businessdaily.gr/oikonomia/ergas%C3%ADa/2026-05-15/479419/
     accessed_at: '2026-10-05'
     page_or_table: 'NOT RETRIEVED — live URL 404 (also under Camoufox); Wayback availability API returns archived_snapshots:
       {} (no capture on any date)'
-  verification: *id001
+  verification:
+    independent_sources: 0
+    confidence: single-source
+    independence_note:
+      el: Ρεπορτάζ χωρίς ανακτήσιμο φορέα· δεν έχει επιβεβαιωθεί κανένας αριθμός.
+      en: A report with no retrievable carrier; no figure confirmed from it.
 - year: 2024
-  count: null
-  source_ref: skertso-brain-gain-2026
+  count: 51993
+  source_ref: naftemporiki-brain-gain-2026
   classification: confirmed
   citizenship: greek-citizens
   education: any
   dispute_note:
-    el: 'Αναφερόμενη τιμή 51.993 επιστροφές το 2024 (ρεκόρ) — μη επιβεβαιώσιμη: 404 + κανένα αρχείο.'
-    en: 'Reported 51,993 returns in 2024 (a record) — unverifiable: 404 plus no archive.'
+    el: Επιβεβαιώθηκε από ξεχωριστό φορέα (naftemporiki.gr, μελέτη ΟΟΣΑ–ΕΚΤ).
+    en: Confirmed from a separate carrier (naftemporiki.gr, the OECD-EKT study).
   evidence:
-  - source_ref: skertso-brain-gain-2026
-    url: https://www.businessdaily.gr/oikonomia/ergas%C3%ADa/2026-05-15/479419/
+  - source_ref: naftemporiki-brain-gain-2026
+    url: https://www.naftemporiki.gr/finance/economy/2132861/oosa-gia-proti-fora-apo-tin-krisi-epistrefoyn-perissoteroi-ellines-ap-osoys-feygoyn/
     accessed_at: '2026-10-05'
-    page_or_table: 'NOT RETRIEVED — live URL 404 (also under Camoufox); Wayback availability API returns archived_snapshots:
-      {} (no capture on any date)'
+    published_at: '2026-07-03'
+    page_or_table: article body, section «Χρονιά-καμπή το 2023»
+    quote:
+      el: Το 2023 επέστρεψαν 46.091 Έλληνες, έναντι 36.931 που έφυγαν, ενώ το 2024 οι επιστροφές αυξήθηκαν στις 51.993,
+        με τις αναχωρήσεις να περιορίζονται στις 32.141
+      en: Το 2023 επέστρεψαν 46.091 Έλληνες, έναντι 36.931 που έφυγαν, ενώ το 2024 οι επιστροφές αυξήθηκαν στις 51.993,
+        με τις αναχωρήσεις να περιορίζονται στις 32.141
+    quote_language: el
   verification: *id001
