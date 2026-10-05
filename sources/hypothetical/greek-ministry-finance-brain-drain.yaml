@@ -1,0 +1,33 @@
+id: greek-ministry-finance-brain-drain
+title:
+  el: Υπολογισμός διαρροής εγκεφάλων 2010–2021 (Υπουργείο Οικονομικών)
+  en: Brain-drain estimate 2010-2021 (Ministry of Finance)
+publisher:
+  el: Υπουργείο Οικονομικών (Ελλάδα)
+  en: Hellenic Ministry of Finance
+country: greece
+year: 2024
+url: https://greekcitytimes.com/2024/07/31/greeces-efforts-to-reverse-brain-drain-amid-continued-emigration/
+classification: hypothetical
+type: official-statistics
+scope: greek-citizens
+reliability: low
+publication:
+  retrieved_at: '2026-10-05'
+independence:
+  primary_data_collector: true
+  notes:
+    el: Ο αριθμός («600.000 κυρίως μορφωμένοι Έλληνες έφυγαν 2010–2021») αποδίδεται στο Υπουργείο Οικονομικών.
+      Το έγγραφο του υπουργείου δεν βρέθηκε σε δημόσια διαδικτυακή έκδοση· ο μόνος τρόπος ανάγνωσης είναι
+      το άρθρο της Greek City Times που το παραθέτει (το url δείχνει στον φορέα).
+    en: The figure ('approximately 600,000 mostly educated Greeks left 2010-2021') is attributed to the
+      Ministry of Finance. No publicly web-published ministry document was found; the only retrievable
+      carrier is the Greek City Times article quoting it (hence the URL points at the carrier, not the
+      ministry).
+robots_txt_allows_fetch: false
+language: en
+notes:
+  el: Υπολογισμός κυβέρνησης για διαρροή εγκεφάλων. Κατά τα άλλα τεκμηριωμένος ως επιβεβαιωμένος, αλλά
+    χωρίς ανακτήσιμο έγγραφο → hypothetical με confidence single-source.
+  en: Government brain-drain calculation. By rule an official figure would be confirmed, but with no retrievable
+    document it stays hypothetical with single-source confidence.

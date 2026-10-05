@@ -1,19 +1,23 @@
 id: ons-uk-2021
 title:
-  el: "Απογραφή Αγγλίας και Ουαλίας 2021"
-  en: "Census 2021, England and Wales"
+  el: Απογραφή Αγγλίας και Ουαλίας 2021
+  en: Census 2021, England and Wales
 publisher:
-  el: "Office for National Statistics (ONS)"
-  en: "Office for National Statistics (ONS)"
+  el: Office for National Statistics (ONS)
+  en: Office for National Statistics (ONS)
 country: united-kingdom
 year: 2021
-url: https://www.ons.gov.uk/census
+url: https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/datasets/populationoftheunitedkingdombycountryofbirthandnationality/july2020tojune2021
 classification: confirmed
 type: census
 scope: greek-origin
 reliability: high
-retrieved_at: "2026-10-05"
+publication:
+  retrieved_at: '2026-10-05'
+independence:
+  primary_data_collector: true
+robots_txt_allows_fetch: true
 language: en
 notes:
-  el: "Απογραφή πληθυσμού, ελληνική καταγωγή."
-  en: "National census, Greek ancestry."
+  el: Απογραφή πληθυσμού, ελληνική καταγωγή.
+  en: National census, Greek ancestry.

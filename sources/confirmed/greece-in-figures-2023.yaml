@@ -1,10 +1,10 @@
 id: greece-in-figures-2023
 title:
-  el: "Η Ελλάδα σε Αριθμούς 2023"
-  en: "Greece in Figures 2023"
+  el: Η Ελλάδα σε Αριθμούς 2023
+  en: Greece in Figures 2023
 publisher:
-  el: "Ελληνική Στατιστική Αρχή (ΕΛΣΤΑΤ)"
-  en: "Hellenic Statistical Authority (ELSTAT)"
+  el: Ελληνική Στατιστική Αρχή (ΕΛΣΤΑΤ)
+  en: Hellenic Statistical Authority (ELSTAT)
 country: greece
 year: 2023
 url: https://www.greeceinnumbers.gr/en-gb/Population/Migration
@@ -12,8 +12,12 @@ classification: confirmed
 type: official-statistics
 scope: greek-citizens
 reliability: high
-retrieved_at: "2026-10-05"
+publication:
+  retrieved_at: '2026-10-05'
+independence:
+  primary_data_collector: true
+robots_txt_allows_fetch: false
 language: en
 notes:
-  el: "Επίσημα στοιχεία ροών μετανάστευσης."
-  en: "Official migration flow data."
+  el: Επίσημα στοιχεία ροών μετανάστευσης.
+  en: Official migration flow data.

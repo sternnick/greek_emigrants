@@ -1,19 +1,24 @@
 id: abs-au-2021
 title:
-  el: "Απογραφή Πληθυσμού και Κατοικιών 2021"
-  en: "Census of Population and Housing 2021"
+  el: Απογραφή Πληθυσμού και Κατοικιών 2021
+  en: Census of Population and Housing 2021
 publisher:
-  el: "Australian Bureau of Statistics (ABS)"
-  en: "Australian Bureau of Statistics (ABS)"
+  el: Australian Bureau of Statistics (ABS)
+  en: Australian Bureau of Statistics (ABS)
 country: australia
 year: 2021
-url: https://www.abs.gov.au/census
+url: https://www.abs.gov.au/statistics/people/people-and-communities/cultural-diversity-census/2021
 classification: confirmed
 type: census
 scope: greek-origin
 reliability: high
-retrieved_at: "2026-10-05"
+publication:
+  retrieved_at: '2026-10-05'
+  published_at: '2022-06-28'
+independence:
+  primary_data_collector: true
+robots_txt_allows_fetch: true
 language: en
 notes:
-  el: "Εθνική απογραφή, ancestry: Greek."
-  en: "National census, ancestry: Greek."
+  el: 'Εθνική απογραφή, ancestry: Greek.'
+  en: 'National census, ancestry: Greek.'

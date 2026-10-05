@@ -1,10 +1,10 @@
 id: community-estimate-ca-2024
 title:
-  el: "Εκτίμηση Ελληνικής Κοινότητας Καναδά 2024"
-  en: "Greek Canadian Community Estimate 2024"
+  el: Εκτίμηση Ελληνικής Κοινότητας Καναδά 2024
+  en: Greek Canadian Community Estimate 2024
 publisher:
-  el: "Ελληνική Κοινότητα Καναδά"
-  en: "Greek Community of Canada"
+  el: Ελληνική Κοινότητα Καναδά
+  en: Greek Community of Canada
 country: canada
 year: 2024
 url: TODO
@@ -12,8 +12,12 @@ classification: hypothetical
 type: community-estimate
 scope: greek-origin
 reliability: medium
-retrieved_at: "2026-10-05"
+publication:
+  retrieved_at: '2026-10-05'
+independence:
+  primary_data_collector: true
+robots_txt_allows_fetch: false
 language: el
 notes:
-  el: "Εκτίμηση κοινοτικών φορέων."
-  en: "Community estimate."
+  el: Εκτίμηση κοινοτικών φορέων.
+  en: Community estimate.

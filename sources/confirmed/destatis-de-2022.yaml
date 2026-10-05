@@ -1,19 +1,23 @@
 id: destatis-de-2022
 title:
-  el: "Πληθυσμός και Απασχόληση — Αλλοδαπός Πληθυσμός 2022"
-  en: "Population and Employment — Foreign Population 2022"
+  el: Πληθυσμός και Απασχόληση — Αλλοδαπός Πληθυσμός 2022
+  en: Population and Employment — Foreign Population 2022
 publisher:
-  el: "Ομοσπονδιακή Στατιστική Υπηρεσία (Destatis)"
-  en: "Federal Statistical Office (Destatis)"
+  el: Ομοσπονδιακή Στατιστική Υπηρεσία (Destatis)
+  en: Federal Statistical Office (Destatis)
 country: germany
 year: 2022
-url: https://www.destatis.de/EN/Themes/Society-Environment/Population/Migration-Integration/_node.html
+url: https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Migration-Integration/Tabellen/auslaendische-bevoelkerung-staatsangehoerigkeit-jahre.html
 classification: confirmed
 type: census
 scope: greek-citizens
 reliability: high
-retrieved_at: "2026-10-05"
+publication:
+  retrieved_at: '2026-10-05'
+independence:
+  primary_data_collector: true
+robots_txt_allows_fetch: true
 language: de
 notes:
-  el: "Επίσημη απογραφή, υπηκοότητα Ελλάδας."
-  en: "Official census, Greek citizenship."
+  el: Επίσημη απογραφή, υπηκοότητα Ελλάδας.
+  en: Official census, Greek citizenship.

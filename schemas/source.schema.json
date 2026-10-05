@@ -5,7 +5,7 @@
   "required": [
     "id", "title", "publisher", "country", "year",
     "url", "classification", "type", "scope",
-    "reliability", "retrieved_at", "language"
+    "reliability", "publication", "independence", "language"
   ],
   "additionalProperties": false,
   "properties": {
@@ -19,7 +19,32 @@
     "type": { "$ref": "common.schema.json#/$defs/SourceType" },
     "scope": { "$ref": "common.schema.json#/$defs/Definition" },
     "reliability": { "$ref": "common.schema.json#/$defs/Reliability" },
-    "retrieved_at": { "type": "string", "format": "date" },
+    "publication": {
+      "type": "object",
+      "required": ["retrieved_at"],
+      "additionalProperties": false,
+      "properties": {
+        "published_at": { "type": "string", "format": "date" },
+        "updated_at": { "type": "string", "format": "date" },
+        "retrieved_at": { "type": "string", "format": "date" }
+      }
+    },
+    "independence": {
+      "type": "object",
+      "required": ["primary_data_collector"],
+      "additionalProperties": false,
+      "properties": {
+        "primary_data_collector": { "type": "boolean" },
+        "derives_from": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/Slug" },
+          "uniqueItems": true
+        },
+        "notes": { "$ref": "common.schema.json#/$defs/I18nString" }
+      }
+    },
+    "agency": { "$ref": "common.schema.json#/$defs/I18nString" },
+    "robots_txt_allows_fetch": { "type": "boolean" },
     "language": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$" },
     "notes": { "$ref": "common.schema.json#/$defs/I18nString" }
   }

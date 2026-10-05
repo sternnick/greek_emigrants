@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://greek-diaspora.local/schemas/births.schema.json",
+  "type": "object",
+  "required": ["country", "records"],
+  "additionalProperties": false,
+  "properties": {
+    "country": { "$ref": "common.schema.json#/$defs/Slug" },
+    "status": {
+      "type": "string",
+      "enum": ["stub", "partial", "complete", "disputed"]
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "year", "count", "source_ref", "classification",
+          "evidence", "verification", "mother_origin", "father_origin"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "year": { "type": "integer", "minimum": 1800, "maximum": 2100 },
+          "count": {
+            "oneOf": [
+              { "type": "integer", "minimum": 0 },
+              { "type": "null" }
+            ]
+          },
+          "source_ref": { "$ref": "common.schema.json#/$defs/Slug" },
+          "classification": { "$ref": "common.schema.json#/$defs/Classification" },
+          "mother_origin": {
+            "type": "string",
+            "enum": ["greek", "greek-citizen", "greek-origin", "mixed"]
+          },
+          "father_origin": {
+            "type": "string",
+            "enum": ["greek", "greek-citizen", "greek-origin", "mixed"]
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "common.schema.json#/$defs/EvidenceCitation" }
+          },
+          "verification": { "$ref": "common.schema.json#/$defs/Verification" },
+          "notes": { "$ref": "common.schema.json#/$defs/I18nString" }
+        }
+      }
+    }
+  }
+}

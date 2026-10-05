@@ -1,10 +1,10 @@
 id: omonoia-al-2013
 title:
-  el: "«Ελληνική απογραφή» της οργάνωσης Ομόνοια, 2013"
-  en: "Omonoia 'Greek census', 2013"
+  el: «Ελληνική απογραφή» της οργάνωσης Ομόνοια, 2013
+  en: Omonoia 'Greek census', 2013
 publisher:
-  el: "Ομόνοια (οργάνωση ελληνικής μειονότητας Αλβανίας)"
-  en: "Omonoia (Greek minority organization in Albania)"
+  el: Ομόνοια (οργάνωση ελληνικής μειονότητας Αλβανίας)
+  en: Omonoia (Greek minority organization in Albania)
 country: albania
 year: 2013
 url: https://en.wikipedia.org/wiki/Greeks_in_Albania
@@ -12,8 +12,17 @@ classification: hypothetical
 type: self-report
 scope: greek-ethnic
 reliability: low
-retrieved_at: "2026-10-05"
+publication:
+  retrieved_at: '2026-10-05'
+  published_at: '2013-12-11'
+independence:
+  primary_data_collector: true
+robots_txt_allows_fetch: true
 language: en
 notes:
-  el: "Ιδιοαναφορά μειονοτικής οργάνωσης, όχι επίσημη μέτρηση· δεν αναγνωρίζεται από την αλβανική κυβέρνηση. Ο αρχικός ειδησεογραφικός σύνδεσμος (Balkaneu, 11/12/2013) τώρα δίνει 410 Gone, γι' αυτό η παραπομπή γίνεται μέσω της Wikipedia που τον παραθέτει."
-  en: "Self-report by a minority organization, not an official count; not recognised by the Albanian government. The original press link (Balkaneu, 2013-12-11) now returns HTTP 410 Gone, so this row cites the Wikipedia summary that carries that reference."
+  el: Ιδιοαναφορά μειονοτικής οργάνωσης, όχι επίσημη μέτρηση· δεν αναγνωρίζεται από την αλβανική κυβέρνηση.
+    Ο αρχικός ειδησεογραφικός σύνδεσμος (Balkaneu, 11/12/2013) τώρα δίνει 410 Gone, γι' αυτό η παραπομπή
+    γίνεται μέσω της Wikipedia που τον παραθέτει.
+  en: Self-report by a minority organization, not an official count; not recognised by the Albanian government.
+    The original press link (Balkaneu, 2013-12-11) now returns HTTP 410 Gone, so this row cites the Wikipedia
+    summary that carries that reference.

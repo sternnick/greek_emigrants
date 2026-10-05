@@ -4,28 +4,60 @@ name:
   el: Αλβανία
   en: Albania
 continent: europe
-
 records:
-  - record_id: al-2023-census-minority
-    year: 2023
-    count: 23485
-    source_ref: instat-al-2023
-    classification: confirmed
-    method: census
-    definition: greek-ethnic
-    population_type: indigenous-minority
-    notes:
-      el: "Αυτόχθονη ελληνική μειονότητα. Απογραφή INSTAT 2023 (δημοσίευση 28/6/2024): 23.485 αυτοαποκαλούμενοι Έλληνες (0,98%). Κατά νομό: Αυλώνας 12.044 (8,21%), Αργυρόκαστρο 8.552 (14,25%), Κορυτσά 740 (0,42%)."
-      en: "Indigenous Greek minority. INSTAT 2023 census (published 2024-06-28): 23,485 self-declared (0.98%). By county: Vlorë 12,044 (8.21%), Gjirokastër 8,552 (14.25%), Korçë 740 (0.42%)."
-
-  - record_id: al-2013-omonoia-census
-    year: 2013
-    count: 287000
-    source_ref: omonoia-al-2013
-    classification: hypothetical
-    method: estimate
-    definition: greek-ethnic
-    population_type: indigenous-minority
-    notes:
-      el: "Ιδία εκτίμηση της οργάνωσης Ομόνοια από την αποκαλούμενη «ελληνική απογραφή» του 2013 (~10% του πληθυσμού). Δεν αναγνωρίζεται από την αλβανική κυβέρνηση."
-      en: "Omonoia's own figure from its so-called 'Greek census' of 2013 (about 10% of the population). Not recognised by the Albanian government."
+- record_id: al-2023-census-minority
+  year: 2023
+  count: 23485
+  source_ref: instat-al-2023
+  classification: confirmed
+  method: census
+  definition: greek-ethnic
+  population_type: indigenous-minority
+  evidence:
+  - source_ref: instat-al-2023
+    url: https://www.instat.gov.al/media/13626/cens-2023-census-botim.pdf
+    accessed_at: '2026-10-05'
+    published_at: '2024-06-28'
+    page_or_table: MAIN RESULTS — Tab. 14 Resident population by ethnicity · row Greke | Greek
+    quote:
+      el: Greke | Greek 23 485 12 063 11 422
+      en: Greke | Greek 23 485 12 063 11 422
+    quote_language: en
+  verification:
+    independent_sources: 1
+    confidence: single-source
+  notes:
+    el: 'Αυτόχθονη ελληνική μειονότητα. Απογραφή INSTAT 2023 (δημοσίευση 28/6/2024): 23.485 αυτοαποκαλούμενοι Έλληνες
+      (0,98%). Κατά νομό: Αυλώνας 12.044 (8,21%), Αργυρόκαστρο 8.552 (14,25%), Κορυτσά 740 (0,42%).'
+    en: 'Indigenous Greek minority. INSTAT 2023 census (published 2024-06-28): 23,485 self-declared (0.98%). By
+      county: Vlorë 12,044 (8.21%), Gjirokastër 8,552 (14.25%), Korçë 740 (0.42%).'
+- record_id: al-2013-omonoia-census
+  year: 2013
+  count: 287000
+  source_ref: omonoia-al-2013
+  classification: hypothetical
+  method: estimate
+  definition: greek-ethnic
+  population_type: indigenous-minority
+  evidence:
+  - source_ref: omonoia-al-2013
+    url: https://en.wikipedia.org/wiki/Greeks_in_Albania
+    accessed_at: '2026-10-05'
+    published_at: '2013-12-11'
+    page_or_table: article text; original article balkaneu.com/omonias-census-greek-minority-constitutes-10-population-albania/
+      returns 410 Gone (no snapshot located while archive APIs were unavailable)
+    quote:
+      el: The Omonoia organization put the number at 287,000 after their so called "Greek census" in 2013.
+      en: The Omonoia organization put the number at 287,000 after their so called "Greek census" in 2013.
+    quote_language: en
+  verification:
+    independent_sources: 1
+    confidence: single-source
+    independence_note:
+      el: Self-report μειονοτικής οργάνωσης· ο φορέας δημοσίευσε ο ίδιος το νούμερο.
+      en: Minority organization's self-report — it published the figure itself; Wikipedia page is only the carrier.
+  notes:
+    el: Ιδία εκτίμηση της οργάνωσης Ομόνοια από την αποκαλούμενη «ελληνική απογραφή» του 2013 (~10% του πληθυσμού).
+      Δεν αναγνωρίζεται από την αλβανική κυβέρνηση.
+    en: Omonoia's own figure from its so-called 'Greek census' of 2013 (about 10% of the population). Not recognised
+      by the Albanian government.
