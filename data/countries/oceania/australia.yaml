@@ -4,10 +4,35 @@ name:
   el: Αυστραλία
   en: Australia
 continent: oceania
+status: disputed
 records:
+- record_id: au-2006-community
+  year: 2006
+  count: null
+  source_ref: ausgreeknet-2006
+  classification: hypothetical
+  method: estimate
+  definition: greek-origin
+  population_type: diaspora
+  evidence:
+  - source_ref: ausgreeknet-2006
+    url: http://www.ausgreeknet.com/greeksaroundtheglobe.htm
+    accessed_at: '2026-10-05'
+    archive_url: http://web.archive.org/web/20060619165420/http://www.ausgreeknet.com/greeksaroundtheglobe.htm
+    page_or_table: Greeks Around the Globe — figures inside a Flash object; snapshot retrieved, numbers not text-extractable
+  verification:
+    independent_sources: 0
+    confidence: single-source
+    independence_note:
+      el: Επιμελητής που συγκέντρωνε κοινοτικές εκτιμήσεις· δεν συνέλεξε δεδομένα.
+      en: Aggregator compiling community estimates; collected no data.
+  status: historical
+  notes:
+    el: Ιστορική εκτίμηση, superseded. Αναφερόμενη τιμή ~700.000 — μη εξαγώγιμη από το Flash, γι' αυτό count=null.
+    en: Historical estimate, superseded. Reported value ~700,000 — not extractable from the Flash object, hence count=null.
 - record_id: au-2021-census
   year: 2021
-  count: 424000
+  count: null
   source_ref: abs-au-2021
   classification: confirmed
   method: census
@@ -27,12 +52,25 @@ records:
   verification:
     independent_sources: 1
     confidence: single-source
+  status: disputed
   dispute_note:
-    el: Η τιμή 424.000 δεν εμφανίζεται σε κανένα κελί του published αρχείου· οι τιμές της γραμμής Greek παρατίθενται
-      στην απόδειξη. Έκδοση 2022-10 φέρεται να ανέφερε 424.750 — δεν επαληθεύτηκε.
-    en: The record's 424,000 appears in no cell of the published file; the 'Greek' row values are quoted in the
-      evidence. An earlier report (2022-10) allegedly cited 424,750 — unverified; the live file is byte-identical
-      to the 2022 Wayback capture.
+    el: 'Προηγούμενη καταχώριση: 424.000 — δεν υπάρχει σε κανένα κελί του παρατιθέμενου αρχείου ABS. Το βιβλίο εργασίας
+      δεν αποθηκεύει αναγνώσιμες κεφαλίδες στηλών: η γραμμή «Greek» (φύλλο 5) δίνει 301.829 | 384.688 | 152.571 | 103.914
+      | 137.255 | 8.460 | 4.393 | 15.219 με τελική στήλη 1.108.364 (άθροισμα προηγουμένων = 1.108.329), δηλαδή οι στήλες
+      είναι υποσύνολα συν σύνολο — αλλά ποια στήλη είναι το εθνικό σύνολο δεν επαληθεύεται χωρίς ετικέτες. Σημείωση:
+      η τιμή 424.744 ανήκει στη γραμμή «French» του ίδιου φύλλου. count=null έως την ανάγνωση πίνακα ancestry του ABS
+      με κεφαλίδες (backlog). Ο ευρέως επαναλαμβανόμενος αριθμός 424.000 φαίνεται να προέρχεται από το σύνολο της γραμμής
+      «French» (424.744) στο ίδιο φύλλο του workbook ABS — σφάλμα μεταγραφής που έχει διαδοθεί μέσω δευτερογενών πηγών.
+      Ο πίνακας ancestry του ABS απαιτεί εγγραφή στο TableBuilder (δωρεάν, με εταιρικό email). Backlog: εγγραφή + εξαγωγή
+      της γραμμής Greek με κεφαλίδες.'
+    en: 'Previous record: 424,000 — present in no cell of the cited ABS file. The workbook stores no readable column
+      headers: the ''Greek'' row (sheet 5) reads 301,829 | 384,688 | 152,571 | 103,914 | 137,255 | 8,460 | 4,393 | 15,219
+      with a final column 1,108,364 (sum of the preceding = 1,108,329), i.e. sub-totals plus a total — but which column
+      is the national figure cannot be verified without labels. Note: 424,744 belongs to the ''French'' row of the same
+      sheet. count=null until the ABS ancestry table is read with headers (backlog). The widely repeated 424,000 figure
+      appears to originate from the French row total (424,744) in the same ABS workbook sheet — a transcription error
+      that has propagated through secondary sources. The ABS ancestry table requires TableBuilder registration (free,
+      organisation email). Backlog: register + export Greek row with headers.'
   notes:
     el: 'ABS 2021, ancestry: Greek.'
     en: 'ABS 2021, ancestry: Greek.'
@@ -53,12 +91,13 @@ records:
   verification:
     independent_sources: 1
     confidence: single-source
+  status: disputed
   dispute_note:
-    el: 'Το 700.000 (2024) δεν επαληθεύτηκε από κείμενο: ο επιμελητής (ausgreeknet, 2006) το ενσωματώνει σε Flash
-      object. Η τιμή ταιριάζει με αναφορές τρίτων αλλά παραμένει μη εξακριβώσιμη.'
-    en: 'The 700,000 (2024) figure could not be verified from text: the aggregator (ausgreeknet.com, archived 2006)
-      embeds figures in a Flash object. The value matches third-party reports of that aggregator but stays unverified;
-      a SWF string extraction could restore the evidence.'
+    el: 'Το 700.000 (2024) δεν επαληθεύτηκε από κείμενο: ο επιμελητής (ausgreeknet, 2006) το ενσωματώνει σε Flash object.
+      Η τιμή ταιριάζει με αναφορές τρίτων αλλά παραμένει μη εξακριβώσιμη.'
+    en: 'The 700,000 (2024) figure could not be verified from text: the aggregator (ausgreeknet.com, archived 2006) embeds
+      figures in a Flash object. The value matches third-party reports of that aggregator but stays unverified; a SWF
+      string extraction could restore the evidence.'
   notes:
     el: Εκτίμηση ελληνικών κοινοτήτων Αυστραλίας.
     en: Greek Australian community estimate.

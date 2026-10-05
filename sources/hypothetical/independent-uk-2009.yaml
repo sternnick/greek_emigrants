@@ -1,0 +1,31 @@
+id: independent-uk-2009
+title:
+  el: 'Pandora: It''s all Greek to Boris (The Independent)'
+  en: 'Pandora: It''s all Greek to Boris (The Independent)'
+publisher:
+  el: The Independent
+  en: The Independent
+country: united-kingdom
+year: 2009
+url: https://www.independent.co.uk/news/people/pandora/pandora-its-all-greek-to-boris-803996.html
+classification: hypothetical
+type: media
+scope: greek-origin
+reliability: low
+publication:
+  published_at: '2009-04-03'
+  retrieved_at: '2026-10-05'
+independence:
+  primary_data_collector: false
+  notes:
+    el: Το δημοσίευμα μεταδίδει εκτίμηση του London Greek Radio (~400.000)· δεν συνέλεξε δεδομένα. Ο αρχικός
+      εκτιμητής δεν έχει δικό του ανακτήσιμο έγγραφο, γι' αυτό δεν δηλώνεται στα derives_from.
+    en: The article transmits a London Greek Radio estimate (~400,000); it collected no data. The originating
+      estimator has no retrievable document of its own, so it is not declared in derives_from.
+robots_txt_allows_fetch: true
+language: en
+notes:
+  el: Πλησιέστερη τεκμηριωμένη κοινοτική τιμή για το ΗΒ πριν τις απογραφές του 2021. Διαβάστηκε αυτοπροσώπως
+    από στιγμιότυπο (2020-09-22).
+  en: Nearest documented UK community figure predating the 2021 census cycle. Read first-hand from a 2020-09-22
+    snapshot.

@@ -2,13 +2,18 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://greek-diaspora.local/schemas/country.schema.json",
   "type": "object",
-  "required": ["id", "iso_alpha2", "name", "continent", "records"],
+  "required": ["id", "iso_alpha2", "name", "continent", "status", "records"],
   "additionalProperties": false,
   "properties": {
     "id": { "$ref": "common.schema.json#/$defs/Slug" },
     "iso_alpha2": { "type": "string", "pattern": "^[A-Z]{2}$" },
     "name": { "$ref": "common.schema.json#/$defs/I18nString" },
     "continent": { "$ref": "common.schema.json#/$defs/Slug" },
+    "status": {
+      "type": "string",
+      "enum": ["stub", "partial", "complete", "disputed"],
+      "description": "Coverage state. stub = no records yet (records: []); partial = at least one confirmed record, no hypothetical with a value; complete = both classifications present; disputed = sources disagree on material facts (takes precedence over complete)."
+    },
     "total_population": {
       "type": "object",
       "required": ["count", "year", "source_ref"],
@@ -55,6 +60,11 @@
           },
           "verification": { "$ref": "common.schema.json#/$defs/Verification" },
           "dispute_note": { "$ref": "common.schema.json#/$defs/I18nString" },
+          "status": {
+            "type": "string",
+            "enum": ["verified", "disputed", "historical"],
+            "description": "verified = matches its published source; disputed = value corrected or not confirmable (dispute_note required); historical = dated past figure kept for the time series."
+          },
           "notes": { "$ref": "common.schema.json#/$defs/I18nString" }
         }
       }

@@ -4,6 +4,7 @@ name:
   el: Αλβανία
   en: Albania
 continent: europe
+status: complete
 records:
 - record_id: al-2023-census-minority
   year: 2023
@@ -26,11 +27,12 @@ records:
   verification:
     independent_sources: 1
     confidence: single-source
+  status: verified
   notes:
     el: 'Αυτόχθονη ελληνική μειονότητα. Απογραφή INSTAT 2023 (δημοσίευση 28/6/2024): 23.485 αυτοαποκαλούμενοι Έλληνες
       (0,98%). Κατά νομό: Αυλώνας 12.044 (8,21%), Αργυρόκαστρο 8.552 (14,25%), Κορυτσά 740 (0,42%).'
-    en: 'Indigenous Greek minority. INSTAT 2023 census (published 2024-06-28): 23,485 self-declared (0.98%). By
-      county: Vlorë 12,044 (8.21%), Gjirokastër 8,552 (14.25%), Korçë 740 (0.42%).'
+    en: 'Indigenous Greek minority. INSTAT 2023 census (published 2024-06-28): 23,485 self-declared (0.98%). By county:
+      Vlorë 12,044 (8.21%), Gjirokastër 8,552 (14.25%), Korçë 740 (0.42%).'
 - record_id: al-2013-omonoia-census
   year: 2013
   count: 287000
@@ -56,8 +58,9 @@ records:
     independence_note:
       el: Self-report μειονοτικής οργάνωσης· ο φορέας δημοσίευσε ο ίδιος το νούμερο.
       en: Minority organization's self-report — it published the figure itself; Wikipedia page is only the carrier.
+  status: verified
   notes:
-    el: Ιδία εκτίμηση της οργάνωσης Ομόνοια από την αποκαλούμενη «ελληνική απογραφή» του 2013 (~10% του πληθυσμού).
-      Δεν αναγνωρίζεται από την αλβανική κυβέρνηση.
+    el: Ιδία εκτίμηση της οργάνωσης Ομόνοια από την αποκαλούμενη «ελληνική απογραφή» του 2013 (~10% του πληθυσμού). Δεν
+      αναγνωρίζεται από την αλβανική κυβέρνηση.
     en: Omonoia's own figure from its so-called 'Greek census' of 2013 (about 10% of the population). Not recognised
       by the Albanian government.

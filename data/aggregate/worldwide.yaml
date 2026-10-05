@@ -2,10 +2,12 @@ generated_by: scripts/aggregate.py
 totals_by_definition:
   confirmed:
     greek-ethnic: 23485
-    greek-citizens: 453000
-    greek-origin: 2264000
+    greek-citizens: 361270
+    greek-born: 77000
+    greek-origin: 1482350
   hypothetical:
     greek-ethnic: 287000
+    greek-origin: 400000
 continents:
   europe:
     countries:
@@ -32,7 +34,7 @@ continents:
         el: Γερμανία
         en: Germany
       confirmed:
-        count: 453000
+        count: 361270
         year: 2022
         source_ref: destatis-de-2022
         definition: greek-citizens
@@ -44,19 +46,25 @@ continents:
         el: Ηνωμένο Βασίλειο
         en: United Kingdom
       confirmed:
-        count: 370000
+        count: 77000
         year: 2021
         source_ref: ons-uk-2021
+        definition: greek-born
+        population_type: diaspora
+      hypothetical:
+        count: 400000
+        year: 2009
+        source_ref: independent-uk-2009
         definition: greek-origin
         population_type: diaspora
-      hypothetical: null
     totals:
       confirmed:
         greek-ethnic: 23485
-        greek-citizens: 453000
-        greek-origin: 370000
+        greek-citizens: 361270
+        greek-born: 77000
       hypothetical:
         greek-ethnic: 287000
+        greek-origin: 400000
   north-america:
     countries:
     - id: canada
@@ -65,7 +73,7 @@ continents:
         el: Καναδάς
         en: Canada
       confirmed:
-        count: 270000
+        count: 262135
         year: 2021
         source_ref: statcan-ca-2021
         definition: greek-origin
@@ -77,7 +85,7 @@ continents:
         el: Ηνωμένες Πολιτείες Αμερικής
         en: United States
       confirmed:
-        count: 1200000
+        count: 1220215
         year: 2023
         source_ref: us-acs-2023
         definition: greek-origin
@@ -85,7 +93,7 @@ continents:
       hypothetical: null
     totals:
       confirmed:
-        greek-origin: 1470000
+        greek-origin: 1482350
       hypothetical: {}
   oceania:
     countries:
@@ -94,14 +102,8 @@ continents:
       name:
         el: Αυστραλία
         en: Australia
-      confirmed:
-        count: 424000
-        year: 2021
-        source_ref: abs-au-2021
-        definition: greek-origin
-        population_type: diaspora
+      confirmed: null
       hypothetical: null
     totals:
-      confirmed:
-        greek-origin: 424000
+      confirmed: {}
       hypothetical: {}
