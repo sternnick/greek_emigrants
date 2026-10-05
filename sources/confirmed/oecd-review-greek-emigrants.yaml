@@ -23,6 +23,7 @@ independence:
   - statcan-ca-2021
   - abs-au-2021
   - us-acs-2023
+  - greece-in-figures-2023
 robots_txt_allows_fetch: true
 language: en
 language_iso639_2b: eng
