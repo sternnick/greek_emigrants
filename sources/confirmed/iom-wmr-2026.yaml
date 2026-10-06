@@ -1,0 +1,26 @@
+id: iom-wmr-2026
+title:
+  el: Αναφορά Παγκόσμιας Μετανάστευσης 2026
+  en: World Migration Report 2026
+publisher:
+  el: Διεθνής Οργανισμός Μετανάστευσης
+  en: International Organization for Migration
+country: world
+year: 2026
+url: https://publications.iom.int/books/world-migration-report-2026
+classification: confirmed
+type: international-org
+scope: greek-citizens
+reliability: high
+publication:
+  retrieved_at: '2026-10-06'
+  published_at: '2026-05-01'
+independence:
+  primary_data_collector: false
+  derives_from: []
+robots_txt_allows_fetch: false
+language: en
+language_iso639_2b: eng
+notes:
+  el: 'Το PDF που καταλήψαμε έχει 338 σελίδες (η σελίδα του IOM ilmoώνει 308). Η πρόσβαση στο URL αποκλείομένης απόstanders αλλά η päÄ°ina pfh été nå°â via Camoufox (rung 3 of web‑fetch ladder).'
+  en: 'The PDF we downloaded has 338 pages (the IOM landing page states 308). Direct access to the URL was blocked (403) but the content was retrieved via Camoufox (rung 3 of the web‑fetch ladder).'

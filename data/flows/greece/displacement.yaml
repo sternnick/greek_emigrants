@@ -1,0 +1,47 @@
+country: greece
+direction: displacement
+records:
+  - year: 2024
+    count: 60000
+    source_ref: iom-wmr-2026
+    classification: confirmed
+    citizenship: all-residents
+    education: any
+    evidence:
+      - source_ref: iom-wmr-2026
+        url: https://publications.iom.int/books/world-migration-report-2026
+        accessed_at: '2026-10-06'
+        published_at: '2026-05-01'
+        page_or_table: Figure 18
+        quote:
+          el: Greece had the highest number of internal disaster displacements in Europe in 2024 (60,000), triggered by large-scale fires.
+          en: Greece had the highest number of internal disaster displacements in Europe in 2024 (60,000), triggered by large-scale fires.
+        quote_language: en
+    verification:
+      independent_sources: 0
+      confidence: single-source
+    notes:
+      el: 'Αριθμός εσωτερικού μεταναστευτικού ο Diplacement λόγω καταστροφών σε Ελλάδα το 2024: 60.000 άτομα (πυρκαγιές).'
+      en: 'Internal disaster displacement in Greece for 2024: 60,000 persons (wildfires).'
+  - year: 2025
+    count: 79000
+    source_ref: iom-wmr-2026
+    classification: confirmed
+    citizenship: all-residents
+    education: any
+    evidence:
+      - source_ref: iom-wmr-2026
+        url: https://publications.iom.int/books/world-migration-report-2026
+        accessed_at: '2026-10-06'
+        published_at: '2026-05-01'
+        page_or_table: Figure 18
+        quote:
+          el: Greece had the highest number of internal disaster displacements in Europe in 2025 (more than 79,000), most triggered by wildfires.
+          en: Greece had the highest number of internal disaster displacements in Europe in 2025 (more than 79,000), most triggered by wildfires.
+        quote_language: en
+    verification:
+      independent_sources: 0
+      confidence: single-source
+    notes:
+      el: 'Αριθμός εσωτερικού μεταναusteυτικού ο Diplacement λόγω καταστροφών σε Ελλάδα το 2025: περισσότερα από 79.000 atoms (πυρκαγιές).'
+      en: 'Internal disaster displacement in Greece for 2025: more than 79,000 persons (wildfires).'

@@ -87,7 +87,7 @@
     },
     "FlowDirection": {
       "type": "string",
-      "enum": ["outflow", "return", "net"],
+      "enum": ["outflow", "return", "net", "displacement"],
       "description": "net = a derived balance (returns minus outflow); those records must carry computed: true and are excluded from totals."
     }
   }
